@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace EnemyDB
+namespace CrossoutNicknamesCollector
 {
     public partial class Form1 : Form
     {
@@ -31,7 +31,6 @@ namespace EnemyDB
 
         //DB
         public string ConnectionStringPlayers => $"Data Source={playersFileDB};Version=3;";
-        public string enemyFileDB = "enemy.db";
         public string playersFileDB = "analytics.db";
 
         HashSet<string> analiticsPlayer = new HashSet<string>();
@@ -41,7 +40,6 @@ namespace EnemyDB
         public string DuplicateLogsDerictory => $"{LocalDerictory}\\{duplicateFolderLogs}";
 
         public string PathToPlayersDB => $"{LocalDerictory}//{playersFileDB}";
-        public string PathToEnemyDB => $"{LocalDerictory}//{enemyFileDB}";
 
         public string[] NickNames => GetNicknamesFromDatabase(ConnectionStringPlayers, "Players");
         
@@ -124,58 +122,6 @@ namespace EnemyDB
 
                 File.Copy(file, destinationFile);
             }
-        }
-
-        public string GetNewestFolder(string folderPath)
-        {
-            try
-            {
-                var folderDirectories = Directory.GetDirectories(folderPath);
-
-                var sortedFolders = folderDirectories.OrderByDescending(d => Directory.GetLastWriteTime(d)).ToList();
-
-                if (sortedFolders.Any())
-                {
-                    return sortedFolders.First();
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-
-            return null;
-        }
-
-        public static string FindLastNicknameInPrivateMessage(string logFilePath, string command)
-        {
-            string nickname = null;
-
-            try
-            {
-                string[] lines = File.ReadAllLines(logFilePath);
-
-                for (int i = lines.Length - 1; i >= 0; i--)
-                {
-                    string line = lines[i];
-                    if (line.Contains(command) && line.Contains("<    PRIVATE To  >"))
-                    {
-                        // Используем регулярное выражение для извлечения никнейма из квадратных скобок
-                        Match match = Regex.Match(line, @"\[\s*(.*?)\s*]");
-                        if (match.Success)
-                        {
-                            nickname = match.Groups[1].Value;
-                            // Не прерываем цикл, чтобы найти последнее сообщение с командой
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-
-            return nickname;
         }
 
         public string GetNicknameWithoutID(string input = "null")
@@ -279,34 +225,6 @@ namespace EnemyDB
                     }
 
                     Console.WriteLine("База данных успешно очищена.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-        }
-
-        public static void ReadAllNicknames(string dbPath, List<string> nicknamesList)
-        {
-            try
-            {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
-                    // Выбираем все записи из таблицы Users
-                    using (var command = new SQLiteCommand("SELECT nickname FROM Users", connection))
-                    {
-                        using (var reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                string nickname = reader["nickname"].ToString();
-                                nicknamesList.Add(nickname); // Добавляем никнейм в список
-                            }
-                        }
-                    }
                 }
             }
             catch (Exception ex)

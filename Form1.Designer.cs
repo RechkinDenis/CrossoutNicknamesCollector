@@ -1,4 +1,4 @@
-﻿namespace EnemyDB
+﻿namespace CrossoutNicknamesCollector
 {
     partial class Form1
     {
