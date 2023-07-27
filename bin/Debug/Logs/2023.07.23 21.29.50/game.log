@@ -1,0 +1,509 @@
+
+--- Date: 2023-7-23 (Sun Jul 2023) UTC+03:00
+
+21:29:50.792         | //////////////////////////////////////////////////////////////////////////////
+21:29:50.792         | //
+21:29:50.792         | // Build: Crossout x64 2.7.10.250607 (Jul 17 2023 17:54:44)
+21:29:50.792         | // params: "D:\Games\Crossout\bin\win64\Crossout.exe" -lang RUSSIAN -fromlauncher --no-relaunch  --aftermath 
+21:29:50.792         | //
+21:29:50.792         | //////////////////////////////////////////////////////////////////////////////
+21:29:50.792         | 
+21:29:56.099  WARNING| frame time of frame 1 within loading callback is too large (8.882357)
+21:30:00.964         | EasyAntiCheat::Client: Init result 0, message Служба Easy Anti-Cheat запущена
+21:30:01.079         | ====== starting level 1: 'levels/maps/mainmenu'  single env=-1 ======
+21:30:01.110         | ====== level started:  'mainmenu' success ======
+21:30:02.914         | TargemService: RequestAuth: login 'denk1030@gmail.co*', auth 'GAIJIN', url 'https://crank.crossout.net/live'
+21:30:05.111         | server mods CVar 'ABTest.EnableTutorialPass' -> '1'
+21:30:05.111         | server mods CVar 'ABTest.TutorialBattlePassGroupA' -> 'TutorialBattlePass_V5_chest_0h'
+21:30:05.111         | server mods CVar 'ABTest.TutorialBattlePassGroupB' -> 'TutorialBattlePass_V5_chest_0h'
+21:30:05.111         | server mods CVar 'CarEditor.DecorationAnalytics' -> '1'
+21:30:05.111         | server mods CVar 'CollectableRandomEntity.ExclusiveProbability' -> '0.08'
+21:30:05.111         | server mods CVar 'CollectableRandomEntity.MaxCount' -> '3'
+21:30:05.111         | server mods CVar 'CollectableRandomEntity.MinCount' -> '2'
+21:30:05.111         | server mods CVar 'Game.CarEditorAnalytics' -> '1'
+21:30:05.111         | server mods CVar 'GameUI.ChatChannelsDisabled' -> 'russian:novice;russian:partysearch;english:novice;english:partysearch;german:novice;german:partysearch;french:novice;french:partysearch;spanish:novice;spanish:partysearch'
+21:30:05.111         | server mods CVar 'GameUI.ShowCrystals' -> '1'
+21:30:05.111         | server mods CVar 'GameUI.ShowDecorExhibition' -> '1'
+21:30:05.111         | server mods CVar 'GameUI.ShowUserBrawls' -> '1'
+21:30:05.111         | server mods CVar 'ah_arbiterFacadeUser' -> '94775'
+21:30:05.111         | server mods CVar 'ah_minSellPrice' -> '10'
+21:30:05.111         | server mods CVar 'bpe_maxDecorationDesignsExhibited' -> '6'
+21:30:05.111         | server mods CVar 'cl_enableUserProfileStats' -> '1'
+21:30:05.111         | server mods CVar 'cl_newsWndV2' -> '1'
+21:30:05.111         | server mods CVar 'cl_showJams' -> '1'
+21:30:05.111         | server mods CVar 'clanWars_firstDay' -> '2016-09-18T16:00:00Z'
+21:30:05.111         | server mods CVar 'customGame_showEnvSettings' -> '1'
+21:30:05.111         | server mods CVar 'gameui_debriefLikesMode' -> '2'
+21:30:05.111         | server mods CVar 'leviathan_subtypePowerThreshold' -> '12'
+21:30:05.111         | server mods CVar 'sv_circuit' -> 'live'
+21:30:05.111         | server mods CVar 'sv_customGameExtended' -> '1'
+21:30:05.111         | server mods CVar 'sv_dbgLeviathan' -> '1'
+21:30:05.111         | server mods CVar 'sv_disableVoiceChatService' -> '1'
+21:30:05.111         | server mods CVar 'user_2stepRestrictions' -> '1'
+21:30:05.111         | server mods CVar 'user_customGame' -> '2'
+21:30:05.111         | server mods CVar 'user_hangarVisitorsInterval' -> '28800'
+21:30:05.111         | server mods CVar 'user_hangarVisitorsNum' -> '5'
+21:30:05.111         | server mods CVar 'user_newPlayerAnalyticsCarEditor' -> '0'
+21:30:05.111         | server mods CVar 'user_newPlayerAnalyticsNumDays' -> '0'
+21:30:05.111         | server mods CVar 'user_newPlayerAnalyticsTestDrive' -> '0'
+21:30:05.111         | server mods CVar 'user_newPlayerAnalyticsWindowsAndTabs' -> '0'
+21:30:05.111         | server mods CVar 'user_tradeRegulatorMaxOrders' -> '5'
+21:30:05.111         | server mods CVar 'user_tradeRegulatorNewbieLevel' -> '5'
+21:30:05.111         | server mods CVar 'user_tradeRegulatorNewbieRestrictBuy' -> '1'
+21:30:05.111         | Auth success: token uoJDAAAAAACC0U_j8czf-xq6H4SJAQAAQD_ChQRub25lBGxpdmU, uid 4424378, server time 2023-07-23T18:30:19.132Z (drift of -14 sec)
+21:30:05.734         | TSConnectionManager::StateNEGOTIATING: SoContainer login complete
+21:30:05.850         | DataStorage: set data with type='chat_decoration_settings' version='2495'
+21:30:05.850         | DataStorage: set data with type='weekend_schedule' version='2731'
+21:30:05.850         | DataStorage: set data with type='queue_rotation' version='2744'
+21:30:05.851         | DataStorage: set data with type='auction_goods_hold' version='2477'
+21:30:05.851         | DataStorage: set data with type='shop_items' version='2748'
+21:30:05.851         | DataStorage: set data with type='bundle_ingame_price' version='1934'
+21:30:05.851         | DataStorage: set data with type='unavailable_recipe' version='2701'
+21:30:05.851         | DataStorage: set data with type='hidden_emo_item' version='2363'
+21:30:05.851         | DataStorage: set data with type='custom_game_data' version='2725'
+21:30:05.851         | DataStorage: set data with type='ranked_events' version='2603'
+21:30:05.851         | DataStorage: set data with type='forbidden_goods' version='2749'
+21:30:05.851         | DataStorage: set data with type='ingame_shop_items' version='2747'
+21:30:05.852         | DataStorage: set data with type='blueprint_jam_settings' version='2625'
+21:30:05.853         | DataStorage: set data with type='ingame_offers' version='2504'
+21:30:05.853         | DataStorage: set data with type='fusion_events' version='2726'
+21:30:05.853         | DataStorage: set data with type='collection_fusion_event' version='2578'
+21:30:05.853         | DataStorage: set data with type='leaderboards_settings' version='2585'
+21:30:05.853         | DataStorage: set data with type='auction_price_limitations' version='2311'
+21:30:05.853         | DataStorage: set data with type='new_recipes_data' version='1183'
+21:30:05.853         | DataStorage: set data with type='legacy_news_feed' version='2716'
+21:30:05.853         | DataStorage: set data with type='battle_pass' version='1333'
+21:30:05.853         | DataStorage: set data with type='mission_schedule' version='2730'
+21:30:05.853         | DataStorage: set data with type='craftsman_config' version='2714'
+21:30:05.853         | DataStorage: set data with type='fusion_erase_event' version='2734'
+21:30:05.853         | DataStorage: set data with type='aim_assist_ab_test' version='2682'
+21:30:06.948         | TSConnectionManager::StateNEGOTIATING: complete
+21:30:06.948         | TargemService:OnGoingOnline: uid 4424378, nickName '_UA_Puffin_', sessionId -2050867392, serverTime 2023-07-23T18:30:20Z, countryCode 'UA'
+21:30:07.064         | ====== starting level 2: 'levels/maps/hangar'  single Empty,env=221621 ======
+21:30:07.064         | {
+21:30:07.064         | 	"is_hangar": 1
+21:30:07.064         | }
+21:30:07.996         | ====== level started:  'hangar' success ======
+21:30:15.572         | Test drive started from Hangar
+21:30:30.496         | Spawn User Blueprint 7
+21:30:33.353         | Stored mission name: FreePlay_Pvp
+21:30:33.353         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690156800000,"mapOptionList":"bridge:FreePlay","botList":""}'
+21:30:34.252         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+21:30:34.635         | CL_MatchMaker::ConnectHandler: addr = 3.253.144.189:35248, gsid = 552640385
+21:30:34.768         | client: start connecting to 3.253.144.189|35248...
+21:30:34.774  WARNING| frame 4566: 135 ms spike
+21:30:35.042         | client: connected to 3.253.144.189|35248, server guid '1690135408530791', client guid '986288350443671216', setting up session...
+21:30:35.160         | client: connected to dedicated server. gsid: 552640385, hostname: 'wheel03-am-uk.pxo/live-bcr5v-r76fw'
+21:30:35.264         | client: server assigned id 3
+21:30:35.288         | client: got level load message 'levels/maps/bridge' FreePlay, levelId: 1
+21:30:35.368         | ====== starting level 3: 'levels/maps/bridge' FreePlay client Empty,env=664236 ======
+21:30:35.368         | {
+21:30:35.368         | 	"minUR": 7367
+21:30:35.368         | 	"maxUR": 7367
+21:30:35.368         | 	"queueTag": FreePlay_Pvp
+21:30:35.368         | 	"fixedMMValue": 0
+21:30:35.368         | }
+21:30:36.062         | client: send ready message
+21:30:36.262         | client: ADD_PLAYER  0        Daymon1-2, uid 13343158 status   ACTIVE team 1
+21:30:36.265         | client: ADD_PLAYER  1       Naplo43841, uid 5356581 status   ACTIVE team 2
+21:30:36.346         | client: ADD_PLAYER  2      Tarkus99519, uid 12320944 status   ACTIVE team 3
+21:30:36.346         | client: ADD_PLAYER  3      _UA_Puffin_, uid 4424378 status MAP_LOAD team 4
+21:30:36.347         | client: ADD_PLAYER  4          Musaidr, uid 12893230 status   ACTIVE team 5
+21:30:36.347         | client: ADD_PLAYER  5     Бурчик, uid 5438556 status   ACTIVE team 6
+21:30:36.361         | client: ADD_PLAYER  6         wepisgod, uid 4732363 status   ACTIVE team 7
+21:30:36.430         | client: ADD_PLAYER  7 Бандеромобіль, uid 9140056 status   ACTIVE team 8
+21:30:36.431         | client: ADD_PLAYER  8   R3ady_t0_F1ght, uid 9788276 status   ACTIVE team 9
+21:30:36.431         | client: ADD_PLAYER  9             HΣX, uid 8349096 status   ACTIVE team 10
+21:30:36.431         | client: ADD_PLAYER 10       _Mr_Meffi_, uid 9236909 status   ACTIVE team 11
+21:30:36.432         | client: ADD_PLAYER 11        TrappyLuw, uid 8192947 status   ACTIVE team 12
+21:30:36.443         | client: UPDATE_PLAYER  3      _UA_Puffin_, uid 4424378 status   ACTIVE team 4
+21:30:36.443  WARNING| Client: received Entity sync notification #0 for entity with netId 26606, but entity doesn't exist
+21:30:36.443  WARNING| Client: received Entity sync notification #0 for entity with netId 26604, but entity doesn't exist
+21:30:36.443  WARNING| Client: received Entity sync notification #0 for entity with netId 26608, but entity doesn't exist
+21:30:36.548         | client: got init message. ping 86, MTU 1350
+21:30:36.554         | ====== level started:  'bridge' success ======
+21:30:37.603         | client: player 9 leave game
+21:30:38.253  WARNING| server_fps [ 2023-07-23T18:30:52.265Z ]:  30 30 29 29 29 30 30 30 29 29 30 29 29 30 29 30 29  9 30 30 29 30 29 30 28 30 30 30
+21:30:49.470         | client: RESERVE_PLAYER  9   _red_diamond8_, uid 10985254@live status RESERVED team 10
+21:30:51.303         | client: UPDATE_PLAYER  9   _red_diamond8_, uid 10985254 status   ACTIVE team 10
+21:31:03.646  WARNING| net: USER_BYTES_PUSHED 2469; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 15605; USER_BYTES_RECEIVED_IGNORED 24; ACTUAL_SENT 4959; ACTUAL_BYTES_RECEIVED 19843; packetLoss 0%
+21:31:05.350         | client: RESERVE_PLAYER 12             HΣX, uid 8349096@live status RESERVED team 13
+21:31:06.931         | client: UPDATE_PLAYER 12             HΣX, uid 8349096 status   ACTIVE team 13
+21:31:25.983         | client: RESERVE_PLAYER 13       eberfierro, uid 8315104@live status RESERVED team 14
+21:31:27.554         | client: UPDATE_PLAYER 13       eberfierro, uid 8315104 status   ACTIVE team 14
+21:31:30.644  WARNING| net: USER_BYTES_PUSHED 1806; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 10571; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 3901; ACTUAL_BYTES_RECEIVED 13775; packetLoss 0%
+21:31:38.995  WARNING| server_fps [ 2023-07-23T18:31:53.007Z ]:  29 30 29 29 29 29 30 30 30 30 30 30 29 30 29 29 30 29 29 30 30 29 30 30 29 29 30 30 30  9 30 30 29 30 29 30 29 29 29 30
+21:31:43.216         | client: player 4 leave game
+21:31:44.638  WARNING| net: USER_BYTES_PUSHED 2984; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 8541; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 5049; ACTUAL_BYTES_RECEIVED 11619; packetLoss 0%
+21:31:49.108  WARNING| server_fps [ 2023-07-23T18:32:03.121Z ]:  29 30 29 30 29 30 30 29 30 29 29 29 30 29 30 30 30 30 29 29 30 29 30 30 29 30 30 29 29 21 30 30 30 29 30 29 29 30 30 29
+21:32:06.639  WARNING| net: USER_BYTES_PUSHED 2966; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 13214; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5494; ACTUAL_BYTES_RECEIVED 17006; packetLoss 0%
+21:32:20.801  WARNING| server_fps [ 2023-07-23T18:32:34.812Z ]:  30 30 29 30 30 29 29 29 30 30 29 30 29 29 29 29 30 30 29 30 30 29 30 30 30 29 30 29 29 12 29 30 29 30 30 30 29 30 30 29
+21:32:27.968         | client: player 10 leave game
+21:32:30.768         | client: player 9 leave game
+21:33:23.989         | client: player 12 leave game
+21:33:24.651  WARNING| server_fps [ 2023-07-23T18:33:38.662Z ]:  29 29 30 30 30 29 30 29 29 30 30 30 29 30 30 29 30 29 30 29 29 29 30 29 29 29 30 29 29 15 29 29 29 30 29 29 30 29 30 30
+21:33:34.094         | client: player 5 leave game
+21:33:34.778  WARNING| server_fps [ 2023-07-23T18:33:48.791Z ]:  29 29 30 29 29 30 29 29 30 29 29 30 30 29 30 29 29 29 30 30 29 30 30 29 30 30 30 29 29 13 30 29 29 29 29 29 29 29 29 29
+21:34:05.269         | client: player 2 leave game
+21:34:10.421  WARNING| server_fps [ 2023-07-23T18:34:24.435Z ]:  29 29 29 29 30 30 30 30 29 30 30 30 30 30 29 30 30 29 29 29 29 30 30 30 30 29 30 29 30 12 29 29 29 29 29 29 29 29 29 30
+21:34:12.642  WARNING| net: USER_BYTES_PUSHED 1871; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 4708; USER_BYTES_RECEIVED_IGNORED 31; ACTUAL_SENT 3615; ACTUAL_BYTES_RECEIVED 6499; packetLoss 0%
+21:34:18.688         | client: player 11 leave game
+21:34:20.968         | client: player 13 leave game
+21:34:27.064         | client: player 0 leave game
+21:34:27.745  WARNING| server_fps [ 2023-07-23T18:34:41.759Z ]:  30 30 30 30 29 29 29 29 29 30 29 30 30 30 30 30 29 29 30 30 29 29 30 30 30 29 30 30 30 21 30 30 30 29 30 29 30 30 30 30
+21:34:56.300  WARNING| client: packet loss last second 10.1%
+21:34:56.364  WARNING| client: packet loss last second 11.5%
+21:34:56.770  WARNING| client: packet loss last second 9.7%
+21:34:56.784  WARNING| client: packet loss last second 11.4%
+21:34:57.276  WARNING| client: packet loss last second 9.9%
+21:35:22.641  WARNING| net: USER_BYTES_PUSHED 1975; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 9109; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 3790; ACTUAL_BYTES_RECEIVED 11575; packetLoss 0%
+21:35:23.637  WARNING| net: USER_BYTES_PUSHED 2651; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 8711; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 4652; ACTUAL_BYTES_RECEIVED 11441; packetLoss 0%
+21:35:46.044         | client: player 8 leave game
+21:35:55.735         | client: avgPing 84.5/92.0; avgPacketLoss 0.0/11.1%; avgSnapshotLoss 0.5/4.7%, MTU 1350
+21:35:55.736         | client: connection closed. CLIENT_QUIT
+21:35:55.736         | Network stats (bytes per second): avg pushed 2076, max pushed 2573, avg sent 3929, max sent 4718, avg received 10595, max received 19196
+21:35:56.022         | ====== starting level 4: 'levels/maps/hangar'  single Empty,env=221621 ======
+21:35:56.022         | {
+21:35:56.022         | 	"is_hangar": 1
+21:35:56.022         | }
+21:35:56.023         | Gameplay statistic. gameResult 'freePlayFinish'
+21:35:56.023         |       score   0, expBase 0, expDailyBonus 4.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+21:35:56.506         | ====== level started:  'hangar' success ======
+21:35:56.996         | Stored mission name: FreePlay_Pvp
+21:35:56.996         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690156800000,"mapOptionList":"bridge:FreePlay","botList":""}'
+21:35:58.278         | Matchmaker_NotifyQueueState: 27 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+21:35:58.320         | CL_MatchMaker::ConnectHandler: addr = 34.248.180.83:35644, gsid = 552627685
+21:35:58.349         | client: start connecting to 34.248.180.83|35644...
+21:35:58.616         | client: connected to 34.248.180.83|35644, server guid '1690129245474285', client guid '986288350443671216', setting up session...
+21:35:58.741         | client: connected to dedicated server. gsid: 552627685, hostname: 'wheel03-am-uk.pxo/live-bcr5v-5ptp6'
+21:35:58.845         | client: server assigned id 2
+21:35:58.854         | client: got level load message 'levels/maps/bridge' FreePlay, levelId: 1
+21:35:58.922         | ====== starting level 5: 'levels/maps/bridge' FreePlay client Empty,env=523108 ======
+21:35:58.922         | {
+21:35:58.922         | 	"minUR": 10303
+21:35:58.922         | 	"maxUR": 10303
+21:35:58.922         | 	"queueTag": FreePlay_Pvp
+21:35:58.922         | 	"fixedMMValue": 0
+21:35:58.922         | }
+21:35:59.450         | client: send ready message
+21:35:59.648         | client: ADD_PLAYER  0        Just_Drak, uid 12023083 status   ACTIVE team 1
+21:35:59.730         | client: ADD_PLAYER  1          OptiWan, uid 3833508 status   ACTIVE team 2
+21:35:59.730         | client: ADD_PLAYER  2      _UA_Puffin_, uid 4424378 status MAP_LOAD team 3
+21:35:59.734         | client: ADD_PLAYER  3 ForLaFreiheitLOL, uid 11121673 status   ACTIVE team 4
+21:35:59.749         | client: ADD_PLAYER  4      Tarkus99519, uid 12320944 status   ACTIVE team 5
+21:35:59.750         | client: ADD_PLAYER  5  Dragon_IntelleX, uid 8663839 status   ACTIVE team 6
+21:35:59.817         | client: ADD_PLAYER  6     バルサー, uid 5209542 status   ACTIVE team 7
+21:35:59.817         | client: ADD_PLAYER  7     youskiritchi, uid 8525081 status   ACTIVE team 8
+21:35:59.817         | client: ADD_PLAYER  8        Micha_3_0, uid 9299428 status   ACTIVE team 9
+21:35:59.818         | client: ADD_PLAYER  9       KaktorKing, uid 5122102 status   ACTIVE team 10
+21:35:59.834         | client: ADD_PLAYER 10 CBmobil_DerErste, uid 10638637 status   ACTIVE team 11
+21:35:59.834         | client: ADD_PLAYER 11      vvvvvvvvlad, uid 13557622 status   ACTIVE team 12
+21:35:59.835         | client: ADD_PLAYER 12        TrappyLuw, uid 8192947 status   ACTIVE team 13
+21:35:59.835         | client: ADD_PLAYER 13  Fire_Max_player, uid 11695251 status   ACTIVE team 14
+21:35:59.835         | client: ADD_PLAYER 14    marcel_ickert, uid 4241246 status   ACTIVE team 15
+21:35:59.899         | client: ADD_PLAYER 15    aniergonsales, uid 9626287 status   ACTIVE team 16
+21:35:59.901         | client: UPDATE_PLAYER  2      _UA_Puffin_, uid 4424378 status   ACTIVE team 3
+21:35:59.901  WARNING| Client: received Entity sync notification #0 for entity with netId 258384, but entity doesn't exist
+21:35:59.901  WARNING| Client: received Entity sync notification #1 for entity with netId 258352, but entity doesn't exist
+21:35:59.901  WARNING| Client: received Entity sync notification #2 for entity with netId 258352, but entity doesn't exist
+21:35:59.981         | client: got init message. ping 103, MTU 1350
+21:35:59.987         | ====== level started:  'bridge' success ======
+21:36:04.454         | client: player 5 leave game
+21:36:05.320  WARNING| net: USER_BYTES_PUSHED 2578; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 15234; USER_BYTES_RECEIVED_IGNORED 70; ACTUAL_SENT 5068; ACTUAL_BYTES_RECEIVED 20541; packetLoss 0%
+21:36:06.309  WARNING| server_fps [ 2023-07-23T18:36:20.320Z ]:  30 30 29 30 29 29 29 30 30 30 30 29 30 29 30 29 30 29 30 29 29 29 29 29 29 30 30 29 29 11 30 29 30 29 29 29 30 30 30 30
+21:36:09.595         | client: player 3 leave game
+21:36:10.348         | client: RESERVE_PLAYER  3  Dragon_IntelleX, uid 8663839@live status RESERVED team 4
+21:36:11.322  WARNING| net: USER_BYTES_PUSHED 2577; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 19042; USER_BYTES_RECEIVED_IGNORED 20; ACTUAL_SENT 5159; ACTUAL_BYTES_RECEIVED 23983; packetLoss 0%
+21:36:12.198         | client: UPDATE_PLAYER  3  Dragon_IntelleX, uid 8663839 status   ACTIVE team 4
+21:36:15.404         | client: RESERVE_PLAYER  5 ForLaFreiheitLOL, uid 11121673@live status RESERVED team 6
+21:36:16.885         | client: UPDATE_PLAYER  5 ForLaFreiheitLOL, uid 11121673 status   ACTIVE team 6
+21:36:33.128         | client: player 4 leave game
+21:36:33.791  WARNING| server_fps [ 2023-07-23T18:36:47.802Z ]:  30 29 30 29 30 29 30 30 30 29 29 30 29 29 29 30 30 29 29 29 29 29 29 29 30 30 30 30 29  6 29 29 29 29 29 29 30 30 30 29
+21:36:36.368         | client: RESERVE_PLAYER  4   _MARTINI_skill, uid 13375767@live status RESERVED team 5
+21:36:39.261         | client: UPDATE_PLAYER  4   _MARTINI_skill, uid 13375767 status   ACTIVE team 5
+21:37:02.341  WARNING| server_fps [ 2023-07-23T18:37:16.351Z ]:  30 30 29 30 29 29 30 30 29 29 29 29 29 30 29 30 29 30 29 30 30 30 30 30 29 30 30 30 29 11 30 30 25 25 30 29 30 29 30 30
+21:37:09.324  WARNING| net: USER_BYTES_PUSHED 2829; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 26306; USER_BYTES_RECEIVED_IGNORED 68; ACTUAL_SENT 5536; ACTUAL_BYTES_RECEIVED 32020; packetLoss 0%
+21:37:10.323  WARNING| net: USER_BYTES_PUSHED 2895; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 20563; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 5406; ACTUAL_BYTES_RECEIVED 25381; packetLoss 0%
+21:37:16.702         | client: player 8 leave game
+21:37:17.860  WARNING| server_fps [ 2023-07-23T18:37:31.871Z ]:  30 29 30 29 29 29 29 30 29 30 30 30 30 29 30 29 30 30 30 29 29 29 29 30 30 30 29 30 29 14 29 30 29 29 29 29 29 29 29 29
+21:37:25.782         | client: player 13 leave game
+21:37:41.237  WARNING| client: snapshot loss rate 5.5%
+21:37:42.297  WARNING| client: snapshot loss rate 5.5%
+21:37:43.710         | client: RESERVE_PLAYER  8           ofsell, uid 7620357@live status RESERVED team 9
+21:37:45.049         | client: UPDATE_PLAYER  8           ofsell, uid 7620357 status   ACTIVE team 9
+21:37:47.923         | client: RESERVE_PLAYER 13        Micha_3_0, uid 9299428@live status RESERVED team 14
+21:37:49.497         | client: UPDATE_PLAYER 13        Micha_3_0, uid 9299428 status   ACTIVE team 14
+21:37:51.312  WARNING| server_fps [ 2023-07-23T18:38:05.322Z ]:  30 29 29 29 30 30 29 29 29 30 29 30 30 30 29 30 30 30 30 30 30 30 30 30 29 30 30 30 30 13 13 30 29 29 30 29 29 29 29 29
+21:38:06.979  WARNING| server_fps [ 2023-07-23T18:38:20.993Z ]:  29 29 30 29 29 30 29 30 29 29 29 30 29 30 30 30 29 30 30 30 29 29 30 30 29 29 30 29 30 18 29 30 30 29 29 29 29 30 30 30
+21:38:12.322  WARNING| net: USER_BYTES_PUSHED 1575; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16217; USER_BYTES_RECEIVED_IGNORED 40; ACTUAL_SENT 3249; ACTUAL_BYTES_RECEIVED 19639; packetLoss 0%
+21:38:13.902         | client: player 3 leave game
+21:38:20.711  WARNING| server_fps [ 2023-07-23T18:38:34.723Z ]:  30 30 29 30 30 30 29 29 29 30 30 30 29 29 30 30 30 30 29 30 30 29 29 30 30 30 29 29 29  8 30 29 29 30 29 30 29 29 30 30
+21:38:31.572  WARNING| server_fps [ 2023-07-23T18:38:45.583Z ]:  30 29 29 30 29 29 29 30 30 29 30 30 30 30 29 29 30 29 30 29 29 29 29 30 30 30 30 29 29  8 30 29 30 30 29 29 30 29 30 29
+21:38:45.841  WARNING| server_fps [ 2023-07-23T18:38:59.854Z ]:  30 30 29 30 29 29 30 29 30 30 29 29 30 30 30 29 30 29 29 30 29 30 29 30 29 30 30 29 30 12 29 29 29 30 29 30 29 30 30 29
+21:38:46.323  WARNING| net: USER_BYTES_PUSHED 2331; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 22742; USER_BYTES_RECEIVED_IGNORED 245; ACTUAL_SENT 4882; ACTUAL_BYTES_RECEIVED 27728; packetLoss 0%
+21:38:57.977         | client: player 5 leave game
+21:38:58.636  WARNING| server_fps [ 2023-07-23T18:39:12.651Z ]:  29 30 29 29 29 30 29 30 26 29 30 30 30 29 29 29 29 30 29 29 29 30 29 30 29 29 30 29 30  7 30 29 30 30 30 30 29 30 30 30
+21:39:00.698         | client: RESERVE_PLAYER  3  Dragon_IntelleX, uid 8663839@live status RESERVED team 4
+21:39:02.318         | client: UPDATE_PLAYER  3  Dragon_IntelleX, uid 8663839 status   ACTIVE team 4
+21:39:06.333  WARNING| net: USER_BYTES_PUSHED 2956; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 32329; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 5944; ACTUAL_BYTES_RECEIVED 38924; packetLoss 0%
+21:39:07.042         | client: RESERVE_PLAYER  5          BigaBoo, uid 47675@live status RESERVED team 6
+21:39:08.560         | client: UPDATE_PLAYER  5          BigaBoo, uid 47675 status   ACTIVE team 6
+21:39:18.295         | client: player 14 leave game
+21:39:18.959  WARNING| server_fps [ 2023-07-23T18:39:32.973Z ]:  29 29 29 30 29 29 30 30 30 30 29 29 29 29 29 30 29 29 30 29 30 30 29 30 30 29 29 30 30 10 29 29 29 29 29 30 30 30 29 30
+21:39:21.664         | client: player 9 leave game
+21:39:28.396         | client: RESERVE_PLAYER  9       KaktorKing, uid 5122102@live status RESERVED team 10
+21:39:30.104         | client: UPDATE_PLAYER  9       KaktorKing, uid 5122102 status   ACTIVE team 10
+21:39:40.452  WARNING| server_fps [ 2023-07-23T18:39:54.464Z ]:  29 30 29 29 29 30 30 30 30 29 29 29 30 30 29 30 30 29 29 29 30 29 30 30 29 29 29 30 30  7 29 29 30 29 29 29 30 29 30 30
+21:40:03.716         | client: RESERVE_PLAYER 14 Бандеромобіль, uid 9140056@live status RESERVED team 15
+21:40:09.680  WARNING| server_fps [ 2023-07-23T18:40:23.690Z ]:  29 29 29 29 30 30 29 30 30 30 30 30 29 30 30 30 29 30 30 30 30 30 29 29 29 30 29 30 29 15 30 29 30 29 29 29 30 29 30 30
+21:40:11.535         | client: UPDATE_PLAYER 14 Бандеромобіль, uid 9140056 status   ACTIVE team 15
+21:40:14.352  WARNING| client: packet loss last second 7.8%
+21:40:15.277  WARNING| client: packet loss last second 9.4%
+21:40:32.225  WARNING| server_fps [ 2023-07-23T18:40:46.234Z ]:  29 29 29 30 30 29 29 30 29 29 29 29 30 30 30 29 30 30 29 30 29 30 29 29 30 30 30 30 30 10 30 30 30 30 29 29 29 29 30 29
+21:40:39.327  WARNING| net: USER_BYTES_PUSHED 2409; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 31092; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 4967; ACTUAL_BYTES_RECEIVED 36456; packetLoss 0%
+21:40:57.582  WARNING| server_fps [ 2023-07-23T18:41:11.591Z ]:  30 29 29 30 30 30 30 30 30 30 30 30 30 29 30 30 29 29 29 29 29 29 29 29 30 29 30 29 30 17 29 29 29 30 30 29  9 30 30 30
+21:41:08.860         | client: player 10 leave game
+21:41:09.516  WARNING| server_fps [ 2023-07-23T18:41:23.528Z ]:  29 29 30 30 29 29 29 29 30 30 30 30 29 30 29 29 30 29 30 29 29 29 30 29 29 29 30 29 30  8 30 30 30 30 30 29 29 30 30 30
+21:41:22.753         | client: RESERVE_PLAYER 10 CBmobil_DerErste, uid 10638637@live status RESERVED team 11
+21:41:24.207         | client: UPDATE_PLAYER 10 CBmobil_DerErste, uid 10638637 status   ACTIVE team 11
+21:41:31.098  WARNING| server_fps [ 2023-07-23T18:41:45.108Z ]:  29 30 29 30 29 30 29 30 30 30 30 30 29 30 30 29 30 30 30 30 29 30 30 29 30 30 30 30 30 12 30 29 29 29 29 29 29 29 30 30
+21:41:31.658         | client: player 8 leave game
+21:41:35.388         | client: RESERVE_PLAYER  8       Pjetković, uid 9167806@live status RESERVED team 9
+21:41:36.036         | client: player 6 leave game
+21:41:37.195         | client: UPDATE_PLAYER  8       Pjetković, uid 9167806 status   ACTIVE team 9
+21:41:43.517         | client: RESERVE_PLAYER  6          sulincz, uid 9968741@live status RESERVED team 7
+21:41:44.054  WARNING| server_fps [ 2023-07-23T18:41:58.066Z ]:  29 29 30 30 29 30 29 29 30 30 29 30 29 30 29 30 30 29 29 29 29 30 29 29 29 29 30 30 30 13 29 30 30 30 29 30 30 30 30 29
+21:41:45.148         | client: UPDATE_PLAYER  6          sulincz, uid 9968741 status   ACTIVE team 7
+21:41:47.332  WARNING| net: USER_BYTES_PUSHED 2183; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 23103; USER_BYTES_RECEIVED_IGNORED 20; ACTUAL_SENT 4498; ACTUAL_BYTES_RECEIVED 27825; packetLoss 0%
+21:41:47.518         | client: player 10 leave game
+21:41:49.329  WARNING| net: USER_BYTES_PUSHED 3087; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 9726; USER_BYTES_RECEIVED_IGNORED 31; ACTUAL_SENT 5522; ACTUAL_BYTES_RECEIVED 12322; packetLoss 0%
+21:41:50.453         | client: player 13 leave game
+21:41:54.780         | client: player 12 leave game
+21:41:55.435  WARNING| server_fps [ 2023-07-23T18:42:09.449Z ]:  30 30 30 30 30 30 30 29 29 30 29 30 30 30 29 30 29 30 29 29 29 29 29 30 29 30 30 29 30  8 30 30 29 30 30 30 29 29 30 29
+21:42:15.453         | client: RESERVE_PLAYER 10 CBmobil_DerErste, uid 10638637@live status RESERVED team 11
+21:42:16.967         | client: UPDATE_PLAYER 10 CBmobil_DerErste, uid 10638637 status   ACTIVE team 11
+21:42:19.804         | client: player 6 leave game
+21:42:20.470  WARNING| server_fps [ 2023-07-23T18:42:34.482Z ]:  30 29 30 29 29 29 30 29 30 30 29 30 29 30 29 29 29 29 29 29 29 30 30 30 30 29 29 29 30  6 30 29 30 30 29 30 30 29 29 30
+21:42:34.074         | client: RESERVE_PLAYER  6     バルサー, uid 5209542@live status RESERVED team 7
+21:42:35.303         | client: UPDATE_PLAYER  6     バルサー, uid 5209542 status   ACTIVE team 7
+21:42:37.468         | client: RESERVE_PLAYER 12   Mrslimesmasher, uid 10038823@live status RESERVED team 13
+21:42:40.808         | client: UPDATE_PLAYER 12   Mrslimesmasher, uid 10038823 status   ACTIVE team 13
+21:42:41.049  WARNING| client: snapshot loss rate 6.2%
+21:42:42.067  WARNING| client: snapshot loss rate 6.2%
+21:42:45.462         | client: RESERVE_PLAYER 13          BaDToaD, uid 5257738@live status RESERVED team 14
+21:42:47.156         | client: UPDATE_PLAYER 13          BaDToaD, uid 5257738 status   ACTIVE team 14
+21:43:14.798  WARNING| server_fps [ 2023-07-23T18:43:28.807Z ]:  30 30 29 30 29 29 29 29 30 29 30 30 29 30 30 30 30 29 30 29 29 29 29 30 29 30 30 29 30 24 30 30 29 30 30 29 30 30 30 29
+21:43:26.170  WARNING| server_fps [ 2023-07-23T18:43:40.184Z ]:  30 30 30 30 30 29 30 29 30 30 26 29 29 30 29 29 30 29 29 29 29 29 30 29 29 30 30 29 29 11 29 30 30 30 30 29 29 30 29 30
+21:43:37.538         | client: player 14 leave game
+21:43:38.296  WARNING| server_fps [ 2023-07-23T18:43:52.306Z ]:  29 30 30 29 30 29 30 30 29 29 30 30 29 29 30 29 30 30 30 29 30 29 30 30 30 30 29 30 29  5 26 30 30 30 29 29 30 29 30 29
+21:43:40.171         | client: player 7 leave game
+21:43:46.327  WARNING| net: USER_BYTES_PUSHED 2603; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 19036; USER_BYTES_RECEIVED_IGNORED 1117; ACTUAL_SENT 4842; ACTUAL_BYTES_RECEIVED 23635; packetLoss 0%
+21:43:53.739         | client: RESERVE_PLAYER  7    tomer_merkava, uid 12259422@live status RESERVED team 8
+21:43:55.592         | client: UPDATE_PLAYER  7    tomer_merkava, uid 12259422 status   ACTIVE team 8
+21:44:13.541         | client: RESERVE_PLAYER 14       eberfierro, uid 8315104@live status RESERVED team 15
+21:44:15.018         | client: UPDATE_PLAYER 14       eberfierro, uid 8315104 status   ACTIVE team 15
+21:44:15.655  WARNING| server_fps [ 2023-07-23T18:44:29.664Z ]:  29 29 29 29 30 29 29 30 30 30 30 29 29 30 30 29 30 30 29 29 29 29 29 29 30 29 30 30 29 21 29 30 29 30 29 30 30 30 30 30
+21:44:32.620  WARNING| server_fps [ 2023-07-23T18:44:46.632Z ]:  29 30 29 29 30 29 30 29 29 29 29 30 30 30 29 30 29 29 30 30 29 30 30 29 29 29 30 29 30 13 30 29 30 30 30 29 29 30 29 30
+21:44:43.932         | client: player 6 leave game
+21:44:44.591  WARNING| server_fps [ 2023-07-23T18:44:58.604Z ]:  29 30 30 30 29 29 30 29 29 29 29 29 29 30 29 29 29 29 30 30 30 29 29 30 29 29 29 30 30 12 30 30 29 30 30 29 30 30 29 30
+21:44:45.068         | client: player 7 leave game
+21:45:05.391         | TargemServices: RenewAuth: new token = uoJDAAAAAABS3o6dALy4tfJ2LYSJAQAAQD_ChQRub25lBGxpdmU, server time 2023-07-23T18:45:19.445Z (drift of -14 sec)
+21:45:10.768         | client: RESERVE_PLAYER  6    tomer_merkava, uid 12259422@live status RESERVED team 7
+21:45:12.550         | client: UPDATE_PLAYER  6    tomer_merkava, uid 12259422 status   ACTIVE team 7
+21:45:15.090  WARNING| server_fps [ 2023-07-23T18:45:29.135Z ]:  30 29 30 29 29 30 29 29 29 29 30 29 30 30 29 29 30 30 30 29 29 30 29 29 29 29 29 30 29 19 30 30 30 30 30 30 30 30 30 30
+21:45:19.578         | client: player 13 leave game
+21:45:23.840  WARNING| client: packet loss last second 10.6%
+21:45:24.441  WARNING| client: packet loss last second 9.5%
+21:45:24.619  WARNING| client: packet loss last second 8.3%
+21:45:24.664  WARNING| client: packet loss last second 10.3%
+21:45:37.515         | client: RESERVE_PLAYER  7 tatiana_bon93314, uid 13271245@live status RESERVED team 8
+21:45:38.783         | client: UPDATE_PLAYER  7 tatiana_bon93314, uid 13271245 status   ACTIVE team 8
+21:46:14.182  WARNING| server_fps [ 2023-07-23T18:46:28.226Z ]:  30 30 30 30 29 30 30 30 30 30 29 30 29 29 30 29 30 30 30 29 30 29 29 30 30 29 29 30 29 13 30 30 29 29 30 29 30 30 29 30
+21:46:15.978         | client: player 3 leave game
+21:46:21.725         | client: RESERVE_PLAYER  3  Dragon_IntelleX, uid 8663839@live status RESERVED team 4
+21:46:22.685         | client: player 5 leave game
+21:46:23.364         | client: UPDATE_PLAYER  3  Dragon_IntelleX, uid 8663839 status   ACTIVE team 4
+21:47:04.884         | client: RESERVE_PLAYER  5       SWED_sperz, uid 8145700@live status RESERVED team 6
+21:47:06.328         | client: UPDATE_PLAYER  5       SWED_sperz, uid 8145700 status   ACTIVE team 6
+21:47:13.524         | client: RESERVE_PLAYER 13 Каратель, uid 1065663@live status RESERVED team 14
+21:47:16.890         | client: UPDATE_PLAYER 13 Каратель, uid 1065663 status   ACTIVE team 14
+21:47:33.449  WARNING| server_fps [ 2023-07-23T18:47:47.494Z ]:  29 30 30 29 29 30 30 30 30 30 29 29 30 30 29 29 29 29 29 30 30 29 30 29 29 30 29 29 30 16 30 29 29 30 30 30 29 29 29 30
+21:47:54.563  WARNING| server_fps [ 2023-07-23T18:48:08.605Z ]:  30 29 29 26 30 29 29 30 29 30 30 29 29 29 30 29 30 30 29 29 30 30 30 29 29 30 29 30 30 10 30 30 30 29 29 29 29 30 29 30
+21:48:04.707  WARNING| server_fps [ 2023-07-23T18:48:18.752Z ]:  17 30 29 30 30 30 29 29 29 30 29 30 29 30 30 29 30 30 29 29 29 30 30 29 29 30 30 30 29 23 29 29 29 30 30 30 30 30 30 30
+21:48:19.744  WARNING| server_fps [ 2023-07-23T18:48:33.787Z ]:  29 30 30 30 29 30 29 29 29 30 30 30 30 30 30 30 30 30 29 30 30 29 29 29 30 30 29 30 30 12 30 30 29 29 29 29 30 30 30 30
+21:48:32.246  WARNING| server_fps [ 2023-07-23T18:48:46.288Z ]:  29 30 29 30 30 30 29 29 30 30 30 29 29 30 30 30 30 30 30 29 29 30 29 29 29 30 30 30 30 23 30 30 30 30 30 30 29 30 29 29
+21:48:47.487  WARNING| server_fps [ 2023-07-23T18:49:01.475Z ]:  29 29 30 30 29 29 30 29 30 30 30 29 30 29 30 30 30 30 30 29 29 30 29 29 29 29 30 30 30 13 30 30 29 29 29 30 30 30 29 30
+21:49:06.569  WARNING| server_fps [ 2023-07-23T18:49:20.616Z ]:  30 30 30 30 29 29 29 29 30 30 30 30 29 30 30 29 30 29 29 30 30 30 30 29 29 30 30 29 30  9 30 30 30 30 30 30 29 30 30 30
+21:49:26.252  WARNING| server_fps [ 2023-07-23T18:49:40.296Z ]:  30 30 30 29 30 29 29 29 29 29 29 30 30 29 30 29 29 29 30 29 29 30 30 30 29 29 30 29 29 16 13 29 30 30 30 30 29 30 29 30
+21:49:39.394  WARNING| server_fps [ 2023-07-23T18:49:53.437Z ]:  29 29 29 29 30 30 29 29 30 30 29 30 30 30 30 30 29 30 29 30 30 29 29 29 29 29 29 29 29 10 12 29 29 29 29 29 30 29 30 30
+21:49:42.328  WARNING| net: USER_BYTES_PUSHED 2779; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 33603; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 5677; ACTUAL_BYTES_RECEIVED 39400; packetLoss 0%
+21:49:51.330  WARNING| net: USER_BYTES_PUSHED 2684; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 17541; USER_BYTES_RECEIVED_IGNORED 225; ACTUAL_SENT 5283; ACTUAL_BYTES_RECEIVED 22773; packetLoss 0%
+21:50:07.673  WARNING| server_fps [ 2023-07-23T18:50:21.715Z ]:  29 30 29 29 30 29 30 29 30 30 30 29 29 30 30 29 30 29 29 30 30 30 30 29 29 30 30 29 30  9 29 29 29 29 30 29 29 30 30 30
+21:50:24.933  WARNING| server_fps [ 2023-07-23T18:50:38.978Z ]:  29 30 30 30 29 29 30 29 29 29 30 30 29 29 29 29 30 30 29 30 30 30 30 29 30 29 30 30 30 11 30 29 30 29 30 30 29 30 30 30
+21:50:28.161         | client: player 3 leave game
+21:50:36.789         | client: RESERVE_PLAYER  3  Dragon_IntelleX, uid 8663839@live status RESERVED team 4
+21:50:38.370         | client: UPDATE_PLAYER  3  Dragon_IntelleX, uid 8663839 status   ACTIVE team 4
+21:50:45.552  WARNING| server_fps [ 2023-07-23T18:50:59.595Z ]:  29 30 30 29 29 29 30 30 29 30 30 30 29 29 30 30 29 30 29 29 29 30 30 30 29 30 29 29 30 21 29 29 29 30 30 30 29 29 29 29
+21:50:50.443  WARNING| client: snapshot loss rate 7.8%
+21:50:51.465  WARNING| client: snapshot loss rate 7.8%
+21:50:59.743  WARNING| server_fps [ 2023-07-23T18:51:13.787Z ]:  29 30 29 29 29 30 30 30 29 29 29 29 30 30 29 29 30 29 30 29 29 30 29 29 29 29 30 29 30 24 30 29 29 29 29 29 30 29 29 29
+21:51:14.150  WARNING| server_fps [ 2023-07-23T18:51:28.196Z ]:  30 30 29 29 29 29 30 29 29 30 30 30 29 29 29 30 30 30 30 30 30 29 29 29 29 30 29 29 29 19 30 30 29 30 29 29 30 30 29 30
+21:51:15.119         | client: player 9 leave game
+21:51:25.879         | client: RESERVE_PLAYER  9         gubenale, uid 10435261@live status RESERVED team 10
+21:51:27.493         | client: UPDATE_PLAYER  9         gubenale, uid 10435261 status   ACTIVE team 10
+21:51:50.109         | client: player 15 leave game
+21:51:50.698  WARNING| server_fps [ 2023-07-23T18:52:04.741Z ]:  30 30 30 30 29 30 30 30 29 29 29 30 29 30 30 29 29 30 29 30 29 29 30 29 30 29 30 29 30  6 29 29 29 30 30 30 29 29 29 29
+21:51:51.576         | client: RESERVE_PLAYER 15     バルサー, uid 5209542@live status RESERVED team 16
+21:51:52.897         | client: UPDATE_PLAYER 15     バルサー, uid 5209542 status   ACTIVE team 16
+21:52:02.920  WARNING| server_fps [ 2023-07-23T18:52:16.963Z ]:  30 30 29 30 29 29 29 30 30 29 29 29 29 30 29 29 30 29 29 29 29 30 29 30 29 30 29 29 29 12 29 29 30 30 30 30 29 29 30 15
+21:52:16.141  WARNING| server_fps [ 2023-07-23T18:52:30.187Z ]:  30 29 30 29 30 29 30 30 30 30 29 29 29 30 29 29 29 30 30 29 29 29 29 30 30 29 29 30 29 14 14 29 29 30 30 30 30 29 29 29
+21:52:34.323  WARNING| net: USER_BYTES_PUSHED 2650; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 15369; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 5223; ACTUAL_BYTES_RECEIVED 19384; packetLoss 0%
+21:52:37.393         | client: player 15 leave game
+21:52:56.890         | client: RESERVE_PLAYER 15     Killerhunter, uid 2397483@live status RESERVED team 16
+21:52:56.957  WARNING| server_fps [ 2023-07-23T18:53:10.944Z ]:  30 30 29 30 29 30 29 29 29 30 29 30 30 30 30 29 29 29 29 30 29 29 29 29 30 29 29 29 29  7 30 30 30 29 29 29 30 30 29 29
+21:52:58.488         | client: UPDATE_PLAYER 15     Killerhunter, uid 2397483 status   ACTIVE team 16
+21:53:02.957         | client: player 15 leave game
+21:53:10.590  WARNING| server_fps [ 2023-07-23T18:53:24.632Z ]:  30 29 29 29 30 29 29 29 30 30 30 30 30 30 29 29 29 29 30 30 29 30 29 30 29 30 29 30 30  8 30 30 30 30 30 30 30 30 30 29
+21:53:16.574         | client: RESERVE_PLAYER 15            MusEm, uid 2753959@live status RESERVED team 16
+21:53:17.082         | client: player 9 leave game
+21:53:18.945         | client: UPDATE_PLAYER 15            MusEm, uid 2753959 status   ACTIVE team 16
+21:53:32.438  WARNING| server_fps [ 2023-07-23T18:53:46.482Z ]:  30 29 29 29 29 29 30 30 29 29 30 29 30 29 30 29 29 30 29 29 29 29 29 29 30 29 30 30 30  7 29 30 29 29 30 30 30 30 29 29
+21:53:33.699         | client: player 3 leave game
+21:53:39.443         | client: RESERVE_PLAYER  3  Dragon_IntelleX, uid 8663839@live status RESERVED team 4
+21:53:41.045         | client: UPDATE_PLAYER  3  Dragon_IntelleX, uid 8663839 status   ACTIVE team 4
+21:53:50.526         | client: RESERVE_PLAYER  9         ira29iks, uid 12994070@live status RESERVED team 10
+21:53:54.425  WARNING| server_fps [ 2023-07-23T18:54:08.468Z ]:  30 30 29 30 30 30 29 29 30 29 30 29 30 29 30 30 30 29 29 30 30 29 30 29 30 29 29 29 29 17 30  9 30 29 30 30 29 29 29 30
+21:54:01.786         | client: UPDATE_PLAYER  9         ira29iks, uid 12994070 status   ACTIVE team 10
+21:54:16.911  WARNING| client: snapshot loss rate 7.0%
+21:54:23.710  WARNING| server_fps [ 2023-07-23T18:54:37.756Z ]:  29 29 29 29 30 30 30 30 30 29 29 29 29 30 30 30 29 29 30 30 30 29 30 29 29 29 30 29 30 24 29 29 30 29 29 30 30 29 30 29
+21:54:31.133         | client: avgPing 83.7/143.0; avgPacketLoss 0.0/9.8%; avgSnapshotLoss 0.3/7.8%, MTU 1350
+21:54:31.133         | client: connection closed. CLIENT_QUIT
+21:54:31.133         | Network stats (bytes per second): avg pushed 2055, max pushed 3456, avg sent 4081, max sent 6185, avg received 18063, max received 30997
+21:54:31.445         | ====== starting level 6: 'levels/maps/hangar'  single Empty,env=221621 ======
+21:54:31.445         | {
+21:54:31.445         | 	"is_hangar": 1
+21:54:31.445         | }
+21:54:31.603         | Gameplay statistic. gameResult 'freePlayFinish'
+21:54:31.603         |       score   0, expBase 0, expDailyBonus 4.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+21:54:31.926         | ====== level started:  'hangar' success ======
+21:54:34.962         | Spawn User Blueprint 0
+21:54:36.523         | Stored mission name: FreePlay_Pvp
+21:54:36.523         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690156800000,"mapOptionList":"bridge:FreePlay","botList":""}'
+21:54:37.374         | Matchmaker_NotifyQueueState: 10 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+21:54:37.798         | CL_MatchMaker::ConnectHandler: addr = 3.250.46.153:35645, gsid = 552646451
+21:54:37.827         | client: start connecting to 3.250.46.153|35645...
+21:54:38.066         | client: connected to 3.250.46.153|35645, server guid '1690138425340715', client guid '986288350443671216', setting up session...
+21:54:38.191         | client: connected to dedicated server. gsid: 552646451, hostname: 'wheel02-am-uk.pxo/live-bcr5v-c4nhq'
+21:54:38.288         | client: server assigned id 2
+21:54:38.298         | client: got level load message 'levels/maps/bridge' FreePlay, levelId: 1
+21:54:38.375         | ====== starting level 7: 'levels/maps/bridge' FreePlay client Empty,env=523108 ======
+21:54:38.375         | {
+21:54:38.375         | 	"minUR": 2460
+21:54:38.375         | 	"maxUR": 2460
+21:54:38.375         | 	"queueTag": FreePlay_Pvp
+21:54:38.375         | 	"fixedMMValue": 0
+21:54:38.375         | }
+21:54:38.912         | client: send ready message
+21:54:39.084         | client: ADD_PLAYER  0     Cyber_V1russ, uid 10860656 status   ACTIVE team 1
+21:54:39.084         | client: ADD_PLAYER  1 S__________12406, uid 10084596 status   ACTIVE team 2
+21:54:39.084         | client: ADD_PLAYER  2      _UA_Puffin_, uid 4424378 status MAP_LOAD team 3
+21:54:39.085         | client: ADD_PLAYER  3          DAWA_QC, uid 11706272 status MAP_LOAD team 4
+21:54:39.162         | client: UPDATE_PLAYER  2      _UA_Puffin_, uid 4424378 status   ACTIVE team 3
+21:54:39.235         | client: got init message. ping 148, MTU 1350
+21:54:39.237         | ====== level started:  'bridge' success ======
+21:54:39.861         | client: UPDATE_PLAYER  3          DAWA_QC, uid 11706272 status   ACTIVE team 4
+21:54:46.424         | client: player 3 leave game
+21:55:38.777         | client: RESERVE_PLAYER  3 さくらさくらさくらさ, uid 7152378@live status RESERVED team 4
+21:55:40.744         | client: UPDATE_PLAYER  3 さくらさくらさくらさ, uid 7152378 status   ACTIVE team 4
+21:55:47.991         | client: player 1 leave game
+21:56:06.032         | client: player 0 leave game
+21:56:18.615         | client: player 3 leave game
+21:57:10.286         | client: avgPing 75.5/152.0; avgPacketLoss 0.0/0.8%; avgSnapshotLoss 0.2/1.6%, MTU 1350
+21:57:10.286         | client: connection closed. CLIENT_QUIT
+21:57:10.286         | Network stats (bytes per second): avg pushed 2165, max pushed 2584, avg sent 3815, max sent 4359, avg received 4444, max received 7984
+21:57:10.556         | ====== starting level 8: 'levels/maps/hangar'  single Empty,env=221621 ======
+21:57:10.556         | {
+21:57:10.556         | 	"is_hangar": 1
+21:57:10.556         | }
+21:57:10.604         | Gameplay statistic. gameResult 'freePlayFinish'
+21:57:10.604         |       score   0, expBase 0, expDailyBonus 4.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+21:57:11.020         | ====== level started:  'hangar' success ======
+21:58:52.145         | Test drive started from Hangar
+21:59:03.239  WARNING| CarPart::EmitDeathBlow::Stack
+21:59:03.239  WARNING| 	00: Type: 'CarPart', id: 136972, def = 'CarPart_ModuleAmmo_rare', netId = 1206, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	01: Type: 'CarPart', id: 136971, def = 'CarPart_ModuleAmmoBig_epic', netId = 1204, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	02: Type: 'CarPart', id: 136986, def = 'CarPart_ModuleAmmoBig_epic', netId = 1234, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	03: Type: 'CarPart', id: 136987, def = 'CarPart_ModuleAmmoBig_epic', netId = 1236, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| CarPart::EmitDeathBlow::Stack
+21:59:03.239  WARNING| 	00: Type: 'CarPart', id: 136972, def = 'CarPart_ModuleAmmo_rare', netId = 1206, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	01: Type: 'CarPart', id: 136971, def = 'CarPart_ModuleAmmoBig_epic', netId = 1204, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	02: Type: 'CarPart', id: 136986, def = 'CarPart_ModuleAmmoBig_epic', netId = 1234, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	03: Type: 'CarPart', id: 136987, def = 'CarPart_ModuleAmmoBig_epic', netId = 1236, gameLayer = 'Dynamic'
+21:59:03.239  WARNING| 	04: Type: 'CarPart', id: 136983, def = 'CarPart_ModuleAmmoBig_epic', netId = 1228, gameLayer = 'Dynamic'
+21:59:10.336         | Stored mission name: FreePlay_Pvp
+21:59:10.337         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690156800000,"mapOptionList":"bridge:FreePlay","botList":""}'
+21:59:11.389         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+21:59:12.118         | CL_MatchMaker::ConnectHandler: addr = 3.250.46.153:35110, gsid = 552646042
+21:59:12.162         | client: start connecting to 3.250.46.153|35110...
+21:59:12.418         | client: connected to 3.250.46.153|35110, server guid '1690138193672924', client guid '986288350443671216', setting up session...
+21:59:12.523         | client: connected to dedicated server. gsid: 552646042, hostname: 'wheel02-am-uk.pxo/live-bcr5v-blbgt'
+21:59:12.620         | client: server assigned id 6
+21:59:12.630         | client: got level load message 'levels/maps/bridge' FreePlay, levelId: 1
+21:59:12.702         | ====== starting level 9: 'levels/maps/bridge' FreePlay client Empty,env=664236 ======
+21:59:12.702         | {
+21:59:12.702         | 	"minUR": 1780
+21:59:12.702         | 	"maxUR": 1780
+21:59:12.702         | 	"queueTag": FreePlay_Pvp
+21:59:12.702         | 	"fixedMMValue": 0
+21:59:12.702         | }
+21:59:13.229         | client: send ready message
+21:59:13.431         | client: ADD_PLAYER  0     Tot_Kto_Chay, uid 11464769 status   ACTIVE team 1
+21:59:13.515         | client: ADD_PLAYER  1         gubenale, uid 10435261 status   ACTIVE team 2
+21:59:13.515         | client: ADD_PLAYER  2   MatveyRobocop1, uid 13254108 status   ACTIVE team 3
+21:59:13.516         | client: ADD_PLAYER  3       Quemematan, uid 9240222 status   ACTIVE team 4
+21:59:13.523         | client: ADD_PLAYER  4        Bloodbads, uid 3559328 status   ACTIVE team 5
+21:59:13.524         | client: ADD_PLAYER  5     al3x_ik_2911, uid 4959763 status   ACTIVE team 6
+21:59:13.597         | client: ADD_PLAYER  6      _UA_Puffin_, uid 4424378 status MAP_LOAD team 7
+21:59:13.609         | client: UPDATE_PLAYER  6      _UA_Puffin_, uid 4424378 status   ACTIVE team 7
+21:59:13.697         | client: got init message. ping 91, MTU 1350
+21:59:13.699         | ====== level started:  'bridge' success ======
+21:59:15.037  WARNING| server_fps [ 2023-07-23T18:59:29.085Z ]:  29 29 29 30 29 29 30 29 29 29 29 15 29 29 30 30 29 29 29 30 29 30
+21:59:28.332         | client: player 4 leave game
+21:59:35.428         | client: RESERVE_PLAYER  4        Bloodbads, uid 3559328@live status RESERVED team 5
+21:59:36.996         | client: UPDATE_PLAYER  4        Bloodbads, uid 3559328 status   ACTIVE team 5
+21:59:40.125  WARNING| net: USER_BYTES_PUSHED 2488; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 12489; USER_BYTES_RECEIVED_IGNORED 3204; ACTUAL_SENT 4507; ACTUAL_BYTES_RECEIVED 18094; packetLoss 0%
+21:59:40.562         | client: player 4 leave game
+21:59:40.570         | client: RESERVE_PLAYER  4  Xx_Lermontov_xX, uid 12553286@live status RESERVED team 5
+21:59:41.224  WARNING| server_fps [ 2023-07-23T18:59:55.272Z ]:  30 30 30 30 30 30 30 29 30 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 30 13 29 29 30 30 29 29 29 29 30 29
+21:59:43.474         | client: UPDATE_PLAYER  4  Xx_Lermontov_xX, uid 12553286 status   ACTIVE team 5
+21:59:46.032         | client: RESERVE_PLAYER  7        Bloodbads, uid 3559328@live status RESERVED team 8
+21:59:47.497         | client: UPDATE_PLAYER  7        Bloodbads, uid 3559328 status   ACTIVE team 8
+22:00:05.856         | TargemServices: RenewAuth: new token = uoJDAAAAAACMJIQcPESAy0o0O4SJAQAAQD_ChQRub25lBGxpdmU, server time 2023-07-23T19:00:19.885Z (drift of -14 sec)
+22:00:11.806  WARNING| server_fps [ 2023-07-23T19:00:25.829Z ]:  29 30 29 30 30 29 30 29 29 29 29 30 30 30 30 29 30 30 30 30 30 29 30 30 30 30 29 30 29 19 30 30 29 29 30 30 29 29 29 30
+22:00:26.589         | client: player 0 leave game
+22:00:42.901         | client: RESERVE_PLAYER  0          MildMax, uid 3318926@live status RESERVED team 1
+22:00:43.741         | client: player 7 leave game
+22:00:44.316         | client: UPDATE_PLAYER  0          MildMax, uid 3318926 status   ACTIVE team 1
+22:01:13.401  WARNING| server_fps [ 2023-07-23T19:01:27.423Z ]:  29 29 29 29 30 30 29 29 30 30 29 29 29 29 29 29 29 29 29 30 29 29 30 30 30 29 29 29 29 16 30 30 29 29 29 30 29 29 30 30
+22:01:16.123  WARNING| net: USER_BYTES_PUSHED 2538; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 12675; USER_BYTES_RECEIVED_IGNORED 2794; ACTUAL_SENT 4498; ACTUAL_BYTES_RECEIVED 17880; packetLoss 0%
+22:01:19.139         | client: avgPing 83.3/94.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.4/3.1%, MTU 1350
+22:01:19.139         | client: connection closed. CLIENT_QUIT
+22:01:19.139         | Network stats (bytes per second): avg pushed 2160, max pushed 2480, avg sent 4009, max sent 4478, avg received 8503, max received 10921
+22:01:19.480         | ====== starting level 10: 'levels/maps/hangar'  single Empty,env=221621 ======
+22:01:19.480         | {
+22:01:19.480         | 	"is_hangar": 1
+22:01:19.480         | }
+22:01:19.531         | Gameplay statistic. gameResult 'freePlayFinish'
+22:01:19.531         |       score   0, expBase 0, expDailyBonus 4.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+22:01:19.988         | ====== level started:  'hangar' success ======
+22:02:19.229         | GameApp shutdown
+22:02:19.332    ERROR| TLS alert: warning: close notify
+22:02:19.332         | TSConnectionManager::StateDISCONNECTING: reason 'client gentle quit'
+22:02:19.333    ERROR| TLS alert: warning: close notify
+22:02:20.795         | [0x14:] async    0000024904F30118 0000000000000000 
+22:02:20.795         | [0x8:] timer    00007FF7A5EC0588 00007FF7A5EC0580 
+22:02:20.795         | [0x2618c:I] tcp      0000024985534660 0000024985534040 ASC@0000024985534040[ProtoTransport::Connect,0x602,fd 4294967295,0.0.0.0:0]
+22:02:20.795         | [0x2618c:I] tcp      0000024985534EB8 0000024985534898 ASC@0000024985534898[ProtoTransport::Connect,0x602,fd 4294967295,0.0.0.0:0]
+22:02:20.795         | [0x9:] poll     0000024985534910 0000024985534898 
+22:02:20.795         | [0x9:] poll     00000249855340B8 0000024985534040 
+22:02:20.795         | [0x14:] async    0000024904F30118 0000000000000000 
