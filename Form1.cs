@@ -56,23 +56,19 @@ namespace CrossoutNicknamesCollector
         public Form1()
         {
             InitializeComponent();
+        }
 
-            if (!File.Exists(PathToPlayersDB)) 
-            { 
-                label4.Text = "file DB is missing";
-                button2.Enabled = false;
-
-                // TODO CREATE DB
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists(PathToPlayersDB))
+            {
+                // Create db file
+                CreateDB(PathToPlayersDB);
             }
-            else 
-            { 
-                label4.Text = "file DB exists"; 
-                button2.Enabled = true;
 
-                // Open sql connection
-                sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
-                sqlConnect.Open();
-            }
+            // Open sql connection
+            sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
+            sqlConnect.Open();
         }
 
         public string[] GetNicknamesFromDatabase(string connectionString, string tableName)
@@ -157,8 +153,10 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                var connection = sqlConnect;
-                
+                using (var connection = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;"))
+                {
+                    connection.Open();
+
                     // Проверяем наличие таблицы "Players" в базе данных
                     string checkTableQuery = "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Players'";
                     using (var command = new SQLiteCommand(checkTableQuery, connection))
@@ -204,7 +202,7 @@ namespace CrossoutNicknamesCollector
                             }
                         }
                     }
-                
+                }
             }
             catch (Exception ex)
             {
@@ -242,7 +240,6 @@ namespace CrossoutNicknamesCollector
                 if (!File.Exists(path))
                 {
                     File.Create(path);
-                    //CreateDatabase(path);
                 }
             }
             catch (Exception ex)
@@ -744,22 +741,6 @@ namespace CrossoutNicknamesCollector
                 {
                     listBox1.Items.Add(nickname);
                 }
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //Create DB
-
-            CreateDB(PathToPlayersDB);
-            if (!File.Exists(PathToPlayersDB))
-            {
-                label4.Text = "file DB is missing";
-            }
-            else
-            {
-                label4.Text = "file DB exists or has been created";
-                button2.Enabled = true;
             }
         }
     }
