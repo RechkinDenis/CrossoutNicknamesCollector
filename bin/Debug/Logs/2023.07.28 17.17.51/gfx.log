@@ -1,0 +1,289 @@
+
+--- Date: 2023-7-28 (Fri Jul 2023) UTC+03:00
+
+17:17:52.742         | CreateDevice() using 'NVIDIA GeForce GTX 1650' adapter
+17:17:52.742         | Adapter vendorId:                0x10de
+17:17:52.742         | Adapter deviceId:                0x1f99
+17:17:52.743         | Adapter driver date:             20.7.2022
+17:17:52.743         | Adapter driver version:          31.00.15.1691
+17:17:52.743         | Adapter dedicated video memory:  4154458112
+17:17:52.743         | Adapter dedicated system memory: 0
+17:17:52.743         | Adapter shared system memory:    4209512448
+17:17:52.896         | NvApi initialized. Interface version: NVidia Complete Version 1.10. Driver version: 51691. Build branch: r515_00
+17:17:54.525         | Driver features:
+17:17:54.525         | 	DriverConcurrentCreates: true
+17:17:54.525         | 	DriverCommandLists: true
+17:17:54.525         | 	MapNoOverwriteOnDynamicConstantBuffer: true
+17:17:54.525         | 	MapNoOverwriteOnDynamicSrv: true
+17:17:54.526         | Gpu counters activated
+17:17:54.526         | 
+17:17:54.526         | ------------ Autodetecting defaults ------------
+17:17:54.526         | OS: Windows 10 Home 22H2 (10.0.22621.1992) x64
+17:17:54.526         | CPU: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+17:17:54.526         | CPU cores: 4
+17:17:54.526         | CPU threads: 8
+17:17:54.526         | RAM: 8029 MB
+17:17:54.526         | Memory Load: 61%
+17:17:54.526         | Page File: 7598 MB used, 9992 MB available
+17:17:54.526         | Log disk free space: 27.8 GB (11.47%)
+17:17:54.526         | GPU: NVIDIA GeForce GTX 1650
+17:17:54.526         | VRAM: 3962 MB
+17:17:54.526         | Feature level: 11_1
+17:17:54.526         | Auto-detected default graphics quality: [Good]
+17:17:54.526         | ------------------------------------------------
+17:17:54.526         | 
+17:17:54.628         | CreateSwapChain(ModeDesc.Width = 1422, ModeDesc.Height = 693, BufferCount = 2, Flags = 0x802, SwapEffect = FlipSequential)
+17:17:55.773         | Gpu temperature: 47
+17:17:55.773         | Gpu P-State: 0
+17:17:55.773         | ResizeBuffers(Width = 1422, Height = 720, Flags = 0x802)
+17:17:55.791         | ChangeMode(DeviceMode(0, 0, 0, 0), BorderlessFullscreen, prevMode: Windowed)
+17:17:55.832         | OutputRect: {x: 0, y: 0, width: 1920, height: 1080}
+17:17:55.832         | WorkRect for reshape: {x: 0, y: 0, width: 1920, height: 1080, flags: 0}
+17:17:55.834         | ResizeBuffers(Width = 1920, Height = 1080, Flags = 0x802)
+17:17:56.615  WARNING| NVIDIA NGX not available on this hardware/platform., code = 0xbad00001, info: NVSDK_NGX_Result_FAIL_FeatureNotSupported
+17:17:56.650         | Main view color buffer size changed to: {width: 1920, height: 1080}
+17:18:00.682         | Gpu temperature: 47
+17:18:00.682         | Gpu P-State: 0
+17:18:01.816         | Initial settings:
+    r_vsync = 0
+    MainView.RenderScale = 1
+    r_textureQuality = 1
+    r_anisoLevel = 4
+    car_skidmarks = 2
+    cl_debrisQuality = 1
+    cl_shellsQuality = 0
+    Client.LightsQuality = 0
+    Game.ImpactDecals = 1
+    g_lodDistanceFactor = 100
+    g_grassDensity = 0.35
+    MainView.GrassMaxDistance = 300
+    Client.PostEffectAntiAliasing = FxaaLow
+    MainView.EnableShadows = 1
+    MainView.EnableShadowsFiltering = 0
+    MainView.ShadowMapResolution = 512
+    MainView.LightsShadowsQuality = 1
+    MainView.SSAO = 0
+    Particles.RateFactorPreset = 1
+    Client.UltraLowQuality = 0
+    MainView.LightShaft = 1
+    MainView.FSR = 0
+    MainView.FSR.Sharpness = 0.2
+    MainView.TAA = 0
+    MainView.Sharpness = 2
+    MainView.GI = 0
+    MainView.SSLR = 2
+    MainView.SSLR.Mode = 1
+    MainView.ContactShadows = 2
+    MainView.MotionBlur = 0
+    MainView.MotionBlur.Intensity = 0.5
+    MainView.PostProcessing.LensFlare = 1
+    MainView.PostProcessing.Vignetting = 1
+    MainView.DLSS.Mode = 1
+    MainView.DLSS.RegularSharpness = 1
+
+17:18:32.343         | Gpu temperature: 60
+17:18:32.343         | Gpu P-State: 0
+17:19:32.317         | Gpu temperature: 70
+17:19:32.317         | Gpu P-State: 0
+17:20:06.496         | Gpu temperature: 72
+17:20:06.496         | Gpu P-State: 0
+17:20:22.426         | Gpu temperature: 74
+17:20:22.426         | Gpu P-State: 0
+17:21:22.448         | Gpu temperature: 74
+17:21:22.448         | Gpu P-State: 0
+17:22:22.676         | Gpu temperature: 74
+17:22:22.677         | Gpu P-State: 0
+17:23:15.296         | Gpu temperature: 65
+17:23:15.296         | Gpu P-State: 5
+17:24:15.324         | Gpu temperature: 55
+17:24:15.324         | Gpu P-State: 5
+17:25:15.326         | Gpu temperature: 51
+17:25:15.326         | Gpu P-State: 0
+17:26:15.428         | Gpu temperature: 54
+17:26:15.428         | Gpu P-State: 5
+17:27:15.368         | Gpu temperature: 69
+17:27:15.368         | Gpu P-State: 0
+17:27:43.554         | Gpu temperature: 72
+17:27:43.554         | Gpu P-State: 0
+17:27:43.733         | Gpu temperature: 72
+17:27:43.733         | Gpu P-State: 0
+17:27:43.899         | Gpu temperature: 72
+17:27:43.899         | Gpu P-State: 0
+17:27:44.789         | Gpu temperature: 71
+17:27:44.789         | Gpu P-State: 0
+17:27:45.019         | Gpu temperature: 71
+17:27:45.019         | Gpu P-State: 0
+17:28:15.597         | Gpu temperature: 74
+17:28:15.597         | Gpu P-State: 0
+17:29:13.854         | Gpu temperature: 75
+17:29:13.854         | Gpu P-State: 0
+17:30:13.509         | Gpu temperature: 76
+17:30:13.509         | Gpu P-State: 0
+17:31:13.388         | Gpu temperature: 78
+17:31:13.388         | Gpu P-State: 0
+17:32:13.368         | Gpu temperature: 80
+17:32:13.368         | Gpu P-State: 0
+17:33:05.874         | Gpu temperature: 81
+17:33:05.874         | Gpu P-State: 0
+17:34:06.024         | Gpu temperature: 63
+17:34:06.024         | Gpu P-State: 5
+17:35:06.044         | Gpu temperature: 56
+17:35:06.044         | Gpu P-State: 5
+17:35:38.646         | Gpu temperature: 57
+17:35:38.646         | Gpu P-State: 3
+17:36:01.134         | Gpu temperature: 65
+17:36:01.135         | Gpu P-State: 0
+17:37:00.929         | Gpu temperature: 75
+17:37:00.929         | Gpu P-State: 0
+17:38:00.076         | Gpu temperature: 76
+17:38:00.076         | Gpu P-State: 0
+17:38:52.617         | Gpu temperature: 64
+17:38:52.617         | Gpu P-State: 5
+17:39:52.682         | Gpu temperature: 61
+17:39:52.682         | Gpu P-State: 0
+17:40:43.998         | Gpu temperature: 74
+17:40:43.998         | Gpu P-State: 0
+17:41:43.658         | Gpu temperature: 77
+17:41:43.658         | Gpu P-State: 0
+17:42:43.534         | Gpu temperature: 77
+17:42:43.534         | Gpu P-State: 0
+17:42:58.889         | Gpu temperature: 68
+17:42:58.889         | Gpu P-State: 5
+17:43:39.417         | Gpu temperature: 75
+17:43:39.417         | Gpu P-State: 0
+17:44:39.269         | Gpu temperature: 79
+17:44:39.270         | Gpu P-State: 0
+17:45:39.387         | Gpu temperature: 61
+17:45:39.387         | Gpu P-State: 5
+17:46:39.416         | Gpu temperature: 55
+17:46:39.416         | Gpu P-State: 3
+17:47:32.173         | Gpu temperature: 63
+17:47:32.173         | Gpu P-State: 0
+17:48:32.199         | Gpu temperature: 53
+17:48:32.199         | Gpu P-State: 8
+17:49:32.206         | Gpu temperature: 55
+17:49:32.206         | Gpu P-State: 5
+17:50:32.219         | Gpu temperature: 54
+17:50:32.219         | Gpu P-State: 5
+17:51:32.183         | Gpu temperature: 70
+17:51:32.183         | Gpu P-State: 0
+17:52:24.670         | Gpu temperature: 64
+17:52:24.670         | Gpu P-State: 0
+17:53:24.543         | Gpu temperature: 76
+17:53:24.543         | Gpu P-State: 0
+17:54:24.452         | Gpu temperature: 78
+17:54:24.452         | Gpu P-State: 0
+17:55:17.238         | Gpu temperature: 68
+17:55:17.239         | Gpu P-State: 5
+17:55:30.489         | Gpu temperature: 68
+17:55:30.489         | Gpu P-State: 0
+17:56:26.842         | Gpu temperature: 77
+17:56:26.842         | Gpu P-State: 0
+17:57:19.441         | Gpu temperature: 77
+17:57:19.441         | Gpu P-State: 0
+17:57:52.881         | Gpu temperature: 77
+17:57:52.881         | Gpu P-State: 0
+17:58:52.693         | Gpu temperature: 78
+17:58:52.693         | Gpu P-State: 0
+17:59:52.636         | Gpu temperature: 71
+17:59:52.636         | Gpu P-State: 5
+18:00:45.062         | Gpu temperature: 78
+18:00:45.062         | Gpu P-State: 0
+18:00:46.934         | Gpu temperature: 75
+18:00:46.934         | Gpu P-State: 0
+18:01:29.399         | Gpu temperature: 79
+18:01:29.399         | Gpu P-State: 0
+18:02:29.231         | Gpu temperature: 79
+18:02:29.231         | Gpu P-State: 0
+18:03:21.963         | Gpu temperature: 75
+18:03:21.963         | Gpu P-State: 5
+18:04:21.966         | Gpu temperature: 62
+18:04:21.966         | Gpu P-State: 0
+18:05:21.799         | Gpu temperature: 76
+18:05:21.799         | Gpu P-State: 0
+18:06:21.677         | Gpu temperature: 80
+18:06:21.677         | Gpu P-State: 0
+18:07:03.437         | Gpu temperature: 75
+18:07:03.437         | Gpu P-State: 0
+18:08:03.283         | Gpu temperature: 79
+18:08:03.283         | Gpu P-State: 0
+18:09:03.202         | Gpu temperature: 81
+18:09:03.202         | Gpu P-State: 0
+18:09:36.250         | Gpu temperature: 79
+18:09:36.250         | Gpu P-State: 0
+18:10:16.638         | Gpu temperature: 80
+18:10:16.638         | Gpu P-State: 0
+18:11:16.723         | Gpu temperature: 82
+18:11:16.723         | Gpu P-State: 0
+18:12:16.717         | Gpu temperature: 83
+18:12:16.717         | Gpu P-State: 0
+18:13:10.141         | Gpu temperature: 81
+18:13:10.141         | Gpu P-State: 0
+18:13:14.091         | Gpu temperature: 80
+18:13:14.091         | Gpu P-State: 0
+18:14:03.676         | Gpu temperature: 82
+18:14:03.676         | Gpu P-State: 0
+18:15:03.685         | Gpu temperature: 82
+18:15:03.685         | Gpu P-State: 0
+18:16:03.685         | Gpu temperature: 84
+18:16:03.685         | Gpu P-State: 0
+18:16:38.728         | Gpu temperature: 83
+18:16:38.728         | Gpu P-State: 0
+18:17:38.786         | Gpu temperature: 82
+18:17:38.786         | Gpu P-State: 0
+18:18:38.807         | Gpu temperature: 82
+18:18:38.808         | Gpu P-State: 0
+18:19:31.293         | Gpu temperature: 81
+18:19:31.293         | Gpu P-State: 0
+18:19:32.221         | Gpu temperature: 80
+18:19:32.221         | Gpu P-State: 0
+18:20:26.991         | Gpu temperature: 81
+18:20:26.991         | Gpu P-State: 0
+18:21:27.132         | Gpu temperature: 82
+18:21:27.133         | Gpu P-State: 0
+18:22:19.762         | Gpu temperature: 84
+18:22:19.762         | Gpu P-State: 0
+18:23:19.774         | Gpu temperature: 79
+18:23:19.774         | Gpu P-State: 3
+18:24:19.712         | Gpu temperature: 68
+18:24:19.712         | Gpu P-State: 5
+18:25:19.723         | Gpu temperature: 70
+18:25:19.723         | Gpu P-State: 3
+18:26:19.731         | Gpu temperature: 68
+18:26:19.731         | Gpu P-State: 3
+18:27:19.732         | Gpu temperature: 67
+18:27:19.732         | Gpu P-State: 3
+18:28:19.724         | Gpu temperature: 68
+18:28:19.724         | Gpu P-State: 3
+18:28:58.913         | Gpu temperature: 67
+18:28:58.913         | Gpu P-State: 3
+18:29:09.516         | Gpu temperature: 68
+18:29:09.517         | Gpu P-State: 3
+18:30:09.519         | Gpu temperature: 70
+18:30:09.519         | Gpu P-State: 3
+18:31:09.519         | Gpu temperature: 73
+18:31:09.519         | Gpu P-State: 3
+18:32:09.531         | Gpu temperature: 74
+18:32:09.531         | Gpu P-State: 3
+18:33:09.588         | Gpu temperature: 73
+18:33:09.588         | Gpu P-State: 3
+18:34:09.590         | Gpu temperature: 74
+18:34:09.590         | Gpu P-State: 3
+18:35:09.598         | Gpu temperature: 74
+18:35:09.599         | Gpu P-State: 3
+18:36:09.601         | Gpu temperature: 74
+18:36:09.601         | Gpu P-State: 3
+18:37:02.149         | Gpu temperature: 71
+18:37:02.149         | Gpu P-State: 3
+18:38:02.114         | Gpu temperature: 69
+18:38:02.114         | Gpu P-State: 3
+18:39:02.117         | Gpu temperature: 67
+18:39:02.117         | Gpu P-State: 3
+18:40:02.070         | Gpu temperature: 67
+18:40:02.070         | Gpu P-State: 3
+18:41:02.061         | Gpu temperature: 66
+18:41:02.061         | Gpu P-State: 3
+18:42:02.063         | Gpu temperature: 66
+18:42:02.063         | Gpu P-State: 3
+18:43:02.054         | Gpu temperature: 63
+18:43:02.054         | Gpu P-State: 5

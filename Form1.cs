@@ -551,10 +551,90 @@ namespace CrossoutNicknamesCollector
             return sortedNicknames.ToArray();
         }
 
-        public static void BatchInsertNicknames(string dbPath, List<string> nicknames)
+        static List<string> GetUniqueNicknames(List<string> currentNicknames, List<string> newNicknames)
+        {
+            // Используем LINQ для получения уникальных элементов из второго списка (newNicknames),
+            // которых нет в первом списке (currentNicknames)
+            List<string> uniqueNicknames = newNicknames.Except(currentNicknames).ToList();
+            return uniqueNicknames;
+        }
+
+        List<string> AllPlayers(HashSet<string> chat, HashSet<string> game)
+        {
+            List<string> nicknames = new List<string>();
+
+            nicknames.AddRange(chat);
+            nicknames.AddRange(game);
+
+            return nicknames;
+        }
+
+        public void NewBatchInsertNicknames(string dbPath, List<string> nicknames)
+        {
+            List<string> nicknamesToAdd = new List<string>();
+
+            nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
+
+            int batchSize = 100;
+
+            // Создаем подключение к базе данных SQLite
+            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
+            {
+                try
+                {
+                    // Открываем подключение
+                    connection.Open();
+
+                    // Создаем SQL-запрос на добавление записи
+                    string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
+
+                    // Создаем команду с параметром для безопасного добавления значения nickname
+                    using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
+                    {
+                        // Добавляем параметр к команде
+                        SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
+
+                        int totalNicknames = nicknamesToAdd.Count;
+                        int batchesCount = (int)Math.Ceiling((double)totalNicknames / batchSize);
+
+                        // Используем цикл для вставки каждой части никнеймов
+                        for (int i = 0; i < batchesCount; i++)
+                        {
+                            int startIndex = i * batchSize;
+                            int count = Math.Min(batchSize, totalNicknames - startIndex);
+
+                            // Создаем пакет значений для вставки
+                            List<string> batchValues = nicknamesToAdd.GetRange(startIndex, count);
+
+                            // Очищаем параметры команды
+                            parameter.Value = null;
+
+                            // Вставляем пакет значений
+                            foreach (string nickname in batchValues)
+                            {
+                                parameter.Value = nickname;
+                                command.ExecuteNonQuery();
+                            }
+
+                            Console.WriteLine($"Добавлено {count} никнеймов. Всего добавлено: {startIndex + count}");
+                        }
+
+                        Console.WriteLine("Вставка завершена.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
+                }
+            }
+        }
+    
+        /*
+        public void BatchInsertNicknames(string dbPath, List<string> nicknames)
         {
             try
             {
+                
                 using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
                 {
                     connection.Open();
@@ -562,10 +642,10 @@ namespace CrossoutNicknamesCollector
                     // Определяем размер пакета
                     int batchSize = 100;
 
-                    for (int i = 0; i < nicknames.Count; i += batchSize)
+                    for (int i = 0; i < sortNickNames.Count; i += batchSize)
                     {
                         // Получаем текущий пакет никнеймов
-                        List<string> batchNicknames = nicknames.Skip(i).Take(batchSize).ToList();
+                        List<string> batchNicknames = sortNickNames.Skip(i).Take(batchSize).ToList();
 
                         // Формируем SQL-запрос для пакетной вставки
                         StringBuilder queryBuilder = new StringBuilder();
@@ -596,7 +676,7 @@ namespace CrossoutNicknamesCollector
                 Console.WriteLine("Ошибка: " + ex.Message);
             }
         }
-
+        */
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -608,8 +688,7 @@ namespace CrossoutNicknamesCollector
             DeleteFolderRecursively(DuplicateLogsDerictory);
             DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
 
-            analiticsPlayerChat = ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory);
-            analiticsPlayer = ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory);
+            AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory));
 
             CreateDB(PathToPlayersDB);
 
@@ -622,9 +701,10 @@ namespace CrossoutNicknamesCollector
 
             //foreach (string player in SortNickNames())
             //{
-            //    CheckAndAddNickname($"{LocalDerictory}\\{playersFileDB}", player);
+            //    CheckAndAddNickname($"{LocalDerictory}\\{playersFileDB}", player); //old
             //}
-            BatchInsertNicknames(PathToPlayersDB, allSortPlayers);
+
+            NewBatchInsertNicknames(PathToPlayersDB, allSortPlayers);//new
 
             watch.Stop();
 
