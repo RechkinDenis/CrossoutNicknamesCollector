@@ -87,3 +87,72 @@
 00:31:49.316         | ====== level started:  'hangar' success ======
 00:32:27.143  WARNING| frame 905: 115 ms spike
 00:34:27.860  WARNING| frame 2712: 136 ms spike
+00:40:20.762         | Test drive started from Hangar
+00:46:44.450         | TargemServices: RenewAuth: new token = uoJDAAAAAAD62KuWJSJIuBidk56JAQAAK2TFnwRub25lBGxpdmU, server time 2023-07-28T21:47:01.498Z (drift of -17 sec)
+00:58:44.694  WARNING| frame 27367: 241 ms spike
+00:58:54.203  WARNING| frame 28285: 140 ms spike
+00:58:56.233         | Stored mission name: FreePlay_Pvp
+00:58:56.235         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'US' (strict) ,rotatingParams: '{"expireTime":1690588800000,"mapOptionList":"geopp:FreePlay","botList":""}'
+00:58:57.285         | Matchmaker_NotifyQueueState: 23 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+00:58:58.575         | CL_MatchMaker::ConnectHandler: addr = 207.244.92.143:35041, gsid = 553257011
+00:58:58.985         | client: start connecting to 207.244.92.143|35041...
+00:58:59.003  WARNING| frame 28699: 425 ms spike
+00:58:59.460         | client: connected to 207.244.92.143|35041, server guid '1690578823932019', client guid '256705206254339917', setting up session...
+00:58:59.593         | client: connected to dedicated server. gsid: 553257011, hostname: 'wheel10lw-us.pxo'
+00:58:59.800         | client: server assigned id 10
+00:58:59.810         | client: got level load message 'levels/maps/geopp' FreePlay, levelId: 1
+00:59:00.358         | ====== starting level 3: 'levels/maps/geopp' FreePlay client Empty,env=423127 ======
+00:59:00.358         | {
+00:59:00.358         | 	"minUR": 3966
+00:59:00.358         | 	"maxUR": 3966
+00:59:00.358         | 	"queueTag": FreePlay_Pvp
+00:59:00.358         | 	"fixedMMValue": 0
+00:59:00.358         | }
+00:59:01.749  WARNING| AreaShape::Triangulate. 'AreaClipVolume51' has zero triangle near pointIdx 15. ignore it
+00:59:01.842         | client: send ready message
+00:59:02.159         | client: ADD_PLAYER  0         ceno6969, uid 12945864 status   ACTIVE team 1
+00:59:02.162         | client: ADD_PLAYER  1          Fr0gツ, uid 8529201 status   ACTIVE team 2
+00:59:02.289         | client: ADD_PLAYER  2        LotOfCoom, uid 3521039 status   ACTIVE team 3
+00:59:02.290         | client: ADD_PLAYER  3   Hispanic_Ninja, uid 5877812 status   ACTIVE team 4
+00:59:02.292         | client: ADD_PLAYER  4       CLIFFORDEZ, uid 7562247 status   ACTIVE team 5
+00:59:02.312         | client: ADD_PLAYER  5             r0lo, uid 8349310 status   ACTIVE team 6
+00:59:02.313         | client: ADD_PLAYER  6       _o_TANK_o_, uid 7288638 status   ACTIVE team 7
+00:59:02.422         | client: ADD_PLAYER  7       Spunch_BoB, uid 7897759 status   ACTIVE team 8
+00:59:02.427         | client: ADD_PLAYER  8   Donutdestroyer, uid 11940169 status   ACTIVE team 9
+00:59:02.435         | client: ADD_PLAYER  9     LittleNathan, uid 4748665 status   ACTIVE team 10
+00:59:02.438         | client: ADD_PLAYER 10      _UA_Puffin_, uid 4424378 status MAP_LOAD team 11
+00:59:02.438         | client: ADD_PLAYER 11          DAWA_QC, uid 11706272 status   ACTIVE team 12
+00:59:02.485         | client: UPDATE_PLAYER 10      _UA_Puffin_, uid 4424378 status   ACTIVE team 11
+00:59:02.761         | client: got init message. ping 145, MTU 1350
+00:59:02.792         | ====== level started:  'geopp' success ======
+00:59:13.194  WARNING| server_fps [ 2023-07-28T21:59:30.228Z ]:  30 29 30 29 30 30 30 30 29 30 30 30 30 29 30 30 29 30 29 29 29 29 30 30 29 29 30 29 30 23 30 30 29 29 29 29 30 30 29 30
+00:59:14.728         | client: RESERVE_PLAYER 12     ben_r_alford, uid 13086363@live status RESERVED team 13
+00:59:16.528         | client: UPDATE_PLAYER 12     ben_r_alford, uid 13086363 status   ACTIVE team 13
+00:59:26.709         | client: RESERVE_PLAYER 13     casey_alford, uid 13086502@live status RESERVED team 14
+00:59:28.326         | client: UPDATE_PLAYER 13     casey_alford, uid 13086502 status   ACTIVE team 14
+00:59:32.859  WARNING| server_fps [ 2023-07-28T21:59:49.840Z ]:  29 30 29 30 29 30 30 29 30 29 29 29 29 29 30 29 29 29 30 30 30 29 29 30 30 29 30 29 26 12 30 30 30 29 30 29 30 29 30 30
+00:59:47.803         | client: RESERVE_PLAYER 14   acolonelofcorn, uid 2185398@live status RESERVED team 15
+00:59:49.541         | client: UPDATE_PLAYER 14   acolonelofcorn, uid 2185398 status   ACTIVE team 15
+01:00:00.748  WARNING| frame 31579: 490 ms spike
+01:00:03.478  WARNING| frame 31700 GPU wait time is too large (0.9837 sec)
+01:00:03.494         | client: RESERVE_PLAYER 15 Swagflex McKenzi, uid 13568681@live status RESERVED team 16
+01:00:03.546  WARNING| frame 31701: 998 ms spike
+01:00:03.551  WARNING| net: USER_BYTES_PUSHED 903; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 26836; USER_BYTES_RECEIVED_IGNORED 2700; ACTUAL_SENT 1954; ACTUAL_BYTES_RECEIVED 34269; packetLoss 0%
+01:00:03.564  WARNING| net: USER_BYTES_PUSHED 1028; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 26873; USER_BYTES_RECEIVED_IGNORED 2700; ACTUAL_SENT 2110; ACTUAL_BYTES_RECEIVED 34327; packetLoss 0%
+01:00:04.524  WARNING| net: USER_BYTES_PUSHED 3403; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16317; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 6359; ACTUAL_BYTES_RECEIVED 19180; packetLoss 0%
+01:00:04.762         | client: UPDATE_PLAYER 15 Swagflex McKenzi, uid 13568681 status   ACTIVE team 16
+01:00:05.491  WARNING| server_fps [ 2023-07-28T22:00:22.529Z ]:  29 29 29 30 30 29 29 29 30 29 29 29 29 29 30 29 30 29 29 30 29 30 30 29 29 30 29 29 30 20 30 29 29 29 30 30 29 29 30 29
+01:00:25.655  WARNING| server_fps [ 2023-07-28T22:00:42.690Z ]:  30 29 30 30 30 30 30 29 29 29 29 29 29 29 30 30 30 29 29 30 30 30 30 29 30 29 30 30 29 13 27 30 30 30 30 29 30 29 29 30
+01:00:34.239         | client: player 6 leave game
+01:00:37.125         | client: RESERVE_PLAYER  6    tarantula3000, uid 11451596@live status RESERVED team 7
+01:00:44.548  WARNING| server_fps [ 2023-07-28T22:01:01.580Z ]:  30 29 30 29 29 29 29 30 29 29 29 29 29 29 29 30 29 30 29 29 30 30 30 30 30 30 30 29 29  9  9 29 30 30 30 30 30 30 30 30
+01:00:46.453         | client: avgPing 146.4/733.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.0/0.0%, MTU 1350
+01:00:46.453         | client: connection closed. CLIENT_QUIT
+01:00:46.453         | Network stats (bytes per second): avg pushed 1716, max pushed 2599, avg sent 3586, max sent 5198, avg received 14990, max received 23283
+01:00:46.725         | ====== starting level 4: 'levels/maps/hangar'  single Empty,env=221621 ======
+01:00:46.725         | {
+01:00:46.725         | 	"is_hangar": 1
+01:00:46.725         | }
+01:00:46.964         | Gameplay statistic. gameResult 'freePlayFinish'
+01:00:46.964         |       score   0, expBase 0, expDailyBonus 2.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+01:00:47.424         | ====== level started:  'hangar' success ======

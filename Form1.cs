@@ -494,7 +494,7 @@ namespace CrossoutNicknamesCollector
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //TEST
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -547,7 +547,7 @@ namespace CrossoutNicknamesCollector
             //Update List
             listBox1.Items.Clear();
 
-            foreach(string nickname in SortNickNames())
+            foreach(string nickname in SortNicknames(NickNames.ToList()))
             {
                 if (!listBox1.Items.Contains(nickname))
                 {
