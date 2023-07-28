@@ -675,8 +675,6 @@ namespace CrossoutNicknamesCollector
 
             AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory));
 
-            CreateDB(PathToPlayersDB);
-
             //старт
 
 
