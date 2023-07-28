@@ -308,22 +308,3 @@
 21:33:03.194  WARNING| frame 99505: 102 ms spike
 21:33:23.934         | TargemServices: RenewAuth: new token = uoJDAAAAAABT8JNUrF3AvKua4p2JAQAAVmAGnwRub25lBGxpdmU, server time 2023-07-28T18:33:41.006Z (drift of -17 sec)
 21:40:41.085  WARNING| frame 106364: 103 ms spike
-21:43:26.704  WARNING| frame 108844: 103 ms spike
-21:43:26.877  WARNING| frame 108846: 110 ms spike
-21:43:27.981  WARNING| frame 108862: 100 ms spike
-21:46:49.759  WARNING| frame 111882: 121 ms spike
-21:47:12.308         | TSConnectionManager::StateDISCONNECTING: reason 'you've been kicked for AFK'
-21:47:12.390         | SpawnDisconnectDialog: ErrorCode::AFK_KICKED
-21:47:13.034         | ====== starting level 9: 'levels/maps/mainmenu'  single env=-1 ======
-21:47:13.167         | ====== level started:  'mainmenu' success ======
-21:47:13.579         | TargemService::Deauth: /Auth/LogOut done
-21:47:41.994         | TargemService: RequestAuth: login 'denk1030@gmail.co*', auth 'GAIJIN', url 'https://crank.crossout.net/live'
-21:47:43.828         | Auth success: token uoJDAAAAAAB1y6UUHl-t_eW5752JAQAAXUKVnwRub25lBGxpdmU, uid 4424378, server time 2023-07-28T18:48:00.967Z (drift of -17 sec)
-21:47:44.455         | TSConnectionManager::StateNEGOTIATING: SoContainer login complete
-21:47:45.582         | TSConnectionManager::StateNEGOTIATING: complete
-21:47:45.582         | TargemService:OnGoingOnline: uid 4424378, nickName '_UA_Puffin_', sessionId -1617608099, serverTime 2023-07-28T18:48:02Z, countryCode 'UA'
-21:47:45.822         | ====== starting level 10: 'levels/maps/hangar'  single Empty,env=221621 ======
-21:47:45.822         | {
-21:47:45.822         | 	"is_hangar": 1
-21:47:45.822         | }
-21:47:46.671         | ====== level started:  'hangar' success ======

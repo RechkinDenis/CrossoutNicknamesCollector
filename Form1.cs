@@ -8,13 +8,18 @@ using System.Globalization;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CrossoutNicknamesCollector
 {
     public partial class Form1 : Form
     {
+        private SQLiteConnection sqlConnect;
+
         public string saveNickNameCommand = "./save";
-        public string pathToLogsFile = "C:\\Users\\denk1\\OneDrive\\Документы\\My Games\\Crossout\\logs\\";
+        public string pathToLogsFile = "D:\\Logs\\";
         public string chatLog = "chat.log";
         public string gameLog = "game.log";
         public string lastCountPlayers = "lastUpdate.txt";
@@ -54,27 +59,27 @@ namespace CrossoutNicknamesCollector
         public Form1()
         {
             InitializeComponent();
-
-            if (!File.Exists(PathToPlayersDB)) 
-            { 
-                label4.Text = "file DB is missing";
-                button2.Enabled = false;
-            }
-            else 
-            { 
-                label4.Text = "file DB exists"; 
-                button2.Enabled = true; 
-            }
         }
 
-        public static string[] GetNicknamesFromDatabase(string connectionString, string tableName)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists(PathToPlayersDB))
+            {
+                // Create db file
+                CreateDB(PathToPlayersDB);
+            }
+
+            // Open sql connection
+            sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
+            sqlConnect.Open();
+        }
+
+        public string[] GetNicknamesFromDatabase(string connectionString, string tableName)
         {
             List<string> nicknamesList = new List<string>();
 
-            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
+            SQLiteConnection connection = sqlConnect;
+            
                 string sqlQuery = $"SELECT nickname FROM {tableName}";
 
                 using (SQLiteCommand command = new SQLiteCommand(sqlQuery, connection))
@@ -88,7 +93,7 @@ namespace CrossoutNicknamesCollector
                         }
                     }
                 }
-            }
+            
 
             return nicknamesList.ToArray();
         }
@@ -151,7 +156,7 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
+                using (var connection = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;"))
                 {
                     connection.Open();
 
@@ -212,10 +217,8 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     string checkTableQuery = $"SELECT name FROM sqlite_master WHERE type='table' AND name='{tableName}'";
                     using (var command = new SQLiteCommand(checkTableQuery, connection))
                     {
@@ -224,7 +227,7 @@ namespace CrossoutNicknamesCollector
                             return reader.HasRows;
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -240,7 +243,6 @@ namespace CrossoutNicknamesCollector
                 if (!File.Exists(path))
                 {
                     File.Create(path);
-                    //CreateDatabase(path);
                 }
             }
             catch (Exception ex)
@@ -255,17 +257,15 @@ namespace CrossoutNicknamesCollector
             try
             {
                 // Подключение к базе данных
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Создание таблицы Players с одним столбцом nickname
                     using (var command = new SQLiteCommand($"CREATE TABLE IF NOT EXISTS Players (nickname TEXT)", connection))
                     {
                         command.ExecuteNonQuery();
                         Console.WriteLine("Таблица Players с одним столбцом nickname создана.");
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -273,14 +273,12 @@ namespace CrossoutNicknamesCollector
             }
         }
 
-        public static void CheckAndAddNickname(string dbPath, string nickname)
+        public void CheckAndAddNickname(string dbPath, string nickname)
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Начинаем транзакцию
                     using (var transaction = connection.BeginTransaction())
                     {
@@ -309,7 +307,7 @@ namespace CrossoutNicknamesCollector
                         // Завершаем транзакцию
                         transaction.Commit();
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -317,14 +315,12 @@ namespace CrossoutNicknamesCollector
             }
         }
 
-        public static void ClearDatabase(string dbPath)
+        public void ClearDatabase(string dbPath)
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Выполняем SQL-запрос для удаления всех данных из таблицы
                     string query = "DELETE FROM Players";
                     using (var command = new SQLiteCommand(query, connection))
@@ -333,7 +329,7 @@ namespace CrossoutNicknamesCollector
                     }
 
                     Console.WriteLine("База данных успешно очищена.");
-                }
+                
             }
             catch (Exception ex)
             {
@@ -345,10 +341,8 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Выполняем SQL-запрос DELETE для удаления никнейма
                     using (var command = new SQLiteCommand($"DELETE FROM {table} WHERE nickname = @nickname", connection))
                     {
@@ -364,7 +358,7 @@ namespace CrossoutNicknamesCollector
                             label1.Text = $"Никнейм '{nicknameToDelete}' не найден в базе данных.";
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -444,15 +438,13 @@ namespace CrossoutNicknamesCollector
         {
             int rowCount = 0;
 
-            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
+            SQLiteConnection connection = sqlConnect;
+            
                 using (SQLiteCommand command = new SQLiteCommand($"SELECT COUNT(*) FROM {from}", connection))
                 {
                     rowCount = Convert.ToInt32(command.ExecuteScalar());
                 }
-            }
+            
 
             return rowCount;
         }
@@ -571,112 +563,102 @@ namespace CrossoutNicknamesCollector
 
         public void NewBatchInsertNicknames(string dbPath, List<string> nicknames)
         {
-            List<string> nicknamesToAdd = new List<string>();
+            List<string> nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
+            
+            List<List<string>> nicknamesLists = new List<List<string>>();
+            int listSize = nicknamesToAdd.Count / 8; // TODO: replace 8 by real threads count
 
-            nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
-
-            int batchSize = 100;
-
-            // Создаем подключение к базе данных SQLite
-            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
+            Console.WriteLine("Generating nicknames lists...");
+            List<string> tmpNickanames = new List<string>();
+            int index = 0;
+            foreach(string nickname in nicknamesToAdd)
             {
-                try
+                if(index >= listSize)
+                { // Add batch of nicknames
+                    nicknamesLists.Add(tmpNickanames);
+                    tmpNickanames = new List<string>();
+
+                    Console.WriteLine($"Generated {nicknamesLists.Count * listSize}...");
+
+                    index = 0;
+                }
+
+                // Add nickname to list
+                tmpNickanames.Add(nickname);
+                index += 1;
+            }
+
+            if (index != 0)
+            { // Add other nicknames
+                nicknamesLists.Add(tmpNickanames);
+
+                Console.WriteLine($"Generated {tmpNickanames.Count}...");
+            }
+
+            SQLiteConnection connection = sqlConnect;
+
+            List<Thread> threads = new List<Thread>();
+
+            Console.WriteLine("Starting threads...");
+            int threadIndex = 0;
+            foreach(List<string> nicknamesList in nicknamesLists)
+            {
+                int currentThreadIndex = threadIndex;
+                Thread t = new Thread(() =>
                 {
-                    // Открываем подключение
-                    connection.Open();
-
-                    // Создаем SQL-запрос на добавление записи
-                    string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
-
-                    // Создаем команду с параметром для безопасного добавления значения nickname
-                    using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
+                    try
                     {
-                        // Добавляем параметр к команде
-                        SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
-
-                        int totalNicknames = nicknamesToAdd.Count;
-                        int batchesCount = (int)Math.Ceiling((double)totalNicknames / batchSize);
-
-                        // Используем цикл для вставки каждой части никнеймов
-                        for (int i = 0; i < batchesCount; i++)
+                        string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
+                        SQLiteTransaction transaction = connection.BeginTransaction();
+                        using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
                         {
-                            int startIndex = i * batchSize;
-                            int count = Math.Min(batchSize, totalNicknames - startIndex);
+                            command.Transaction = transaction;
+                            SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
 
-                            // Создаем пакет значений для вставки
-                            List<string> batchValues = nicknamesToAdd.GetRange(startIndex, count);
-
-                            // Очищаем параметры команды
-                            parameter.Value = null;
-
-                            // Вставляем пакет значений
-                            foreach (string nickname in batchValues)
+                            foreach (string nickname in nicknamesList)
                             {
                                 parameter.Value = nickname;
                                 command.ExecuteNonQuery();
                             }
-
-                            Console.WriteLine($"Добавлено {count} никнеймов. Всего добавлено: {startIndex + count}");
                         }
 
-                        Console.WriteLine("Вставка завершена.");
+                        // Commit changes
+                        transaction.Commit();
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
-                }
-            }
-        }
-    
-        /*
-        public void BatchInsertNicknames(string dbPath, List<string> nicknames)
-        {
-            try
-            {
-                
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
-                    // Определяем размер пакета
-                    int batchSize = 100;
-
-                    for (int i = 0; i < sortNickNames.Count; i += batchSize)
+                    catch (Exception ex)
                     {
-                        // Получаем текущий пакет никнеймов
-                        List<string> batchNicknames = sortNickNames.Skip(i).Take(batchSize).ToList();
-
-                        // Формируем SQL-запрос для пакетной вставки
-                        StringBuilder queryBuilder = new StringBuilder();
-                        queryBuilder.Append("INSERT INTO Players (nickname) VALUES ");
-
-                        for (int j = 0; j < batchNicknames.Count; j++)
-                        {
-                            queryBuilder.Append($"(@nickname{j})");
-                        }
-
-                        // Выполняем пакетную вставку
-                        using (var command = new SQLiteCommand(queryBuilder.ToString(), connection))
-                        {
-                            for (int j = 0; j < batchNicknames.Count; j++)
-                            {
-                                command.Parameters.AddWithValue($"@nickname{j}", batchNicknames[j]);
-                            }
-
-                            command.ExecuteNonQuery();
-                        }
+                        Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
                     }
 
-                    Console.WriteLine("Пакетная вставка никнеймов успешно завершена.");
-                }
+                    Console.WriteLine($"Thread finished #{threadIndex}");
+                });
+
+                t.Name = $"Thread #{currentThreadIndex}";
+                t.IsBackground = true;
+                t.Start();
+
+                Console.WriteLine($"Thread started #{currentThreadIndex}");
+
+                threads.Add(t);
+                threadIndex++;
             }
-            catch (Exception ex)
+
+            // Wait all threads finish
+            while (true)
             {
-                Console.WriteLine("Ошибка: " + ex.Message);
+                Thread.Sleep(100);
+
+                int finishedCount = 0;
+                foreach(Thread thread in threads)
+                {
+                    if (!thread.IsAlive)
+                        finishedCount++;
+                }
+
+                if (finishedCount == threads.Count)
+                    break;
             }
         }
-        */
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -689,8 +671,6 @@ namespace CrossoutNicknamesCollector
             DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
 
             AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory));
-
-            CreateDB(PathToPlayersDB);
 
             //старт
 
@@ -756,22 +736,6 @@ namespace CrossoutNicknamesCollector
                 {
                     listBox1.Items.Add(nickname);
                 }
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //Create DB
-
-            CreateDB(PathToPlayersDB);
-            if (!File.Exists(PathToPlayersDB))
-            {
-                label4.Text = "file DB is missing";
-            }
-            else
-            {
-                label4.Text = "file DB exists or has been created";
-                button2.Enabled = true;
             }
         }
     }
