@@ -74,6 +74,8 @@ namespace CrossoutNicknamesCollector
 
             sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
             sqlConnect.Open();
+
+            label2.Text = $"Players Count: {CountPlayers}";
         }
 
         public string[] GetNicknamesFromDatabase(string connectionString, string tableName)
@@ -324,13 +326,13 @@ namespace CrossoutNicknamesCollector
             }
         }
 
-        public static List<string> SortNicknames(List<string> nicknamesHashSet)
+        public static List<string> SortNicknames(List<string> nicknames)
         {
             // Создаем объект культуры для правильной сортировки
             CultureInfo culture = new CultureInfo("en-US", false);
 
             // Преобразуем HashSet в List
-            List<string> nicknamesList = nicknamesHashSet.ToList();
+            List<string> nicknamesList = nicknames.ToList();
 
             // Сортируем никнеймы с использованием культуры
             nicknamesList.Sort(new CustomComparer(culture));
@@ -497,9 +499,6 @@ namespace CrossoutNicknamesCollector
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
-            sqlConnect.Open();
-
             //Analitics
             DeleteFolderRecursively(DuplicateLogsDerictory);
             DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
@@ -546,16 +545,9 @@ namespace CrossoutNicknamesCollector
         private void button5_Click(object sender, EventArgs e)
         {
             //Update List
-            List<string> nicknames = new List<string>();
-
-            nicknames.AddRange(analiticsPlayerChat);
-            nicknames.AddRange(analiticsPlayer);
-
-            List<string> sortedNicknames = SortNicknames(nicknames);
-
             listBox1.Items.Clear();
 
-            foreach(string nickname in sortedNicknames)
+            foreach(string nickname in SortNickNames())
             {
                 if (!listBox1.Items.Contains(nickname))
                 {

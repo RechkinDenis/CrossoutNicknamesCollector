@@ -1,0 +1,89 @@
+
+--- Date: 2023-7-29 (Sat Jul 2023) UTC+03:00
+
+00:31:27.899         | //////////////////////////////////////////////////////////////////////////////
+00:31:27.899         | //
+00:31:27.899         | // Build: Crossout x64 2.7.10.250607 (Jul 17 2023 17:54:44)
+00:31:27.900         | // params: "D:\Games\Crossout\bin\win64\Crossout.exe" -lang RUSSIAN -fromlauncher --no-relaunch  --aftermath 
+00:31:27.900         | //
+00:31:27.900         | //////////////////////////////////////////////////////////////////////////////
+00:31:27.900         | 
+00:31:32.811  WARNING| frame time of frame 1 within loading callback is too large (17.115309)
+00:31:38.839         | EasyAntiCheat::Client: Init result 0, message Служба Easy Anti-Cheat запущена
+00:31:39.075         | ====== starting level 1: 'levels/maps/mainmenu'  single env=-1 ======
+00:31:39.138         | ====== level started:  'mainmenu' success ======
+00:31:40.703         | TargemService: RequestAuth: login 'denk1030@gmail.co*', auth 'GAIJIN', url 'https://crank.crossout.net/live'
+00:31:40.706  WARNING| frame 187: 135 ms spike
+00:31:43.800         | server mods CVar 'ABTest.EnableTutorialPass' -> '1'
+00:31:43.800         | server mods CVar 'ABTest.TutorialBattlePassGroupA' -> 'TutorialBattlePass_V5_chest_0h'
+00:31:43.800         | server mods CVar 'ABTest.TutorialBattlePassGroupB' -> 'TutorialBattlePass_V5_chest_0h'
+00:31:43.801         | server mods CVar 'CarEditor.DecorationAnalytics' -> '1'
+00:31:43.801         | server mods CVar 'CollectableRandomEntity.ExclusiveProbability' -> '0.08'
+00:31:43.801         | server mods CVar 'CollectableRandomEntity.MaxCount' -> '3'
+00:31:43.801         | server mods CVar 'CollectableRandomEntity.MinCount' -> '2'
+00:31:43.801         | server mods CVar 'Game.CarEditorAnalytics' -> '1'
+00:31:43.802         | server mods CVar 'GameUI.ChatChannelsDisabled' -> 'russian:novice;russian:partysearch;english:novice;english:partysearch;german:novice;german:partysearch;french:novice;french:partysearch;spanish:novice;spanish:partysearch'
+00:31:43.802         | server mods CVar 'GameUI.ShowCrystals' -> '1'
+00:31:43.802         | server mods CVar 'GameUI.ShowDecorExhibition' -> '1'
+00:31:43.802         | server mods CVar 'GameUI.ShowUserBrawls' -> '1'
+00:31:43.802         | server mods CVar 'ah_arbiterFacadeUser' -> '94775'
+00:31:43.802         | server mods CVar 'ah_minSellPrice' -> '10'
+00:31:43.802         | server mods CVar 'bpe_maxDecorationDesignsExhibited' -> '6'
+00:31:43.802         | server mods CVar 'cl_enableUserProfileStats' -> '1'
+00:31:43.802         | server mods CVar 'cl_newsWndV2' -> '1'
+00:31:43.802         | server mods CVar 'cl_showJams' -> '1'
+00:31:43.802         | server mods CVar 'clanWars_firstDay' -> '2016-09-18T16:00:00Z'
+00:31:43.803         | server mods CVar 'customGame_showEnvSettings' -> '1'
+00:31:43.803         | server mods CVar 'gameui_debriefLikesMode' -> '2'
+00:31:43.803         | server mods CVar 'leviathan_subtypePowerThreshold' -> '12'
+00:31:43.803         | server mods CVar 'sv_circuit' -> 'live'
+00:31:43.803         | server mods CVar 'sv_customGameExtended' -> '1'
+00:31:43.803         | server mods CVar 'sv_dbgLeviathan' -> '1'
+00:31:43.803         | server mods CVar 'sv_disableVoiceChatService' -> '1'
+00:31:43.803         | server mods CVar 'user_2stepRestrictions' -> '1'
+00:31:43.803         | server mods CVar 'user_customGame' -> '2'
+00:31:43.803         | server mods CVar 'user_hangarVisitorsInterval' -> '28800'
+00:31:43.803         | server mods CVar 'user_hangarVisitorsNum' -> '5'
+00:31:43.803         | server mods CVar 'user_newPlayerAnalyticsCarEditor' -> '0'
+00:31:43.803         | server mods CVar 'user_newPlayerAnalyticsNumDays' -> '0'
+00:31:43.803         | server mods CVar 'user_newPlayerAnalyticsTestDrive' -> '0'
+00:31:43.803         | server mods CVar 'user_newPlayerAnalyticsWindowsAndTabs' -> '0'
+00:31:43.803         | server mods CVar 'user_tradeRegulatorMaxOrders' -> '5'
+00:31:43.803         | server mods CVar 'user_tradeRegulatorNewbieLevel' -> '5'
+00:31:43.803         | server mods CVar 'user_tradeRegulatorNewbieRestrictBuy' -> '1'
+00:31:43.804         | Auth success: token uoJDAAAAAACRHHaoHQJ1xgffhZ6JAQAAK2TFnwRub25lBGxpdmU, uid 4424378, server time 2023-07-28T21:32:00.873Z (drift of -17 sec)
+00:31:44.929         | TSConnectionManager::StateNEGOTIATING: SoContainer login complete
+00:31:45.945         | DataStorage: set data with type='chat_decoration_settings' version='2495'
+00:31:45.945         | DataStorage: set data with type='weekend_schedule' version='2731'
+00:31:45.948         | DataStorage: set data with type='queue_rotation' version='2744'
+00:31:45.949         | DataStorage: set data with type='auction_goods_hold' version='2477'
+00:31:45.949         | DataStorage: set data with type='shop_items' version='2753'
+00:31:45.950         | DataStorage: set data with type='bundle_ingame_price' version='1934'
+00:31:45.951         | DataStorage: set data with type='unavailable_recipe' version='2701'
+00:31:45.951         | DataStorage: set data with type='hidden_emo_item' version='2363'
+00:31:45.952         | DataStorage: set data with type='custom_game_data' version='2725'
+00:31:45.952         | DataStorage: set data with type='ranked_events' version='2603'
+00:31:45.955         | DataStorage: set data with type='forbidden_goods' version='2754'
+00:31:45.955         | DataStorage: set data with type='ingame_shop_items' version='2752'
+00:31:45.957         | DataStorage: set data with type='blueprint_jam_settings' version='2625'
+00:31:45.958         | DataStorage: set data with type='ingame_offers' version='2504'
+00:31:45.958         | DataStorage: set data with type='fusion_events' version='2726'
+00:31:45.959         | DataStorage: set data with type='collection_fusion_event' version='2578'
+00:31:45.960         | DataStorage: set data with type='leaderboards_settings' version='2585'
+00:31:45.960         | DataStorage: set data with type='auction_price_limitations' version='2311'
+00:31:45.960         | DataStorage: set data with type='new_recipes_data' version='1183'
+00:31:45.961         | DataStorage: set data with type='legacy_news_feed' version='2716'
+00:31:45.961         | DataStorage: set data with type='battle_pass' version='1333'
+00:31:45.961         | DataStorage: set data with type='mission_schedule' version='2730'
+00:31:45.961         | DataStorage: set data with type='craftsman_config' version='2714'
+00:31:45.961         | DataStorage: set data with type='fusion_erase_event' version='2751'
+00:31:45.961         | DataStorage: set data with type='aim_assist_ab_test' version='2682'
+00:31:46.949         | TSConnectionManager::StateNEGOTIATING: complete
+00:31:46.949         | TargemService:OnGoingOnline: uid 4424378, nickName '_UA_Puffin_', sessionId -1614453717, serverTime 2023-07-28T21:32:04Z, countryCode 'UA'
+00:31:47.197         | ====== starting level 2: 'levels/maps/hangar'  single Empty,env=221621 ======
+00:31:47.198         | {
+00:31:47.198         | 	"is_hangar": 1
+00:31:47.198         | }
+00:31:49.316         | ====== level started:  'hangar' success ======
+00:32:27.143  WARNING| frame 905: 115 ms spike
+00:34:27.860  WARNING| frame 2712: 136 ms spike
