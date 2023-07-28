@@ -488,17 +488,16 @@ namespace CrossoutNicknamesCollector
                         finishedCount++;
                 }
 
+                SetProgress((threads.Count / 100) * finishedCount);
                 if (finishedCount == threads.Count)
                     break;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //TEST
-        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void FetchNicknames()
         {
+            SetProgress(5);
+
             //Analitics
             DeleteFolderRecursively(DuplicateLogsDerictory);
             DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
@@ -514,15 +513,33 @@ namespace CrossoutNicknamesCollector
 
             watch.Stop();
 
-            label1.Text = $"recording ended Milliseconds: {watch.ElapsedMilliseconds}";
-            //конец конца
+            SetMessage1($"recording ended Milliseconds: {watch.ElapsedMilliseconds}");
 
-            label2.Text = $"Players Count: {CountPlayers}";
+            SetMessage2($"Players Count: {CountPlayers}");
 
             string path = $"{LocalDerictory}\\{lastCountPlayers}";
             CreateFileLastCountPlayers(path);
-            label3.Text = $"Last Count: {CheckLastCountPlayers(path)} / + {subtractLastCountPlayers(LastCountPlayers, CountPlayers)}";
-            SetLastCountPlayers(path,CountRowsInDatabase($"Data Source={playersFileDB};Version=3;", "Players").ToString());
+            SetMessage3($"Last Count: {CheckLastCountPlayers(path)} / + {subtractLastCountPlayers(LastCountPlayers, CountPlayers)}");
+            SetLastCountPlayers(path, CountRowsInDatabase($"Data Source={playersFileDB};Version=3;", "Players").ToString());
+
+            SetProgress(100);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //TEST
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+
+            // Start working in background
+            Thread t = new Thread(() => FetchNicknames());
+            t.IsBackground = true;
+            t.Start();
+
+            button2.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -554,6 +571,50 @@ namespace CrossoutNicknamesCollector
                     listBox1.Items.Add(nickname);
                 }
             }
+        }
+
+        /// <summary>
+        ///  Thread-safe set value for progress bar
+        /// </summary>
+        /// <param name="value"></param>
+        private void SetProgress(int value)
+        {
+            progressBar1.Invoke((MethodInvoker)delegate {
+                progressBar1.Value = value;
+            });
+        }
+
+        /// <summary>
+        /// Thread-safe set message
+        /// </summary>
+        /// <param name="message"></param>
+        private void SetMessage1(string message)
+        {
+            label1.Invoke((MethodInvoker)delegate {
+                label1.Text = message;
+            });
+        }
+
+        /// <summary>
+        /// Thread-safe set message
+        /// </summary>
+        /// <param name="message"></param>
+        private void SetMessage2(string message)
+        {
+            label2.Invoke((MethodInvoker)delegate {
+                label2.Text = message;
+            });
+        }
+
+        /// <summary>
+        /// Thread-safe set message
+        /// </summary>
+        /// <param name="message"></param>
+        private void SetMessage3(string message)
+        {
+            label3.Invoke((MethodInvoker)delegate {
+                label3.Text = message;
+            });
         }
     }
 }
