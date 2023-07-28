@@ -19,7 +19,6 @@ namespace CrossoutNicknamesCollector
         private SQLiteConnection sqlConnect;
 
         public string saveNickNameCommand = "./save";
-        public string pathToLogsFile = "D:\\Logs\\";
         public string chatLog = "chat.log";
         public string gameLog = "game.log";
         public string lastCountPlayers = "lastUpdate.txt";
@@ -38,6 +37,7 @@ namespace CrossoutNicknamesCollector
         //DB
         public string ConnectionStringPlayers => $"Data Source={playersFileDB};Version=3;";
         public string playersFileDB = "analytics.db";
+        public string templateFileDB = "template.db";
 
         public HashSet<string> analiticsPlayer = new HashSet<string>();
         public HashSet<string> analiticsPlayerChat = new HashSet<string>();
@@ -48,7 +48,11 @@ namespace CrossoutNicknamesCollector
 
         public string DuplicateLogsDerictory => $"{LocalDerictory}\\{duplicateFolderLogs}";
 
-        public string PathToPlayersDB => $"{LocalDerictory}//{playersFileDB}";
+        public string PathToPlayersDB => $"{LocalDerictory}\\{playersFileDB}";
+
+        public string PathToTemplateDB => $"{LocalDerictory}\\{templateFileDB}";
+
+        public string pathToLogsFile => Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\Crossout\logs\";
 
         public string[] NickNames => GetNicknamesFromDatabase(ConnectionStringPlayers, "Players");
         
@@ -65,11 +69,9 @@ namespace CrossoutNicknamesCollector
         {
             if (!File.Exists(PathToPlayersDB))
             {
-                // Create db file
                 CreateDB(PathToPlayersDB);
             }
 
-            // Open sql connection
             sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
             sqlConnect.Open();
         }
@@ -79,21 +81,20 @@ namespace CrossoutNicknamesCollector
             List<string> nicknamesList = new List<string>();
 
             SQLiteConnection connection = sqlConnect;
-            
-                string sqlQuery = $"SELECT nickname FROM {tableName}";
 
-                using (SQLiteCommand command = new SQLiteCommand(sqlQuery, connection))
+            string sqlQuery = $"SELECT nickname FROM {tableName}";
+
+            using (SQLiteCommand command = new SQLiteCommand(sqlQuery, connection))
+            {
+                using (SQLiteDataReader reader = command.ExecuteReader())
                 {
-                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            string nickname = reader.GetString(0);
-                            nicknamesList.Add(nickname);
-                        }
+                        string nickname = reader.GetString(0);
+                        nicknamesList.Add(nickname);
                     }
                 }
-            
+            }
 
             return nicknamesList.ToArray();
         }
@@ -152,188 +153,18 @@ namespace CrossoutNicknamesCollector
             return nickname.TrimEnd();
         }
 
-        public void CheckAndCreateTable(string dbPath)
-        {
-            try
-            {
-                using (var connection = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;"))
-                {
-                    connection.Open();
-
-                    // Проверяем наличие таблицы "Players" в базе данных
-                    string checkTableQuery = "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Players'";
-                    using (var command = new SQLiteCommand(checkTableQuery, connection))
-                    {
-                        if (!TableExists(PathToPlayersDB, "Players"))
-                        {
-                            // Если таблицы "Players" нет, то создаем её без автоинкремента в столбце id
-                            string createTableQuery = "CREATE TABLE IF NOT EXISTS Players (nickname TEXT)";
-                            using (var createCommand = new SQLiteCommand(createTableQuery, connection))
-                            {
-                                createCommand.ExecuteNonQuery();
-                                Console.WriteLine("Таблица 'Players' успешно создана.");
-                            }
-                        }
-                    }
-
-                    // Проверяем наличие столбца "nickname" в таблице
-                    string checkColumnQuery = "PRAGMA table_info('Players')";
-                    using (var columnCommand = new SQLiteCommand(checkColumnQuery, connection))
-                    {
-                        using (var reader = columnCommand.ExecuteReader())
-                        {
-                            bool columnExists = false;
-                            while (reader.Read())
-                            {
-                                string columnName = reader["name"].ToString();
-                                if (columnName == "nickname")
-                                {
-                                    columnExists = true;
-                                    break;
-                                }
-                            }
-
-                            if (!columnExists)
-                            {
-                                // Если столбца "nickname" нет, то добавляем его
-                                string addColumnQuery = "ALTER TABLE Players ADD COLUMN nickname TEXT";
-                                using (var addColumnCommand = new SQLiteCommand(addColumnQuery, connection))
-                                {
-                                    addColumnCommand.ExecuteNonQuery();
-                                    Console.WriteLine("Столбец 'nickname' успешно добавлен в таблицу 'Players'.");
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-        }
-
-        public bool TableExists(string dbPath, string tableName)
-        {
-            try
-            {
-                var connection = sqlConnect;
-                
-                    string checkTableQuery = $"SELECT name FROM sqlite_master WHERE type='table' AND name='{tableName}'";
-                    using (var command = new SQLiteCommand(checkTableQuery, connection))
-                    {
-                        using (var reader = command.ExecuteReader())
-                        {
-                            return reader.HasRows;
-                        }
-                    }
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-                return false;
-            }
-        }
-
         private void CreateDB(string path)
         {
             try
             {
                 if (!File.Exists(path))
                 {
-                    File.Create(path);
+                    File.Copy(PathToTemplateDB, path);
                 }
             }
             catch (Exception ex)
             {
                 label1.Text = ex.Message;
-            }
-            CheckAndCreateTable(path);
-        }
-
-        public void CreateDatabase(string dbPath)
-        {
-            try
-            {
-                // Подключение к базе данных
-                var connection = sqlConnect;
-                
-                    // Создание таблицы Players с одним столбцом nickname
-                    using (var command = new SQLiteCommand($"CREATE TABLE IF NOT EXISTS Players (nickname TEXT)", connection))
-                    {
-                        command.ExecuteNonQuery();
-                        Console.WriteLine("Таблица Players с одним столбцом nickname создана.");
-                    }
-                
-            }
-            catch (Exception ex)
-            {
-                label1.Text = "Ошибка при создании базы данных: " + ex.Message;
-            }
-        }
-
-        public void CheckAndAddNickname(string dbPath, string nickname)
-        {
-            try
-            {
-                var connection = sqlConnect;
-                
-                    // Начинаем транзакцию
-                    using (var transaction = connection.BeginTransaction())
-                    {
-                        // Проверяем, существует ли никнейм в базе данных
-                        using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM Players WHERE nickname = @nickname", connection))
-                        {
-                            checkCommand.Parameters.AddWithValue("@nickname", nickname);
-                            int count = Convert.ToInt32(checkCommand.ExecuteScalar());
-
-                            if (count > 0)
-                            {
-                                Console.WriteLine("Никнейм уже существует в базе данных.");
-                            }
-                            else
-                            {
-                                // Добавляем никнейм в базу данных
-                                using (var insertCommand = new SQLiteCommand("INSERT INTO Players (nickname) VALUES (@nickname)", connection))
-                                {
-                                    insertCommand.Parameters.AddWithValue("@nickname", nickname);
-                                    insertCommand.ExecuteNonQuery();
-                                    Console.WriteLine("Никнейм успешно добавлен в базу данных.");
-                                }
-                            }
-                        }
-
-                        // Завершаем транзакцию
-                        transaction.Commit();
-                    }
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-        }
-
-        public void ClearDatabase(string dbPath)
-        {
-            try
-            {
-                var connection = sqlConnect;
-                
-                    // Выполняем SQL-запрос для удаления всех данных из таблицы
-                    string query = "DELETE FROM Players";
-                    using (var command = new SQLiteCommand(query, connection))
-                    {
-                        command.ExecuteNonQuery();
-                    }
-
-                    Console.WriteLine("База данных успешно очищена.");
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
             }
         }
 
@@ -666,6 +497,9 @@ namespace CrossoutNicknamesCollector
 
         private void button2_Click(object sender, EventArgs e)
         {
+            sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
+            sqlConnect.Open();
+
             //Analitics
             DeleteFolderRecursively(DuplicateLogsDerictory);
             DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
@@ -674,23 +508,14 @@ namespace CrossoutNicknamesCollector
 
             //старт
 
-
             Stopwatch watch = new Stopwatch();
-
             watch.Start();
-
-            //foreach (string player in SortNickNames())
-            //{
-            //    CheckAndAddNickname($"{LocalDerictory}\\{playersFileDB}", player); //old
-            //}
 
             NewBatchInsertNicknames(PathToPlayersDB, allSortPlayers);//new
 
             watch.Stop();
 
             label1.Text = $"recording ended Milliseconds: {watch.ElapsedMilliseconds}";
-
-            //label1.Text = "recording ended";
             //конец конца
 
             label2.Text = $"Players Count: {CountPlayers}";
