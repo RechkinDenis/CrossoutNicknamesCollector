@@ -13,8 +13,10 @@ namespace CrossoutNicknamesCollector
 {
     public partial class Form1 : Form
     {
+        private SQLiteConnection sqlConnect;
+
         public string saveNickNameCommand = "./save";
-        public string pathToLogsFile = "C:\\Users\\denk1\\OneDrive\\Документы\\My Games\\Crossout\\logs\\";
+        public string pathToLogsFile = "D:\\Logs\\";
         public string chatLog = "chat.log";
         public string gameLog = "game.log";
         public string lastCountPlayers = "lastUpdate.txt";
@@ -59,22 +61,26 @@ namespace CrossoutNicknamesCollector
             { 
                 label4.Text = "file DB is missing";
                 button2.Enabled = false;
+
+                // TODO CREATE DB
             }
             else 
             { 
                 label4.Text = "file DB exists"; 
-                button2.Enabled = true; 
+                button2.Enabled = true;
+
+                // Open sql connection
+                sqlConnect = new SQLiteConnection($"Data Source={PathToPlayersDB};Version=3;");
+                sqlConnect.Open();
             }
         }
 
-        public static string[] GetNicknamesFromDatabase(string connectionString, string tableName)
+        public string[] GetNicknamesFromDatabase(string connectionString, string tableName)
         {
             List<string> nicknamesList = new List<string>();
 
-            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
+            SQLiteConnection connection = sqlConnect;
+            
                 string sqlQuery = $"SELECT nickname FROM {tableName}";
 
                 using (SQLiteCommand command = new SQLiteCommand(sqlQuery, connection))
@@ -88,7 +94,7 @@ namespace CrossoutNicknamesCollector
                         }
                     }
                 }
-            }
+            
 
             return nicknamesList.ToArray();
         }
@@ -151,10 +157,8 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Проверяем наличие таблицы "Players" в базе данных
                     string checkTableQuery = "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Players'";
                     using (var command = new SQLiteCommand(checkTableQuery, connection))
@@ -200,7 +204,7 @@ namespace CrossoutNicknamesCollector
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -212,10 +216,8 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     string checkTableQuery = $"SELECT name FROM sqlite_master WHERE type='table' AND name='{tableName}'";
                     using (var command = new SQLiteCommand(checkTableQuery, connection))
                     {
@@ -224,7 +226,7 @@ namespace CrossoutNicknamesCollector
                             return reader.HasRows;
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -255,17 +257,15 @@ namespace CrossoutNicknamesCollector
             try
             {
                 // Подключение к базе данных
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Создание таблицы Players с одним столбцом nickname
                     using (var command = new SQLiteCommand($"CREATE TABLE IF NOT EXISTS Players (nickname TEXT)", connection))
                     {
                         command.ExecuteNonQuery();
                         Console.WriteLine("Таблица Players с одним столбцом nickname создана.");
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -273,14 +273,12 @@ namespace CrossoutNicknamesCollector
             }
         }
 
-        public static void CheckAndAddNickname(string dbPath, string nickname)
+        public void CheckAndAddNickname(string dbPath, string nickname)
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Начинаем транзакцию
                     using (var transaction = connection.BeginTransaction())
                     {
@@ -309,7 +307,7 @@ namespace CrossoutNicknamesCollector
                         // Завершаем транзакцию
                         transaction.Commit();
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -317,14 +315,12 @@ namespace CrossoutNicknamesCollector
             }
         }
 
-        public static void ClearDatabase(string dbPath)
+        public void ClearDatabase(string dbPath)
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Выполняем SQL-запрос для удаления всех данных из таблицы
                     string query = "DELETE FROM Players";
                     using (var command = new SQLiteCommand(query, connection))
@@ -333,7 +329,7 @@ namespace CrossoutNicknamesCollector
                     }
 
                     Console.WriteLine("База данных успешно очищена.");
-                }
+                
             }
             catch (Exception ex)
             {
@@ -345,10 +341,8 @@ namespace CrossoutNicknamesCollector
         {
             try
             {
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
+                var connection = sqlConnect;
+                
                     // Выполняем SQL-запрос DELETE для удаления никнейма
                     using (var command = new SQLiteCommand($"DELETE FROM {table} WHERE nickname = @nickname", connection))
                     {
@@ -364,7 +358,7 @@ namespace CrossoutNicknamesCollector
                             label1.Text = $"Никнейм '{nicknameToDelete}' не найден в базе данных.";
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -444,15 +438,13 @@ namespace CrossoutNicknamesCollector
         {
             int rowCount = 0;
 
-            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
+            SQLiteConnection connection = sqlConnect;
+            
                 using (SQLiteCommand command = new SQLiteCommand($"SELECT COUNT(*) FROM {from}", connection))
                 {
                     rowCount = Convert.ToInt32(command.ExecuteScalar());
                 }
-            }
+            
 
             return rowCount;
         }
@@ -577,14 +569,10 @@ namespace CrossoutNicknamesCollector
 
             int batchSize = 100;
 
-            // Создаем подключение к базе данных SQLite
-            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-            {
+            SQLiteConnection connection = sqlConnect;
+            
                 try
                 {
-                    // Открываем подключение
-                    connection.Open();
-
                     // Создаем SQL-запрос на добавление записи
                     string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
 
@@ -626,7 +614,7 @@ namespace CrossoutNicknamesCollector
                 {
                     Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
                 }
-            }
+            
         }
     
         /*
