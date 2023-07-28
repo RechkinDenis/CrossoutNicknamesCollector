@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CrossoutNicknamesCollector
 {
@@ -607,8 +609,10 @@ namespace CrossoutNicknamesCollector
                     try
                     {
                         string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
+                        SQLiteTransaction transaction = connection.BeginTransaction();
                         using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
                         {
+                            command.Transaction = transaction;
                             SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
 
                             foreach (string nickname in nicknamesList)
@@ -617,6 +621,9 @@ namespace CrossoutNicknamesCollector
                                 command.ExecuteNonQuery();
                             }
                         }
+
+                        // Commit changes
+                        transaction.Commit();
                     }
                     catch (Exception ex)
                     {

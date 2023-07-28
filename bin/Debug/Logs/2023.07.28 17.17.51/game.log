@@ -1,0 +1,1476 @@
+
+--- Date: 2023-7-28 (Fri Jul 2023) UTC+03:00
+
+17:17:51.223         | //////////////////////////////////////////////////////////////////////////////
+17:17:51.223         | //
+17:17:51.223         | // Build: Crossout x64 2.7.10.250607 (Jul 17 2023 17:54:44)
+17:17:51.223         | // params: "D:\Games\Crossout\bin\win64\Crossout.exe" -lang RUSSIAN -fromlauncher --no-relaunch  --aftermath 
+17:17:51.223         | //
+17:17:51.223         | //////////////////////////////////////////////////////////////////////////////
+17:17:51.223         | 
+17:17:56.688  WARNING| frame time of frame 1 within loading callback is too large (17.511255)
+17:18:01.644         | EasyAntiCheat::Client: Init result 0, message Служба Easy Anti-Cheat запущена
+17:18:01.766         | ====== starting level 1: 'levels/maps/mainmenu'  single env=-1 ======
+17:18:01.799         | ====== level started:  'mainmenu' success ======
+17:18:03.993  WARNING| frame 323: 119 ms spike
+17:18:04.596         | TargemService: RequestAuth: login 'denk1030@gmail.co*', auth 'GAIJIN', url 'https://crank.crossout.net/live'
+17:18:07.675         | server mods CVar 'ABTest.EnableTutorialPass' -> '1'
+17:18:07.675         | server mods CVar 'ABTest.TutorialBattlePassGroupA' -> 'TutorialBattlePass_V5_chest_0h'
+17:18:07.675         | server mods CVar 'ABTest.TutorialBattlePassGroupB' -> 'TutorialBattlePass_V5_chest_0h'
+17:18:07.675         | server mods CVar 'CarEditor.DecorationAnalytics' -> '1'
+17:18:07.675         | server mods CVar 'CollectableRandomEntity.ExclusiveProbability' -> '0.08'
+17:18:07.675         | server mods CVar 'CollectableRandomEntity.MaxCount' -> '3'
+17:18:07.675         | server mods CVar 'CollectableRandomEntity.MinCount' -> '2'
+17:18:07.675         | server mods CVar 'Game.CarEditorAnalytics' -> '1'
+17:18:07.675         | server mods CVar 'GameUI.ChatChannelsDisabled' -> 'russian:novice;russian:partysearch;english:novice;english:partysearch;german:novice;german:partysearch;french:novice;french:partysearch;spanish:novice;spanish:partysearch'
+17:18:07.675         | server mods CVar 'GameUI.ShowCrystals' -> '1'
+17:18:07.675         | server mods CVar 'GameUI.ShowDecorExhibition' -> '1'
+17:18:07.675         | server mods CVar 'GameUI.ShowUserBrawls' -> '1'
+17:18:07.675         | server mods CVar 'ah_arbiterFacadeUser' -> '94775'
+17:18:07.675         | server mods CVar 'ah_minSellPrice' -> '10'
+17:18:07.675         | server mods CVar 'bpe_maxDecorationDesignsExhibited' -> '6'
+17:18:07.675         | server mods CVar 'cl_enableUserProfileStats' -> '1'
+17:18:07.675         | server mods CVar 'cl_newsWndV2' -> '1'
+17:18:07.675         | server mods CVar 'cl_showJams' -> '1'
+17:18:07.675         | server mods CVar 'clanWars_firstDay' -> '2016-09-18T16:00:00Z'
+17:18:07.675         | server mods CVar 'customGame_showEnvSettings' -> '1'
+17:18:07.675         | server mods CVar 'gameui_debriefLikesMode' -> '2'
+17:18:07.675         | server mods CVar 'leviathan_subtypePowerThreshold' -> '12'
+17:18:07.675         | server mods CVar 'sv_circuit' -> 'live'
+17:18:07.675         | server mods CVar 'sv_customGameExtended' -> '1'
+17:18:07.675         | server mods CVar 'sv_dbgLeviathan' -> '1'
+17:18:07.675         | server mods CVar 'sv_disableVoiceChatService' -> '1'
+17:18:07.675         | server mods CVar 'user_2stepRestrictions' -> '1'
+17:18:07.675         | server mods CVar 'user_customGame' -> '2'
+17:18:07.675         | server mods CVar 'user_hangarVisitorsInterval' -> '28800'
+17:18:07.675         | server mods CVar 'user_hangarVisitorsNum' -> '5'
+17:18:07.676         | server mods CVar 'user_newPlayerAnalyticsCarEditor' -> '0'
+17:18:07.676         | server mods CVar 'user_newPlayerAnalyticsNumDays' -> '0'
+17:18:07.676         | server mods CVar 'user_newPlayerAnalyticsTestDrive' -> '0'
+17:18:07.676         | server mods CVar 'user_newPlayerAnalyticsWindowsAndTabs' -> '0'
+17:18:07.676         | server mods CVar 'user_tradeRegulatorMaxOrders' -> '5'
+17:18:07.676         | server mods CVar 'user_tradeRegulatorNewbieLevel' -> '5'
+17:18:07.676         | server mods CVar 'user_tradeRegulatorNewbieRestrictBuy' -> '1'
+17:18:07.676         | Auth success: token uoJDAAAAAAC1pYNB3-F5vwTl-JyJAQAAsWmXnARub25lBGxpdmU, uid 4424378, server time 2023-07-28T14:18:24.615Z (drift of -16 sec)
+17:18:08.497         | TSConnectionManager::StateNEGOTIATING: SoContainer login complete
+17:18:08.613         | DataStorage: set data with type='chat_decoration_settings' version='2495'
+17:18:08.613         | DataStorage: set data with type='weekend_schedule' version='2731'
+17:18:08.613         | DataStorage: set data with type='queue_rotation' version='2744'
+17:18:08.614         | DataStorage: set data with type='auction_goods_hold' version='2477'
+17:18:08.614         | DataStorage: set data with type='shop_items' version='2753'
+17:18:08.614         | DataStorage: set data with type='bundle_ingame_price' version='1934'
+17:18:08.614         | DataStorage: set data with type='unavailable_recipe' version='2701'
+17:18:08.614         | DataStorage: set data with type='hidden_emo_item' version='2363'
+17:18:08.614         | DataStorage: set data with type='custom_game_data' version='2725'
+17:18:08.614         | DataStorage: set data with type='ranked_events' version='2603'
+17:18:08.615         | DataStorage: set data with type='forbidden_goods' version='2754'
+17:18:08.615         | DataStorage: set data with type='ingame_shop_items' version='2752'
+17:18:08.617         | DataStorage: set data with type='blueprint_jam_settings' version='2625'
+17:18:08.617         | DataStorage: set data with type='ingame_offers' version='2504'
+17:18:08.617         | DataStorage: set data with type='fusion_events' version='2726'
+17:18:08.617         | DataStorage: set data with type='collection_fusion_event' version='2578'
+17:18:08.618         | DataStorage: set data with type='leaderboards_settings' version='2585'
+17:18:08.618         | DataStorage: set data with type='auction_price_limitations' version='2311'
+17:18:08.618         | DataStorage: set data with type='new_recipes_data' version='1183'
+17:18:08.618         | DataStorage: set data with type='legacy_news_feed' version='2716'
+17:18:08.618         | DataStorage: set data with type='battle_pass' version='1333'
+17:18:08.618         | DataStorage: set data with type='mission_schedule' version='2730'
+17:18:08.618         | DataStorage: set data with type='craftsman_config' version='2714'
+17:18:08.618         | DataStorage: set data with type='fusion_erase_event' version='2751'
+17:18:08.618         | DataStorage: set data with type='aim_assist_ab_test' version='2682'
+17:18:09.790         | TSConnectionManager::StateNEGOTIATING: complete
+17:18:09.790         | TargemService:OnGoingOnline: uid 4424378, nickName '_UA_Puffin_', sessionId -1667798607, serverTime 2023-07-28T14:18:26Z, countryCode 'UA'
+17:18:09.877         | ====== starting level 2: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:18:09.877         | {
+17:18:09.877         | 	"is_hangar": 1
+17:18:09.877         | }
+17:18:10.835         | ====== level started:  'hangar' success ======
+17:18:44.970         | Quest_Completed callback. questName = 'Daily_5_Market'
+17:19:58.196         | Stored mission name: Machinegun
+17:19:58.196         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:19:59.590         | Matchmaker_NotifyQueueState: 20 avg queue time sec, queueTag: Default2, inQueue: true
+17:20:03.604         | Stored mission name: FreePlay_Pvp
+17:20:03.604         | StartMatchmaking: 'solo', mission 'FreePlay_Pvp', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690588800000,"mapOptionList":"geopp:FreePlay","botList":""}'
+17:20:04.552         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: FreePlay_Pvp, inQueue: true
+17:20:04.921         | CL_MatchMaker::ConnectHandler: addr = 34.244.67.65:35420, gsid = 553187429
+17:20:05.052         | client: start connecting to 34.244.67.65|35420...
+17:20:05.058  WARNING| frame 11873: 135 ms spike
+17:20:05.314         | client: connected to 34.244.67.65|35420, server guid '1690540614436658', client guid '815151534032106213', setting up session...
+17:20:05.405         | client: connected to dedicated server. gsid: 553187429, hostname: 'wheel01-am-uk.pxo/live-bcr5v-p45h5'
+17:20:05.508         | client: server assigned id 11
+17:20:05.517         | client: got level load message 'levels/maps/geopp' FreePlay, levelId: 1
+17:20:05.585         | ====== starting level 3: 'levels/maps/geopp' FreePlay client Empty,env=423127 ======
+17:20:05.585         | {
+17:20:05.585         | 	"minUR": 8958
+17:20:05.585         | 	"maxUR": 8958
+17:20:05.585         | 	"queueTag": FreePlay_Pvp
+17:20:05.585         | 	"fixedMMValue": 0
+17:20:05.585         | }
+17:20:06.360  WARNING| AreaShape::Triangulate. 'AreaClipVolume51' has zero triangle near pointIdx 15. ignore it
+17:20:06.421         | client: send ready message
+17:20:06.617         | client: ADD_PLAYER  0     xBlack_Snowx, uid 13086364 status   ACTIVE team 1
+17:20:06.618         | client: ADD_PLAYER  1          _NtM86_, uid 3902917 status   ACTIVE team 2
+17:20:06.702         | client: ADD_PLAYER  2     BomberJack26, uid 8749315 status   ACTIVE team 3
+17:20:06.703         | client: ADD_PLAYER  3 Жена Сбербанк, uid 11271047 status   ACTIVE team 4
+17:20:06.713         | client: ADD_PLAYER  4      DemonBenett, uid 13329413 status   ACTIVE team 5
+17:20:06.713         | client: ADD_PLAYER  5 ckolzkiy_lllypik, uid 12783161 status   ACTIVE team 6
+17:20:06.714         | client: ADD_PLAYER  6 ПАРЕНЬ_НА_БАНАНЕ, uid 4474573 status   ACTIVE team 7
+17:20:06.784         | client: ADD_PLAYER  7  Dragon_IntelleX, uid 8663839 status   ACTIVE team 8
+17:20:06.784         | client: ADD_PLAYER  8   szymonitto3122, uid 12246917 status   ACTIVE team 9
+17:20:06.785         | client: ADD_PLAYER  9            TXIXT, uid 3752518 status   ACTIVE team 10
+17:20:06.797         | client: ADD_PLAYER 10       Pjetković, uid 9167806 status   ACTIVE team 11
+17:20:06.797         | client: ADD_PLAYER 11      _UA_Puffin_, uid 4424378 status MAP_LOAD team 12
+17:20:06.798         | client: ADD_PLAYER 12   szymonitto2222, uid 11704328 status   ACTIVE team 13
+17:20:06.798         | client: ADD_PLAYER 13       ___3UMA___, uid 13240702 status   ACTIVE team 14
+17:20:06.798         | client: ADD_PLAYER 14        Altima_XO, uid 6042216 status   ACTIVE team 15
+17:20:06.865         | client: ADD_PLAYER 15  BoT_u_cHoBa_oHa, uid 1010429 status   ACTIVE team 16
+17:20:06.866         | client: UPDATE_PLAYER 11      _UA_Puffin_, uid 4424378 status   ACTIVE team 12
+17:20:06.952         | client: got init message. ping 84, MTU 1350
+17:20:07.068         | ====== level started:  'geopp' success ======
+17:20:14.725         | client: player 1 leave game
+17:20:28.214  WARNING| server_fps [ 2023-07-28T14:20:45.142Z ]:  30 29 29 29 29 30 30 30 29 29 29 29 29 29 30 30 30 29 29 29 29 29 29 29 29 30 29 30 29  8 28 30 30 30 29 30 30 29 30 29
+17:20:36.347         | client: player 14 leave game
+17:20:39.510  WARNING| client: snapshot loss rate 5.5%
+17:20:40.516  WARNING| client: snapshot loss rate 9.4%
+17:20:41.116         | client: RESERVE_PLAYER  1   _red_diamond8_, uid 10985254@live status RESERVED team 2
+17:20:41.116  WARNING| client: snapshot loss rate 21.9%
+17:20:41.116  WARNING| client: loss more 11 snapshot in a row
+17:20:41.207  WARNING| client: snapshot loss rate 16.4%
+17:20:42.216  WARNING| client: snapshot loss rate 12.5%
+17:20:42.483  WARNING| client: snapshot loss rate 7.0%
+17:20:43.391         | client: UPDATE_PLAYER  1   _red_diamond8_, uid 10985254 status   ACTIVE team 2
+17:20:46.317         | client: player 7 leave game
+17:20:46.995  WARNING| server_fps [ 2023-07-28T14:21:03.925Z ]:  30 29 29 29 30 30 30 29 29 30 29 29 29 30 30 29 29 30 29 29 29 30 29 30 29 30 30 29 30  6 29 30 30 30 29 30 30 30 29 29
+17:21:14.991         | client: RESERVE_PLAYER  7  Dragon_IntelleX, uid 8663839@live status RESERVED team 8
+17:21:16.708         | client: UPDATE_PLAYER  7  Dragon_IntelleX, uid 8663839 status   ACTIVE team 8
+17:21:17.614  WARNING| server_fps [ 2023-07-28T14:21:34.544Z ]:  29 30 30 30 30 29 29 30 30 30 29 30 30 29 30 30 29 30 29 29 29 29 30 30 30 28 30 29 29 24 29 29 29 30 30 29 29 30 29 30
+17:21:32.669         | client: RESERVE_PLAYER 14           Harjib, uid 11549827@live status RESERVED team 15
+17:21:36.436  WARNING| server_fps [ 2023-07-28T14:21:53.365Z ]:  30 30 30 29 30 30 30 29 30 30 30 30 30 30 30 30 30 30 30 30 30 29 29 30 30 30 30 29 30 23 30 30 30 30 30 29 29 30 30 30
+17:21:36.559         | client: UPDATE_PLAYER 14           Harjib, uid 11549827 status   ACTIVE team 15
+17:21:47.785  WARNING| server_fps [ 2023-07-28T14:22:04.715Z ]:  30 29 29 30 29 30 29 30 30 29 30 30 30 30 29 29 30 30 30 30 30 29 29 29 30 30 29 30 29 10 29 30 29 29 30 30 30 29 29 29
+17:22:23.932  WARNING| net: USER_BYTES_PUSHED 2243; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 19284; USER_BYTES_RECEIVED_IGNORED 10; ACTUAL_SENT 4504; ACTUAL_BYTES_RECEIVED 23825; packetLoss 0%
+17:22:27.343  WARNING| server_fps [ 2023-07-28T14:22:44.274Z ]:  30 29 30 29 30 30 29 29 30 30 30 30 30 29 29 30 30 30 29 29 30 29 29 30 30 29 30 30 29 12 30 30 29 29 30 29 29 30 29 29
+17:22:43.667  WARNING| client: snapshot loss rate 5.5%
+17:22:44.711  WARNING| client: snapshot loss rate 5.5%
+17:22:44.846  WARNING| server_fps [ 2023-07-28T14:23:01.778Z ]:  30 29 29 30 29 30 30 30 30 29 30 30 30 30 30 30 30 29 30 29 29 29 29 29 29 30 30 30 30 11 25 30 29 29 29 30 30 30 29 30
+17:22:47.560         | client: avgPing 82.6/91.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.4/13.3%, MTU 1350
+17:22:47.560         | client: connection closed. CLIENT_QUIT
+17:22:47.560         | Network stats (bytes per second): avg pushed 2288, max pushed 2926, avg sent 4506, max sent 5502, avg received 22909, max received 29130
+17:22:47.832         | ====== starting level 4: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:22:47.832         | {
+17:22:47.832         | 	"is_hangar": 1
+17:22:47.832         | }
+17:22:48.076         | Gameplay statistic. gameResult 'freePlayFinish'
+17:22:48.076         |       score   0, expBase 0, expDailyBonus 4.0, expTotal   0, expBaseFactionTotal 0, expFactionTotal 0
+17:22:48.362         | ====== level started:  'hangar' success ======
+17:26:00.609  WARNING| frame 31753: 907 ms spike
+17:26:02.267         | Sound::Fmod_SystemCallback: Device list changed
+17:26:02.282         | Number of audio devices: 1
+17:26:02.282         |   0: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+17:26:02.282         | Number of recording audio devices: 4, number of devices currently plugged in: 2
+17:26:02.282         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+17:26:02.282         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+17:26:02.282         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: 
+17:26:02.282         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: 
+17:26:17.327         | Sound::Fmod_SystemCallback: Device list changed
+17:26:17.366         | Number of audio devices: 1
+17:26:17.366         |   0: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+17:26:17.366         | Number of recording audio devices: 4, number of devices currently plugged in: 2
+17:26:17.366         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+17:26:17.366         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+17:26:17.366         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: 
+17:26:17.366         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: 
+17:26:27.037         | Sound::Fmod_SystemCallback: Device list changed
+17:26:27.075         | Number of audio devices: 2
+17:26:27.075         |   0: name 'Наушники (JBL T460BT)'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2
+17:26:27.075         |   1: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+17:26:27.075         | Number of recording audio devices: 4, number of devices currently plugged in: 4
+17:26:27.075         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+17:26:27.075         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+17:26:27.075         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED 
+17:26:27.075         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: CONNECTED 
+17:27:08.600         | Stored mission name: Machinegun
+17:27:08.600         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:27:09.612         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:10.462         | Test drive started from Hangar
+17:27:13.304         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:17.291         | Matchmaker_NotifyQueueState: 11 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:20.298         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:23.300         | Matchmaker_NotifyQueueState: 10 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:26.313         | Matchmaker_NotifyQueueState: 10 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:29.327         | Matchmaker_NotifyQueueState: 14 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:33.304         | Matchmaker_NotifyQueueState: 19 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:36.310         | Matchmaker_NotifyQueueState: 19 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:40.304         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:27:42.305         | CL_MatchMaker::ConnectHandler: addr = 52.213.58.249:35197, gsid = 553209600
+17:27:42.354         | client: start connecting to 52.213.58.249|35197...
+17:27:42.422  WARNING| frame 38216: 102 ms spike
+17:27:42.584         | client: connected to 52.213.58.249|35197, server guid '1690554466991097', client guid '815151534032106213', setting up session...
+17:27:42.688         | client: connected to dedicated server. gsid: 553209600, hostname: 'wheel03-am-uk.pxo/live-bcr5v-rq5xz'
+17:27:42.785         | client: server assigned id 11
+17:27:42.798         | client: got level load message 'levels/maps/arizona_silo' Conquer, levelId: 1
+17:27:42.903         | ====== starting level 5: 'levels/maps/arizona_silo' Conquer client Empty,env=628487 ======
+17:27:42.903         | {
+17:27:42.903         | 	"minUR": 7579
+17:27:42.903         | 	"maxUR": 8282
+17:27:42.903         | 	"queueTag": Default2
+17:27:42.903         | 	"fixedMMValue": 0
+17:27:42.903         | }
+17:27:43.346         | client: send ready message
+17:27:44.042         | client: ADD_PLAYER  0     Легион, uid 10760012 status   ACTIVE team 2
+17:27:44.043         | client: ADD_PLAYER  1         Омар, uid 1895021 status   ACTIVE team 2
+17:27:44.114         | client: ADD_PLAYER  2      Biggie Rocc, uid 7726159 status   ACTIVE team 2
+17:27:44.126         | client: ADD_PLAYER  3      NERFtheMODS, uid 4550754 status   ACTIVE team 1
+17:27:44.196         | client: ADD_PLAYER  4   PsychobillyJim, uid 11856852 status   ACTIVE team 1
+17:27:44.268         | client: ADD_PLAYER  5    BestTeddyBear, uid 11649352 status   ACTIVE team 1
+17:27:44.269         | client: ADD_PLAYER  6          gesus13, uid 9239333 status   ACTIVE team 2
+17:27:44.277         | client: ADD_PLAYER  7           tmac32, uid 8363600 status   ACTIVE team 1
+17:27:44.319  WARNING| net: USER_BYTES_PUSHED 61; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 18268; USER_BYTES_RECEIVED_IGNORED 3702; ACTUAL_SENT 316; ACTUAL_BYTES_RECEIVED 22701; packetLoss 0%
+17:27:44.349         | client: ADD_PLAYER  8           DZEBIT, uid 11064282 status   ACTIVE team 1
+17:27:44.419         | client: ADD_PLAYER  9         Sk_Denis, uid 1870723 status   ACTIVE team 2
+17:27:44.420         | client: ADD_PLAYER 10          WRAZNOS, uid 8799400 status MAP_LOAD team 1
+17:27:44.434         | client: ADD_PLAYER 11      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+17:27:44.488         | client: ADD_PLAYER 16            Jamie, uid 0 status   ACTIVE team 2
+17:27:44.514         | client: ADD_PLAYER 17            Ethan, uid 0 status   ACTIVE team 1
+17:27:44.564         | client: ADD_PLAYER 18            Bernd, uid 0 status   ACTIVE team 2
+17:27:44.598         | client: ADD_PLAYER 19           Daniel, uid 0 status   ACTIVE team 1
+17:27:44.716         | client: UPDATE_PLAYER 11      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+17:27:45.124         | client: got init message. ping 108, MTU 1350
+17:27:45.124  WARNING| client: snapshot loss rate 34.5%
+17:27:45.136         | ====== level started:  'arizona_silo' success ======
+17:27:45.136  WARNING| client: snapshot loss rate 29.4%
+17:27:45.136  WARNING| client: snapshot loss rate 24.4%
+17:27:45.172  WARNING| client: snapshot loss rate 19.2%
+17:27:45.619  WARNING| client: snapshot loss rate 14.1%
+17:27:45.669         | client: UPDATE_PLAYER 10          WRAZNOS, uid 8799400 status   ACTIVE team 1
+17:27:46.640  WARNING| client: snapshot loss rate 9.7%
+17:27:47.654  WARNING| client: snapshot loss rate 7.8%
+17:27:49.908         | client: player 18 leave game
+17:27:49.908         | client: RESERVE_PLAYER 12     Im_BaNaNaMaN, uid 8787064@live status RESERVED team 2
+17:27:50.042         | client: player 19 leave game
+17:27:50.042         | client: RESERVE_PLAYER 13      Experiment8, uid 7470865@live status RESERVED team 1
+17:27:51.174         | client: UPDATE_PLAYER 13      Experiment8, uid 7470865 status   ACTIVE team 1
+17:27:53.989         | client: UPDATE_PLAYER 12     Im_BaNaNaMaN, uid 8787064 status   ACTIVE team 2
+17:28:21.421  WARNING| server_fps [ 2023-07-28T14:28:38.353Z ]:  30 29 29 29 30 30 30 30 29 29 30 30 30 30 29 29 29 29 29 30 30 29 29 30 30 29 30 29 30 24 30 30 29 29 29 30 30 29 29 30
+17:28:33.409  WARNING| frame 42684: 1229 ms spike
+17:28:33.416  WARNING| net: USER_BYTES_PUSHED 1380; USER_BYTES_RESENT 27; USER_BYTES_RECEIVED_PROCESSED 35971; USER_BYTES_RECEIVED_IGNORED 712; ACTUAL_SENT 3055; ACTUAL_BYTES_RECEIVED 42953; packetLoss 2%
+17:28:33.429  WARNING| net: USER_BYTES_PUSHED 1571; USER_BYTES_RESENT 27; USER_BYTES_RECEIVED_PROCESSED 35971; USER_BYTES_RECEIVED_IGNORED 736; ACTUAL_SENT 3294; ACTUAL_BYTES_RECEIVED 43029; packetLoss 2%
+17:28:34.309  WARNING| net: USER_BYTES_PUSHED 3728; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 48237; USER_BYTES_RECEIVED_IGNORED 792; ACTUAL_SENT 7577; ACTUAL_BYTES_RECEIVED 58146; packetLoss 0%
+17:28:36.761  WARNING| frame 43041: 101 ms spike
+17:29:00.307  WARNING| net: USER_BYTES_PUSHED 3002; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16072; USER_BYTES_RECEIVED_IGNORED 24; ACTUAL_SENT 5670; ACTUAL_BYTES_RECEIVED 20329; packetLoss 0%
+17:29:03.414  WARNING| server_fps [ 2023-07-28T14:29:20.347Z ]:  29 30 29 29 29 29 29 29 30 30 30 30 29 30 30 30 29 30 30 29 30 30 30 29 29 30 29 30 29 23 30 29 30 29 29 29 29 30 30 29
+17:29:04.988         | client: player 6 leave game
+17:29:40.964  WARNING| client: packet loss last second 7.2%
+17:29:41.826  WARNING| client: packet loss last second 8.2%
+17:29:41.998  WARNING| client: packet loss last second 7.2%
+17:30:01.314  WARNING| server_fps [ 2023-07-28T14:30:18.245Z ]:  29 29 30 30 30 29 30 30 29 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 29 30 30 30 30 17 29 30 29 29 30 29 30 29 30 29
+17:30:25.629         | NotifyStripeEarned: 4424378@live, PvpCompanionEpicKill, 1
+17:30:30.305  WARNING| net: USER_BYTES_PUSHED 2992; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 14452; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5433; ACTUAL_BYTES_RECEIVED 18186; packetLoss 0%
+17:30:40.906         | client: player 7 leave game
+17:30:57.070  WARNING| server_fps [ 2023-07-28T14:31:14.002Z ]:  29 29 29 29 29 30 30 30 30 29 29 30 29 29 30 29 30 29 29 29 30 29 29 30 30 30 29 30 29 12 30 29 29 29 29 29 29 29 29 30
+17:30:59.047         | NotifyStripeEarned: 4424378@live, PvpKillJoy, 1
+17:30:59.113         | Quest_Completed callback. questName = 'BattlePass2023_01_daily_q01'
+17:31:46.132         | NotifyStripeEarned: 4424378@live, PvpKillJoy, 1
+17:31:47.589         | NotifyStripeEarned: 4424378@live, PvpStealthBreak, 1
+17:31:51.874         | client: player 3 leave game
+17:32:09.687         | NotifyStripeEarned: 4424378@live, PvpKillJoy, 1
+17:32:09.687         | NotifyStripeEarned: 4424378@live, PvpSuperiority, 1
+17:32:09.687         | NotifyStripeEarned: 4424378@live, PvpMvpWin, 1
+17:32:09.736         | Gameplay statistic. gameResult 'victory'
+17:32:09.736         |      Scrap_Common  29, Glory  35,  score 1677, expBase 1274, expDailyBonus 4.0, expTotal 7070, expBaseFactionTotal 7070, expFactionTotal 7070
+17:32:09.736         |      loot: ResourcePack_Gasoline5;ResourcePack_Gasoline10;
+17:32:09.736         |      quest Daily_2_WinsPvp1: 0 / 2 -> 1 / 2
+17:32:09.736         |      quest Daily_3_DamageDone1: 0 / 7000 -> 6955 / 7000
+17:32:09.736         |      quest Quest_damage_done_everywhere_15000: 0 / 15000 -> 6955 / 15000
+17:32:09.782         | Quest_Completed callback. questName = 'BattlePass2023_01_daily_q02'
+17:32:09.782         | Quest_Completed callback. questName = 'Quest_stripes_mvp_1'
+17:32:10.155  WARNING| server_fps [ 2023-07-28T14:32:27.088Z ]:  29 29 29 29 29 29 29 29 29 29 30 30 29 29 29 29 30 30 29 29 29 29 29 29 29 29 29 30 30 11 29 29 29 30 30 30 30 30 29 29
+17:32:15.307         | client: player 2 leave game
+17:32:15.515         | client: player 5 leave game
+17:32:15.515         | client: player 13 leave game
+17:32:17.140         | client: player 10 leave game
+17:32:21.137         | client: player 8 leave game
+17:32:26.063         | client: player 9 leave game
+17:32:27.330         | client: player 0 leave game
+17:32:27.864         | client: player 1 leave game
+17:32:31.471         | client: player 12 leave game
+17:32:40.375         | client: player 4 leave game
+17:32:46.642         | client: avgPing 76.2/519.0; avgPacketLoss 0.0/8.0%; avgSnapshotLoss 0.2/16.9%, MTU 1350
+17:32:46.642         | client: connection closed. CLIENT_QUIT
+17:32:46.642         | Network stats (bytes per second): avg pushed 2433, max pushed 2932, avg sent 4544, max sent 5462, avg received 13829, max received 25890
+17:32:46.880         | ====== starting level 6: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:32:46.880         | {
+17:32:46.880         | 	"is_hangar": 1
+17:32:46.880         | }
+17:32:47.556         | ====== level started:  'hangar' success ======
+17:33:23.424         | TargemServices: RenewAuth: new token = uoJDAAAAAAAe9v9VUgAtO0ffBp2JAQAAsWmXnARub25lBGxpdmU, server time 2023-07-28T14:33:40.650Z (drift of -17 sec)
+17:35:35.210         | Stored mission name: Machinegun
+17:35:35.210         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:35:36.791         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: Default2, inQueue: true
+17:35:37.124         | CL_MatchMaker::ConnectHandler: addr = 3.249.5.152:35283, gsid = 553210511
+17:35:37.185         | client: start connecting to 3.249.5.152|35283...
+17:35:37.460         | client: connected to 3.249.5.152|35283, server guid '1690554938649963', client guid '815151534032106213', setting up session...
+17:35:37.593         | client: connected to dedicated server. gsid: 553210511, hostname: 'wheel01-am-uk.pxo/live-bcr5v-t5l5h'
+17:35:37.727         | client: server assigned id 10
+17:35:37.757         | client: got level load message 'levels/maps/rockcity_2bases' Assault, levelId: 1
+17:35:37.999         | ====== starting level 7: 'levels/maps/rockcity_2bases' Assault client Empty,env=345751 ======
+17:35:37.999         | {
+17:35:37.999         | 	"minUR": 7837
+17:35:37.999         | 	"maxUR": 8666
+17:35:37.999         | 	"queueTag": Default2
+17:35:37.999         | 	"fixedMMValue": 0
+17:35:37.999         | }
+17:35:38.540         | client: send ready message
+17:35:38.748         | client: ADD_PLAYER  0      Biggie Rocc, uid 7726159 status   ACTIVE team 1
+17:35:38.749         | client: ADD_PLAYER  1    JestantGeiger, uid 2149318 status   ACTIVE team 2
+17:35:38.836         | client: ADD_PLAYER  2            Va1ar, uid 2152220 status   ACTIVE team 2
+17:35:38.837         | client: ADD_PLAYER  3         Sk_Denis, uid 1870723 status   ACTIVE team 1
+17:35:38.837         | client: ADD_PLAYER  4        DOGGY_263, uid 7780451 status   ACTIVE team 1
+17:35:38.837         | client: ADD_PLAYER  5       Bombila625, uid 1327250 status   ACTIVE team 1
+17:35:38.919         | client: ADD_PLAYER  6         ralot_13, uid 9460283 status   ACTIVE team 2
+17:35:38.919         | client: ADD_PLAYER  7           Emmtek, uid 1263630 status   ACTIVE team 2
+17:35:38.920         | client: ADD_PLAYER  8       Rata_Sabia, uid 13257342 status   ACTIVE team 1
+17:35:38.920         | client: ADD_PLAYER  9         Filatas_, uid 11680331 status   ACTIVE team 2
+17:35:38.920         | client: ADD_PLAYER 10      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+17:35:38.921         | client: ADD_PLAYER 11    Predatorzombi, uid 13165538 status   ACTIVE team 2
+17:35:38.921         | client: ADD_PLAYER 16            Damon, uid 0 status   ACTIVE team 1
+17:35:38.921         | client: ADD_PLAYER 17         Matthias, uid 0 status   ACTIVE team 2
+17:35:38.955         | client: ADD_PLAYER 18          Kristen, uid 0 status   ACTIVE team 1
+17:35:39.001         | client: ADD_PLAYER 19           Joshua, uid 0 status   ACTIVE team 2
+17:35:39.003         | client: UPDATE_PLAYER 10      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+17:35:39.052         | client: got init message. ping 81, MTU 1350
+17:35:39.055         | ====== level started:  'rockcity_2bases' success ======
+17:35:39.761  WARNING| server_fps [ 2023-07-28T14:35:56.920Z ]:  17 30 30 29 30 29 30 30 29 29 30
+17:35:42.034         | client: player 18 leave game
+17:35:42.036         | client: RESERVE_PLAYER 12   KOT_B_KPOCOBKE, uid 6420124@live status RESERVED team 1
+17:35:42.228         | client: player 19 leave game
+17:35:42.228         | client: RESERVE_PLAYER 13       Alex132101, uid 13052423@live status RESERVED team 2
+17:35:43.361         | client: UPDATE_PLAYER 13       Alex132101, uid 13052423 status   ACTIVE team 2
+17:35:43.366         | client: UPDATE_PLAYER 12   KOT_B_KPOCOBKE, uid 6420124 status   ACTIVE team 1
+17:35:43.968         | client: player 17 leave game
+17:35:43.968         | client: RESERVE_PLAYER 14    TARANtarantul, uid 5939491@live status RESERVED team 2
+17:35:44.099         | client: player 16 leave game
+17:35:44.100         | client: RESERVE_PLAYER 15     _Alex_Green_, uid 9654588@live status RESERVED team 1
+17:35:45.229         | client: UPDATE_PLAYER 15     _Alex_Green_, uid 9654588 status   ACTIVE team 1
+17:35:45.428         | client: UPDATE_PLAYER 14    TARANtarantul, uid 5939491 status   ACTIVE team 2
+17:36:43.944  WARNING| server_fps [ 2023-07-28T14:37:01.160Z ]:  30 29 30 30 29 29 30 30 29 30 29 29 29 29 30 29 30 29 29 30 30 29 29 30 30 30 30 29 29 14 30 30 29 29 30 30 29 30 30 29
+17:37:06.648         | NotifyStripeEarned: 4424378@live, PvpAssist, 1
+17:37:08.626         | client: player 14 leave game
+17:37:57.739         | NotifyStripeEarned: 4424378@live, PvpKillJoy, 1
+17:37:58.142         | Quest_Completed callback. questName = 'BattlePass2023_01_daily_q03'
+17:37:58.291  WARNING| server_fps [ 2023-07-28T14:38:15.510Z ]:  30 30 30 29 29 29 29 29 30 29 30 29 30 29 30 29 30 30 30 29 29 29 29 29 29 29 30 29 30 23 29 30 30 30 30 30 29 30 30 30
+17:38:15.653  WARNING| server_fps [ 2023-07-28T14:38:32.872Z ]:  30 30 30 30 30 30 29 30 30 29 30 29 29 30 30 30 29 30 30 30 29 30 30 30 29 30 30 29 29 13 30 29 29 30 29 30 29 29 30 29
+17:38:16.031         | Quest_Completed callback. questName = 'Daily_2_WinsPvp1'
+17:38:16.031         | Quest_Completed callback. questName = 'Daily_3_DamageDone1'
+17:38:16.031         | Quest_Completed callback. questName = 'Daily_6_Quests1'
+17:38:16.081         | Gameplay statistic. gameResult 'victory'
+17:38:16.081         |      Scrap_Common  27, Glory  33,  score 536, expBase 536, expDailyBonus 4.0, expTotal 2974, expBaseFactionTotal 2974, expFactionTotal 2974
+17:38:16.081         |      loot: ResourcePack_Gasoline5;ResourcePack_Gasoline10;
+17:38:16.081         |      quest Daily_2_WinsPvp1: 1 / 2 -> 2 / 2
+17:38:16.081         |      quest Daily_3_DamageDone1: 6955 / 7000 -> 7000 / 7000
+17:38:16.081         |      quest Daily_6_Quests1: 1 / 3 -> 3 / 3
+17:38:16.081         |      quest Weekly_1_Quests_New: 30 / 40 -> 33 / 40
+17:38:16.081         |      quest Quest_damage_done_everywhere_15000: 6955 / 15000 -> 10502 / 15000
+17:38:16.081         |      quest Quest_earn_mechanics_experience_pvp_15000: 0 / 15000 -> 2974 / 15000
+17:38:22.522         | client: player 15 leave game
+17:38:22.971         | client: player 0 leave game
+17:38:23.293         | client: player 12 leave game
+17:38:23.431         | client: player 6 leave game
+17:38:24.814         | client: player 11 leave game
+17:38:24.925         | client: avgPing 81.4/86.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/2.3%, MTU 1350
+17:38:24.925         | client: connection closed. CLIENT_QUIT
+17:38:24.925         | Network stats (bytes per second): avg pushed 2443, max pushed 3079, avg sent 4739, max sent 5894, avg received 19321, max received 30988
+17:38:25.213         | ====== starting level 8: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:38:25.213         | {
+17:38:25.213         | 	"is_hangar": 1
+17:38:25.213         | }
+17:38:25.771         | ====== level started:  'hangar' success ======
+17:40:14.346         | Stored mission name: Machinegun
+17:40:14.346         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:40:15.781         | Matchmaker_NotifyQueueState: 20 avg queue time sec, queueTag: Default2, inQueue: true
+17:40:17.302         | Test drive started from Hangar
+17:40:19.388         | Matchmaker_NotifyQueueState: 12 avg queue time sec, queueTag: Default2, inQueue: true
+17:40:22.398         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:40:26.359         | Matchmaker_NotifyQueueState: 14 avg queue time sec, queueTag: Default2, inQueue: true
+17:40:29.377         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+17:40:31.512         | CL_MatchMaker::ConnectHandler: addr = 54.171.221.125:35403, gsid = 553211026
+17:40:31.564         | client: start connecting to 54.171.221.125|35403...
+17:40:31.789         | client: connected to 54.171.221.125|35403, server guid '1690555242371914', client guid '815151534032106213', setting up session...
+17:40:31.886         | client: connected to dedicated server. gsid: 553211026, hostname: 'wheel02-am-uk.pxo/live-bcr5v-r6xgj'
+17:40:31.984         | client: server assigned id 3
+17:40:31.997         | client: got level load message 'levels/maps/island' Conquer, levelId: 1
+17:40:32.090         | ====== starting level 9: 'levels/maps/island' Conquer client Empty,env=712284 ======
+17:40:32.090         | {
+17:40:32.090         | 	"minUR": 7760
+17:40:32.090         | 	"maxUR": 8672
+17:40:32.090         | 	"queueTag": Default2
+17:40:32.090         | 	"fixedMMValue": 0
+17:40:32.090         | }
+17:40:32.441         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: false
+17:40:32.663         | client: send ready message
+17:40:32.770         | client: ADD_PLAYER  0            VERLO, uid 1737312 status MAP_LOAD team 2
+17:40:32.865         | client: ADD_PLAYER  1       _ruckzuck_, uid 10484658 status MAP_LOAD team 1
+17:40:32.866         | client: ADD_PLAYER  2          IGNTUPE, uid 6108048 status   ACTIVE team 2
+17:40:32.935         | client: ADD_PLAYER  3      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+17:40:32.936         | client: ADD_PLAYER  4          Happy20, uid 1602639 status MAP_LOAD team 1
+17:40:32.936         | client: ADD_PLAYER  5    Predatorzombi, uid 13165538 status MAP_LOAD team 2
+17:40:32.936         | client: ADD_PLAYER  6        FabianB09, uid 13086226 status RESERVED team 2
+17:40:32.937         | client: ADD_PLAYER  7          Shyoanj, uid 7343108 status RESERVED team 1
+17:40:32.957         | client: ADD_PLAYER 16            Brian, uid 0 status   ACTIVE team 1
+17:40:33.005         | client: ADD_PLAYER 17          William, uid 0 status   ACTIVE team 2
+17:40:33.009         | client: ADD_PLAYER 18          Michael, uid 0 status   ACTIVE team 2
+17:40:33.009         | client: ADD_PLAYER 19          Claudia, uid 0 status   ACTIVE team 1
+17:40:33.010         | client: ADD_PLAYER 20           Sophia, uid 0 status   ACTIVE team 2
+17:40:33.010         | client: ADD_PLAYER 21             Andy, uid 0 status   ACTIVE team 1
+17:40:33.022         | client: ADD_PLAYER 22          Dominic, uid 0 status   ACTIVE team 2
+17:40:33.022         | client: ADD_PLAYER 23             Mary, uid 0 status   ACTIVE team 1
+17:40:33.023         | client: UPDATE_PLAYER  3      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+17:40:33.025         | client: got init message. ping 133, MTU 1350
+17:40:33.132         | ====== level started:  'island' success ======
+17:40:33.132         | client: UPDATE_PLAYER  4          Happy20, uid 1602639 status   ACTIVE team 1
+17:40:33.136         | client: UPDATE_PLAYER  1       _ruckzuck_, uid 10484658 status   ACTIVE team 1
+17:40:34.036         | client: player 22 leave game
+17:40:34.036         | client: RESERVE_PLAYER  8         RomaTech, uid 3033315@live status RESERVED team 2
+17:40:34.037         | client: player 20 leave game
+17:40:34.037         | client: RESERVE_PLAYER  9    espe198013680, uid 10873021@live status RESERVED team 2
+17:40:34.049         | client: player 23 leave game
+17:40:34.049         | client: RESERVE_PLAYER 10            IMIMI, uid 5722045@live status RESERVED team 1
+17:40:34.049         | client: player 21 leave game
+17:40:34.049         | client: RESERVE_PLAYER 11     _Alex_Green_, uid 9654588@live status RESERVED team 1
+17:40:35.355         | client: UPDATE_PLAYER  9    espe198013680, uid 10873021 status   ACTIVE team 2
+17:40:35.392         | client: UPDATE_PLAYER  5    Predatorzombi, uid 13165538 status   ACTIVE team 2
+17:40:35.694         | client: UPDATE_PLAYER 11     _Alex_Green_, uid 9654588 status   ACTIVE team 1
+17:40:35.706         | client: UPDATE_PLAYER  8         RomaTech, uid 3033315 status   ACTIVE team 2
+17:40:35.804         | client: UPDATE_PLAYER 10            IMIMI, uid 5722045 status   ACTIVE team 1
+17:40:35.982         | client: player 18 leave game
+17:40:35.982         | client: RESERVE_PLAYER 12           Emmtek, uid 1263630@live status RESERVED team 2
+17:40:36.074         | client: player 19 leave game
+17:40:36.074         | client: RESERVE_PLAYER 13          bodyray, uid 4373469@live status RESERVED team 1
+17:40:36.490         | client: UPDATE_PLAYER  6        FabianB09, uid 13086226 status   ACTIVE team 2
+17:40:37.026         | client: player 17 leave game
+17:40:37.026         | client: RESERVE_PLAYER 14           DZEBIT, uid 11064282@live status RESERVED team 2
+17:40:37.097         | client: player 16 leave game
+17:40:37.097         | client: RESERVE_PLAYER 15      Biggie Rocc, uid 7726159@live status RESERVED team 1
+17:40:37.154         | client: UPDATE_PLAYER  0            VERLO, uid 1737312 status   ACTIVE team 2
+17:40:37.620         | client: UPDATE_PLAYER  7          Shyoanj, uid 7343108 status   ACTIVE team 1
+17:40:37.621         | client: UPDATE_PLAYER 13          bodyray, uid 4373469 status   ACTIVE team 1
+17:40:37.820  WARNING| server_fps [ 2023-07-28T14:40:54.980Z ]:  29 29 30 30 30 30 30 29 29 30 30 29 30 30 30 29 30 30 29 30 29 30 30 29 30 29 29 30 30  5 29 30 29 30 29 30 29 29 30 29
+17:40:38.336         | client: UPDATE_PLAYER 14           DZEBIT, uid 11064282 status   ACTIVE team 2
+17:40:38.783         | client: UPDATE_PLAYER 15      Biggie Rocc, uid 7726159 status   ACTIVE team 1
+17:40:40.721         | client: UPDATE_PLAYER 12           Emmtek, uid 1263630 status   ACTIVE team 2
+17:41:21.514  WARNING| net: USER_BYTES_PUSHED 2685; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 24499; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5236; ACTUAL_BYTES_RECEIVED 29806; packetLoss 0%
+17:41:29.900  WARNING| server_fps [ 2023-07-28T14:41:47.115Z ]:  29 29 29 29 29 30 30 29 30 30 29 30 30 29 30 29 29 30 29 29 29 29 29 29 29 30 30 30 29 10 29 30 29 29 29 30 30 30 29 30
+17:41:49.311         | client: player 8 leave game
+17:41:57.949  WARNING| server_fps [ 2023-07-28T14:42:15.167Z ]:  29 29 30 30 30 29 29 30 26 29 30 30 30 30 29 29 29 29 29 29 29 29 29 30 29 29 29 30 30 18 30 29 29 29 29 29 29 29 30 30
+17:41:59.177         | client: player 11 leave game
+17:42:13.080         | client: player 15 leave game
+17:42:37.513         | Gameplay statistic. gameResult 'defeat'
+17:42:37.513         |      Scrap_Common  15, Glory  18,  score  60, expBase 60, expDailyBonus 4.0, expTotal 333, expBaseFactionTotal 333, expFactionTotal 333
+17:42:37.513         |      quest Daily_3_DamageDone2: 0 / 20000 -> 1575 / 20000
+17:42:37.513         |      quest Quest_damage_done_everywhere_15000: 10502 / 15000 -> 12077 / 15000
+17:42:37.513         |      quest Quest_earn_mechanics_experience_pvp_15000: 2974 / 15000 -> 3307 / 15000
+17:42:38.008  WARNING| server_fps [ 2023-07-28T14:42:55.227Z ]:  30 29 29 29 30 29 29 30 29 29 29 29 29 29 30 30 30 30 30 30 29 30 30 29 29 30 30 29 29 13 30 29 29 29 29 30 30 30 29 29
+17:42:43.184         | client: avgPing 73.1/133.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/2.3%, MTU 1350
+17:42:43.184         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+17:42:43.184         | Network stats (bytes per second): avg pushed 2274, max pushed 2929, avg sent 4303, max sent 5479, avg received 19992, max received 36432
+17:42:43.449         | ====== starting level 10: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:42:43.449         | {
+17:42:43.449         | 	"is_hangar": 1
+17:42:43.449         | 	"return_to_MM": 1
+17:42:43.449         | }
+17:42:44.084         | ====== level started:  'hangar' success ======
+17:42:44.128         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+17:42:44.133         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+17:42:44.176         | Stored mission name: Machinegun
+17:42:44.176         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:42:45.869         | Matchmaker_NotifyQueueState: 8 avg queue time sec, queueTag: Default2, inQueue: true
+17:42:49.403         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+17:42:52.402         | Matchmaker_NotifyQueueState: 8 avg queue time sec, queueTag: Default2, inQueue: true
+17:42:55.412         | Matchmaker_NotifyQueueState: 34 avg queue time sec, queueTag: Default2, inQueue: true
+17:42:56.678         | CL_MatchMaker::ConnectHandler: addr = 54.194.115.26:35164, gsid = 553211301
+17:42:56.728         | client: start connecting to 54.194.115.26|35164...
+17:42:57.478         | client: connected to 54.194.115.26|35164, server guid '1690555387514767', client guid '815151534032106213', setting up session...
+17:42:57.611         | client: connected to dedicated server. gsid: 553211301, hostname: 'wheel03-am-uk.pxo/live-bcr5v-2ft97'
+17:42:57.745         | client: server assigned id 3
+17:42:57.768         | client: got level load message 'levels/maps/conflagration' Conquer, levelId: 1
+17:42:57.967         | ====== starting level 11: 'levels/maps/conflagration' Conquer client Empty,env=907481 ======
+17:42:57.967         | {
+17:42:57.967         | 	"minUR": 8344
+17:42:57.967         | 	"maxUR": 8999
+17:42:57.967         | 	"queueTag": Default2
+17:42:57.967         | 	"fixedMMValue": 0
+17:42:57.967         | }
+17:42:58.761         | client: send ready message
+17:42:58.952         | client: ADD_PLAYER  0   lwebb110217941, uid 10836683 status MAP_LOAD team 2
+17:42:58.953         | client: ADD_PLAYER  1           NERNIZ, uid 149728 status   ACTIVE team 2
+17:42:59.026         | client: ADD_PLAYER  2         Autarken, uid 42087 status   ACTIVE team 1
+17:42:59.026         | client: ADD_PLAYER  3      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+17:42:59.027         | client: ADD_PLAYER  4    Predatorzombi, uid 13165538 status   ACTIVE team 1
+17:42:59.027         | client: ADD_PLAYER  5          Happy20, uid 1602639 status   ACTIVE team 2
+17:42:59.052         | client: ADD_PLAYER  6       Bombila625, uid 1327250 status MAP_LOAD team 1
+17:42:59.098         | client: ADD_PLAYER  7        FabianB09, uid 13086226 status   ACTIVE team 2
+17:42:59.099         | client: ADD_PLAYER 16           Yannis, uid 0 status   ACTIVE team 2
+17:42:59.100         | client: ADD_PLAYER 17           Joshua, uid 0 status   ACTIVE team 1
+17:42:59.102         | client: ADD_PLAYER 18           Olivia, uid 0 status   ACTIVE team 1
+17:42:59.103         | client: ADD_PLAYER 19            Bernd, uid 0 status   ACTIVE team 2
+17:42:59.104         | client: ADD_PLAYER 20            Robyn, uid 0 status   ACTIVE team 1
+17:42:59.104         | client: ADD_PLAYER 21           Alyssa, uid 0 status   ACTIVE team 2
+17:42:59.104         | client: ADD_PLAYER 22            Grace, uid 0 status   ACTIVE team 2
+17:42:59.104         | client: ADD_PLAYER 23            Sarah, uid 0 status   ACTIVE team 1
+17:42:59.105         | client: UPDATE_PLAYER  3      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+17:42:59.105         | client: player 23 leave game
+17:42:59.105         | client: RESERVE_PLAYER  8          Shyoanj, uid 7343108@live status RESERVED team 1
+17:42:59.106         | client: player 22 leave game
+17:42:59.110         | client: RESERVE_PLAYER  9        SKAVENGER, uid 9832@live status RESERVED team 2
+17:42:59.182         | client: got init message. ping 72, MTU 1350
+17:42:59.232         | ====== level started:  'conflagration' success ======
+17:42:59.233         | client: UPDATE_PLAYER  0   lwebb110217941, uid 10836683 status   ACTIVE team 2
+17:43:00.142         | client: UPDATE_PLAYER  6       Bombila625, uid 1327250 status   ACTIVE team 1
+17:43:00.741         | client: UPDATE_PLAYER  9        SKAVENGER, uid 9832 status   ACTIVE team 2
+17:43:04.819         | client: UPDATE_PLAYER  8          Shyoanj, uid 7343108 status   ACTIVE team 1
+17:43:37.690  WARNING| server_fps [ 2023-07-28T14:43:54.908Z ]:  29 29 30 29 29 30 29 29 29 30 29 29 29 30 30 30 30 30 30 29 30 29 29 29 30 29 29 30 29 23 30 29 29 29 30 29 29 29 30 30
+17:44:13.511         | client: player 8 leave game
+17:44:21.250         | client: player 4 leave game
+17:44:41.536         | Quest_Completed callback. questName = 'Quest_damage_done_everywhere_15000'
+17:44:41.537         | Gameplay statistic. gameResult 'defeat'
+17:44:41.537         |      Scrap_Common  16, Glory  20,  score 132, expBase 132, expDailyBonus 4.0, expTotal 732, expBaseFactionTotal 732, expFactionTotal 732
+17:44:41.537         |      quest Daily_3_DamageDone2: 1575 / 20000 -> 4964 / 20000
+17:44:41.537         |      quest Quest_damage_done_everywhere_15000: 12077 / 15000 -> 15000 / 15000
+17:44:41.537         |      quest Quest_earn_mechanics_experience_pvp_15000: 3307 / 15000 -> 4039 / 15000
+17:44:41.928  WARNING| server_fps [ 2023-07-28T14:44:59.144Z ]:  29 29 29 30 29 29 29 29 29 30 29 29 30 29 29 30 30 29 30 30 29 29 30 29 29 29 29 29 29 12 29 29 30 30 30 29 29 29 30 30
+17:44:47.460         | client: player 9 leave game
+17:44:48.859         | client: player 6 leave game
+17:44:48.926         | client: player 1 leave game
+17:44:49.614         | client: player 0 leave game
+17:44:51.822         | client: player 7 leave game
+17:45:05.183         | client: player 2 leave game
+17:46:04.673         | client: player 5 leave game
+17:46:48.891         | client: avgPing 72.4/79.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/3.1%, MTU 1350
+17:46:48.891         | client: connection closed. CLIENT_QUIT
+17:46:48.891         | Network stats (bytes per second): avg pushed 1298, max pushed 2838, avg sent 2640, max sent 5228, avg received 9933, max received 26849
+17:46:49.190         | ====== starting level 12: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:46:49.190         | {
+17:46:49.190         | 	"is_hangar": 1
+17:46:49.190         | }
+17:46:49.603         | ====== level started:  'hangar' success ======
+17:48:24.104         | TargemServices: RenewAuth: new token = uoJDAAAAAABeFrVCMuSODHedFJ2JAQAAsWmXnARub25lBGxpdmU, server time 2023-07-28T14:48:41.318Z (drift of -17 sec)
+17:51:33.022         | Stored mission name: Machinegun
+17:51:33.022         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:51:33.810         | Matchmaker_NotifyQueueState: 11 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:37.467         | Matchmaker_NotifyQueueState: 20 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:40.468         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:43.468         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:46.486         | Matchmaker_NotifyQueueState: 12 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:49.486         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:52.485         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:55.486         | Matchmaker_NotifyQueueState: 29 avg queue time sec, queueTag: Default2, inQueue: true
+17:51:58.552         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: Default2, inQueue: true
+17:52:01.493         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: Default2, inQueue: true
+17:52:05.485         | Matchmaker_NotifyQueueState: 10 avg queue time sec, queueTag: Default2, inQueue: true
+17:52:06.418         | CL_MatchMaker::ConnectHandler: addr = 34.244.67.65:35619, gsid = 553212290
+17:52:06.476         | client: start connecting to 34.244.67.65|35619...
+17:52:06.752         | client: connected to 34.244.67.65|35619, server guid '1690555925000317', client guid '815151534032106213', setting up session...
+17:52:06.818         | client: connected to dedicated server. gsid: 553212290, hostname: 'wheel01-am-uk.pxo/live-bcr5v-vljfg'
+17:52:06.952         | client: server assigned id 3
+17:52:06.980         | client: got level load message 'levels/maps/island' Conquer, levelId: 1
+17:52:07.216         | ====== starting level 13: 'levels/maps/island' Conquer client Empty,env=967041 ======
+17:52:07.216         | {
+17:52:07.216         | 	"minUR": 8529
+17:52:07.216         | 	"maxUR": 9570
+17:52:07.216         | 	"queueTag": Default2
+17:52:07.216         | 	"fixedMMValue": 0
+17:52:07.216         | }
+17:52:07.904         | client: send ready message
+17:52:08.090         | client: ADD_PLAYER  0      Sturmtruppe, uid 1603036 status   ACTIVE team 1
+17:52:08.091         | client: ADD_PLAYER  1      Eagle_eye07, uid 10951610 status   ACTIVE team 2
+17:52:08.164         | client: ADD_PLAYER  2        Repesztek, uid 2746675 status   ACTIVE team 2
+17:52:08.164         | client: ADD_PLAYER  3      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+17:52:08.165         | client: ADD_PLAYER  4     Heget_master, uid 6594182 status   ACTIVE team 2
+17:52:08.165         | client: ADD_PLAYER  5        Kitt_Soni, uid 7493688 status MAP_LOAD team 1
+17:52:08.238         | client: ADD_PLAYER  6       AGstribro7, uid 8749720 status   ACTIVE team 1
+17:52:08.238         | client: ADD_PLAYER  7           SHM1DT, uid 3510014 status   ACTIVE team 1
+17:52:08.238         | client: ADD_PLAYER 16           Oliver, uid 0 status   ACTIVE team 1
+17:52:08.239         | client: ADD_PLAYER 17             Ryan, uid 0 status   ACTIVE team 2
+17:52:08.239         | client: ADD_PLAYER 18         Nicholas, uid 0 status   ACTIVE team 1
+17:52:08.239         | client: ADD_PLAYER 19          Kenneth, uid 0 status   ACTIVE team 2
+17:52:08.240         | client: ADD_PLAYER 20            Bernd, uid 0 status   ACTIVE team 1
+17:52:08.240         | client: ADD_PLAYER 21           Steven, uid 0 status   ACTIVE team 2
+17:52:08.240         | client: ADD_PLAYER 22            Nikki, uid 0 status   ACTIVE team 1
+17:52:08.249         | client: ADD_PLAYER 23           Robert, uid 0 status   ACTIVE team 2
+17:52:08.249         | client: UPDATE_PLAYER  3      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+17:52:08.318         | client: got init message. ping 73, MTU 1350
+17:52:08.395         | ====== level started:  'island' success ======
+17:52:09.455  WARNING| net: USER_BYTES_PUSHED 1661; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 37616; USER_BYTES_RECEIVED_IGNORED 1276; ACTUAL_SENT 3056; ACTUAL_BYTES_RECEIVED 41195; packetLoss 0%
+17:52:09.587         | client: UPDATE_PLAYER  5        Kitt_Soni, uid 7493688 status   ACTIVE team 1
+17:52:23.406  WARNING| client: snapshot loss rate 5.5%
+17:52:24.363  WARNING| client: snapshot loss rate 5.5%
+17:52:41.787  WARNING| Client: received Entity sync notification #0 for entity with netId 2838, but entity doesn't exist
+17:52:45.368  WARNING| net: USER_BYTES_PUSHED 2675; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 17937; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 5000; ACTUAL_BYTES_RECEIVED 22807; packetLoss 0%
+17:52:49.373  WARNING| net: USER_BYTES_PUSHED 2439; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 20544; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 4969; ACTUAL_BYTES_RECEIVED 25785; packetLoss 0%
+17:52:57.367  WARNING| net: USER_BYTES_PUSHED 2693; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16390; USER_BYTES_RECEIVED_IGNORED 72; ACTUAL_SENT 5357; ACTUAL_BYTES_RECEIVED 18063; packetLoss 0%
+17:52:58.128         | client: player 0 leave game
+17:54:40.133         | Gameplay statistic. gameResult 'victory'
+17:54:40.133         |      Scrap_Common  26, Glory  32,  score 451, expBase 451, expDailyBonus 4.0, expTotal 2503, expBaseFactionTotal 2503, expFactionTotal 2503
+17:54:40.133         |      loot: ResourcePack_Gasoline5;ResourcePack_Gasoline10;
+17:54:40.133         |      quest Daily_2_WinsPvp2: 0 / 3 -> 1 / 3
+17:54:40.133         |      quest Daily_3_DamageDone2: 4964 / 20000 -> 9461 / 20000
+17:54:40.133         |      quest Quest_earn_mechanics_experience_pvp_15000: 4039 / 15000 -> 6542 / 15000
+17:54:46.218         | client: player 7 leave game
+17:54:47.418         | client: player 6 leave game
+17:54:48.617         | client: player 5 leave game
+17:54:49.618         | client: player 4 leave game
+17:54:51.761         | client: player 1 leave game
+17:54:52.294         | client: player 2 leave game
+17:55:06.626         | client: avgPing 74.1/82.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.3/5.5%, MTU 1350
+17:55:06.626         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+17:55:06.626         | Network stats (bytes per second): avg pushed 2066, max pushed 2844, avg sent 3927, max sent 5079, avg received 12850, max received 21155
+17:55:06.929         | ====== starting level 14: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:55:06.929         | {
+17:55:06.929         | 	"is_hangar": 1
+17:55:06.929         | 	"return_to_MM": 1
+17:55:06.929         | }
+17:55:07.457         | ====== level started:  'hangar' success ======
+17:55:07.489         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+17:55:07.489         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+17:55:07.512         | Stored mission name: Machinegun
+17:55:07.512         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:55:08.757         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:12.551         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:16.493         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:19.494         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:22.493         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:26.491         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: Default2, inQueue: true
+17:55:29.298         | CL_MatchMaker::ConnectHandler: addr = 34.254.151.215:35902, gsid = 553212639
+17:55:29.355         | client: start connecting to 34.254.151.215|35902...
+17:55:29.611         | client: connected to 34.254.151.215|35902, server guid '1690556140009979', client guid '815151534032106213', setting up session...
+17:55:29.715         | client: connected to dedicated server. gsid: 553212639, hostname: 'wheel01-am-uk.pxo/live-bcr5v-rxz4k'
+17:55:29.813         | client: server assigned id 0
+17:55:29.821         | client: got level load message 'levels/maps/arizona_silo' Conquer, levelId: 1
+17:55:29.903         | ====== starting level 15: 'levels/maps/arizona_silo' Conquer client Empty,env=287013 ======
+17:55:29.903         | {
+17:55:29.903         | 	"minUR": 7985
+17:55:29.903         | 	"maxUR": 9083
+17:55:29.903         | 	"queueTag": Default2
+17:55:29.903         | 	"fixedMMValue": 0
+17:55:29.903         | }
+17:55:30.288         | client: send ready message
+17:55:30.492         | client: ADD_PLAYER  0      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+17:55:30.492         | client: ADD_PLAYER  1  Don_Della_Rocko, uid 11118059 status MAP_LOAD team 1
+17:55:30.493         | client: ADD_PLAYER  2        SKAVENGER, uid 9832 status MAP_LOAD team 2
+17:55:30.493         | client: ADD_PLAYER  3          Happy20, uid 1602639 status MAP_LOAD team 2
+17:55:30.572         | client: ADD_PLAYER  4 S_T_A_L_K_E_R_BG, uid 3079253 status   ACTIVE team 2
+17:55:30.572         | client: ADD_PLAYER  5        Syros_383, uid 5997007 status   ACTIVE team 1
+17:55:30.573         | client: ADD_PLAYER  6       Yidu_Polem, uid 1995661 status MAP_LOAD team 1
+17:55:30.573         | client: ADD_PLAYER  7     __Ragnarok__, uid 4669867 status MAP_LOAD team 1
+17:55:30.587         | client: ADD_PLAYER 16           Yannis, uid 0 status   ACTIVE team 1
+17:55:30.587         | client: ADD_PLAYER 17          Dominic, uid 0 status   ACTIVE team 2
+17:55:30.588         | client: ADD_PLAYER 18            Damon, uid 0 status   ACTIVE team 2
+17:55:30.645         | client: ADD_PLAYER 19            Bernd, uid 0 status   ACTIVE team 1
+17:55:30.645         | client: ADD_PLAYER 20            Jamie, uid 0 status   ACTIVE team 2
+17:55:30.646         | client: ADD_PLAYER 21           Olivia, uid 0 status   ACTIVE team 1
+17:55:30.646         | client: ADD_PLAYER 22          Claudia, uid 0 status   ACTIVE team 1
+17:55:30.646         | client: ADD_PLAYER 23           Joshua, uid 0 status   ACTIVE team 2
+17:55:30.646         | client: UPDATE_PLAYER  0      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+17:55:30.646         | client: UPDATE_PLAYER  6       Yidu_Polem, uid 1995661 status   ACTIVE team 1
+17:55:30.648         | client: got init message. ping 77, MTU 1350
+17:55:30.648         | client: UPDATE_PLAYER  3          Happy20, uid 1602639 status   ACTIVE team 2
+17:55:30.805         | ====== level started:  'arizona_silo' success ======
+17:55:30.805         | client: UPDATE_PLAYER  2        SKAVENGER, uid 9832 status   ACTIVE team 2
+17:55:31.109         | client: UPDATE_PLAYER  1  Don_Della_Rocko, uid 11118059 status   ACTIVE team 1
+17:55:34.762         | client: UPDATE_PLAYER  7     __Ragnarok__, uid 4669867 status   ACTIVE team 1
+17:55:43.110         | client: player 22 leave game
+17:55:43.110         | client: RESERVE_PLAYER  8        nokintos7, uid 2566951@live status RESERVED team 1
+17:55:43.209         | client: player 23 leave game
+17:55:43.209         | client: RESERVE_PLAYER  9       Bombila625, uid 1327250@live status RESERVED team 2
+17:55:43.875  WARNING| server_fps [ 2023-07-28T14:56:01.082Z ]:  29 30 29 30 30 30 30 29 30 30 29 30 30 30 29 29 29 30 29 29 30 30 30 30 30 30 30 30 30  6 29 29 29 29 29 30 29 29 29 29
+17:55:44.498         | client: UPDATE_PLAYER  8        nokintos7, uid 2566951 status   ACTIVE team 1
+17:55:45.907         | client: UPDATE_PLAYER  9       Bombila625, uid 1327250 status   ACTIVE team 2
+17:55:55.290  WARNING| client: snapshot loss rate 10.2%
+17:55:56.299  WARNING| client: snapshot loss rate 13.3%
+17:55:57.318  WARNING| client: snapshot loss rate 13.3%
+17:55:57.792  WARNING| client: snapshot loss rate 7.8%
+17:56:06.968  WARNING| client: snapshot loss rate 5.5%
+17:56:07.984  WARNING| client: snapshot loss rate 5.5%
+17:56:12.463  WARNING| client: snapshot loss rate 6.2%
+17:56:13.688  WARNING| client: snapshot loss rate 7.8%
+17:56:14.706  WARNING| client: snapshot loss rate 7.8%
+17:56:17.244  WARNING| net: USER_BYTES_PUSHED 2858; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 28820; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5507; ACTUAL_BYTES_RECEIVED 34764; packetLoss 0%
+17:56:19.242  WARNING| net: USER_BYTES_PUSHED 2947; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 26885; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5702; ACTUAL_BYTES_RECEIVED 33068; packetLoss 0%
+17:56:20.246  WARNING| net: USER_BYTES_PUSHED 2920; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 20531; USER_BYTES_RECEIVED_IGNORED 16; ACTUAL_SENT 5533; ACTUAL_BYTES_RECEIVED 25001; packetLoss 0%
+17:56:20.339  WARNING| client: snapshot loss rate 5.5%
+17:56:21.355  WARNING| client: snapshot loss rate 5.5%
+17:56:24.263  WARNING| client: snapshot loss rate 7.8%
+17:56:25.281  WARNING| client: snapshot loss rate 7.0%
+17:56:29.598         | client: player 2 leave game
+17:56:43.689         | client: player 4 leave game
+17:56:44.348  WARNING| server_fps [ 2023-07-28T14:57:01.555Z ]:  29 29 29 29 30 30 29 29 29 30 30 30 29 29 30 30 29 30 29 30 30 29 30 29 29 30 29 29 29  9 30 30 30 29 29 29 29 29 29 30
+17:56:45.245  WARNING| net: USER_BYTES_PUSHED 2899; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16434; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5211; ACTUAL_BYTES_RECEIVED 20062; packetLoss 0%
+17:57:06.805  WARNING| client: snapshot loss rate 5.5%
+17:57:07.817  WARNING| client: snapshot loss rate 5.5%
+17:57:11.761         | Gameplay statistic. gameResult 'defeat'
+17:57:11.761         |      Scrap_Common  18, Glory  23,  score 278, expBase 278, expDailyBonus 4.0, expTotal 1542, expBaseFactionTotal 1542, expFactionTotal 1542
+17:57:11.761         |      quest Daily_3_DamageDone2: 9461 / 20000 -> 13021 / 20000
+17:57:11.761         |      quest Quest_earn_mechanics_experience_pvp_15000: 6542 / 15000 -> 8084 / 15000
+17:57:12.190  WARNING| server_fps [ 2023-07-28T14:57:29.398Z ]:  30 29 29 29 30 29 29 29 30 30 29 30 30 29 29 29 30 30 30 30 29 30 29 29 29 30 30 30 30 21 29 30 30 29 29 29 29 29 29 30
+17:57:17.313         | client: avgPing 75.0/103.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 1.5/13.3%, MTU 1350
+17:57:17.313         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+17:57:17.313         | Network stats (bytes per second): avg pushed 2351, max pushed 2988, avg sent 4457, max sent 5479, avg received 19312, max received 34022
+17:57:17.593         | ====== starting level 16: 'levels/maps/hangar'  single Empty,env=221621 ======
+17:57:17.593         | {
+17:57:17.593         | 	"is_hangar": 1
+17:57:17.593         | 	"return_to_MM": 1
+17:57:17.593         | }
+17:57:18.137         | ====== level started:  'hangar' success ======
+17:57:18.171         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+17:57:18.171         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+17:57:18.199         | Stored mission name: Machinegun
+17:57:18.199         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+17:57:19.835         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:57:23.519         | Matchmaker_NotifyQueueState: 7 avg queue time sec, queueTag: Default2, inQueue: true
+17:57:24.785         | CL_MatchMaker::ConnectHandler: addr = 34.240.13.51:35217, gsid = 553212823
+17:57:24.822         | client: start connecting to 34.240.13.51|35217...
+17:57:25.118         | client: connected to 34.240.13.51|35217, server guid '1690556245403014', client guid '815151534032106213', setting up session...
+17:57:25.252         | client: connected to dedicated server. gsid: 553212823, hostname: 'wheel02-am-uk.pxo/live-bcr5v-zhkmw'
+17:57:25.385         | client: server assigned id 5
+17:57:25.408         | client: got level load message 'levels/maps/holes' Domination, levelId: 1
+17:57:25.565         | ====== starting level 17: 'levels/maps/holes' Domination client Empty,env=817133 ======
+17:57:25.565         | {
+17:57:25.565         | 	"minUR": 7859
+17:57:25.565         | 	"maxUR": 8586
+17:57:25.565         | 	"queueTag": Default2
+17:57:25.565         | 	"fixedMMValue": 0
+17:57:25.565         | }
+17:57:26.270         | client: send ready message
+17:57:26.476         | client: ADD_PLAYER  0          __Erika, uid 1686633 status   ACTIVE team 2
+17:57:26.477         | client: ADD_PLAYER  1  HU_LLIAgY_HA3Ag, uid 10450662 status MAP_LOAD team 2
+17:57:26.557         | client: ADD_PLAYER  2          bodyray, uid 4373469 status   ACTIVE team 1
+17:57:26.557         | client: ADD_PLAYER  3        zsigerelo, uid 7118526 status   ACTIVE team 2
+17:57:26.559         | client: ADD_PLAYER  4       Blechtaler, uid 8775065 status   ACTIVE team 1
+17:57:26.581         | client: ADD_PLAYER  5      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+17:57:26.581         | client: ADD_PLAYER  6          Happy20, uid 1602639 status   ACTIVE team 2
+17:57:26.582         | client: ADD_PLAYER  7        Tdante_UA, uid 4032998 status   ACTIVE team 1
+17:57:26.639         | client: ADD_PLAYER 16           George, uid 0 status   ACTIVE team 1
+17:57:26.640         | client: ADD_PLAYER 17            Ethan, uid 0 status   ACTIVE team 2
+17:57:26.640         | client: ADD_PLAYER 18            Jacob, uid 0 status   ACTIVE team 1
+17:57:26.640         | client: ADD_PLAYER 19            Damon, uid 0 status   ACTIVE team 2
+17:57:26.640         | client: ADD_PLAYER 20            Sarah, uid 0 status   ACTIVE team 1
+17:57:26.641         | client: ADD_PLAYER 21         Florence, uid 0 status   ACTIVE team 2
+17:57:26.651         | client: ADD_PLAYER 22           Alexis, uid 0 status   ACTIVE team 1
+17:57:26.660         | client: ADD_PLAYER 23          Michael, uid 0 status   ACTIVE team 2
+17:57:26.661         | client: UPDATE_PLAYER  5      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+17:57:26.729         | client: got init message. ping 81, MTU 1350
+17:57:26.763         | ====== level started:  'holes' success ======
+17:57:26.816  WARNING| client: snapshot loss rate 14.3%
+17:57:26.950  WARNING| client: snapshot loss rate 9.1%
+17:57:27.015         | client: player 23 leave game
+17:57:27.016         | client: RESERVE_PLAYER  8     __Ragnarok__, uid 4669867@live status RESERVED team 2
+17:57:27.017         | client: player 22 leave game
+17:57:27.018         | client: RESERVE_PLAYER  9        nokintos7, uid 2566951@live status RESERVED team 1
+17:57:27.948  WARNING| client: snapshot loss rate 7.0%
+17:57:28.750         | client: UPDATE_PLAYER  9        nokintos7, uid 2566951 status   ACTIVE team 1
+17:57:28.752         | client: UPDATE_PLAYER  1  HU_LLIAgY_HA3Ag, uid 10450662 status   ACTIVE team 2
+17:57:29.549  WARNING| server_fps [ 2023-07-28T14:57:46.697Z ]:  29 29 30 30 29 29 29 30 29 29 29 29 29 30 29 30 30 29 29 30 29 29 29 29 29 30 30 29 30 17 29 29 30 30 29 29 30 29 30 29
+17:57:35.103         | client: player 20 leave game
+17:57:35.103         | client: RESERVE_PLAYER 10       Bombila625, uid 1327250@live status RESERVED team 1
+17:57:35.221         | client: player 21 leave game
+17:57:35.221         | client: RESERVE_PLAYER 11        Zilla1545, uid 3135303@live status RESERVED team 2
+17:57:35.495         | client: UPDATE_PLAYER  8     __Ragnarok__, uid 4669867 status   ACTIVE team 2
+17:57:38.283         | client: UPDATE_PLAYER 10       Bombila625, uid 1327250 status   ACTIVE team 1
+17:57:42.805         | client: UPDATE_PLAYER 11        Zilla1545, uid 3135303 status   ACTIVE team 2
+17:58:09.849  WARNING| server_fps [ 2023-07-28T14:58:27.053Z ]:  29 29 29 29 29 29 30 30 30 29 29 29 29 30 29 30 30 29 29 29 30 29 30 29 29 29 30 29 29 23 30 30 30 30 29 29 29 30 30 30
+17:58:13.571         | NotifyStripeEarned: 4424378@live, PvpAssist, 1
+17:59:01.512  WARNING| server_fps [ 2023-07-28T14:59:18.717Z ]:  30 29 28 29 29 29 29 30 29 30 30 29 30 29 29 29 29 29 29 30 29 30 30 29 30 30 30 25 30 12 30 30 29 29 29 29 29 30 30 30
+17:59:14.805  WARNING| client: snapshot loss rate 6.2%
+17:59:38.939  WARNING| Client: received Entity sync notification #1 for entity with netId 6870, but entity doesn't exist
+18:00:06.889  WARNING| frame 192552: 104 ms spike
+18:00:19.025         | Gameplay statistic. gameResult 'defeat'
+18:00:19.025         |      Scrap_Common  15, Glory  19,  score 107, expBase 107, expDailyBonus 4.0, expTotal 593, expBaseFactionTotal 593, expFactionTotal 593
+18:00:19.026         |      quest Daily_3_DamageDone2: 13021 / 20000 -> 15678 / 20000
+18:00:19.026         |      quest Quest_earn_mechanics_experience_pvp_15000: 8084 / 15000 -> 8677 / 15000
+18:00:19.557  WARNING| server_fps [ 2023-07-28T15:00:36.705Z ]:  29 29 29 30 29 29 29 29 29 29 30 30 30 27 30 30 30 30 30 30 30 29 29 29 30 30 30 29 30 15 29 29 30 29 30 29 30 29 30 29
+18:00:24.251         | client: player 7 leave game
+18:00:24.926         | client: player 4 leave game
+18:00:25.822         | client: player 0 leave game
+18:00:26.301         | client: player 1 leave game
+18:00:26.441         | client: avgPing 82.1/104.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.3/7.6%, MTU 1350
+18:00:26.441         | client: connection closed. CLIENT_QUIT
+18:00:26.441         | Network stats (bytes per second): avg pushed 1913, max pushed 2895, avg sent 3733, max sent 5417, avg received 14579, max received 28990
+18:00:26.732         | ====== starting level 18: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:00:26.732         | {
+18:00:26.732         | 	"is_hangar": 1
+18:00:26.732         | }
+18:00:27.166         | ====== level started:  'hangar' success ======
+18:00:36.477         | Stored mission name: Machinegun
+18:00:36.477         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:00:37.867         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+18:00:41.512         | Matchmaker_NotifyQueueState: 11 avg queue time sec, queueTag: Default2, inQueue: true
+18:00:45.465         | CL_MatchMaker::ConnectHandler: addr = 54.194.115.26:35750, gsid = 553213193
+18:00:45.493         | client: start connecting to 54.194.115.26|35750...
+18:00:45.498         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: false
+18:00:45.740         | client: connected to 54.194.115.26|35750, server guid '1690556453566235', client guid '815151534032106213', setting up session...
+18:00:45.858         | client: connected to dedicated server. gsid: 553213193, hostname: 'wheel03-am-uk.pxo/live-bcr5v-5k9l7'
+18:00:45.963         | client: server assigned id 4
+18:00:45.973         | client: got level load message 'levels/maps/factory' Assault, levelId: 1
+18:00:46.058         | ====== starting level 19: 'levels/maps/factory' Assault client Empty,env=594788 ======
+18:00:46.058         | {
+18:00:46.058         | 	"minUR": 7859
+18:00:46.058         | 	"maxUR": 8958
+18:00:46.058         | 	"queueTag": Default2
+18:00:46.058         | 	"fixedMMValue": 0
+18:00:46.058         | }
+18:00:46.774         | client: send ready message
+18:00:46.979         | client: ADD_PLAYER  0        nokintos7, uid 2566951 status MAP_LOAD team 1
+18:00:46.980         | client: ADD_PLAYER  1          H3D5HOT, uid 13460489 status MAP_LOAD team 2
+18:00:46.980         | client: ADD_PLAYER  2          bodyray, uid 4373469 status MAP_LOAD team 2
+18:00:47.063         | client: ADD_PLAYER  3   papercutpete21, uid 9635011 status   ACTIVE team 1
+18:00:47.063         | client: ADD_PLAYER  4      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+18:00:47.065         | client: ADD_PLAYER  5         za7777zp, uid 12944279 status MAP_LOAD team 2
+18:00:47.065         | client: ADD_PLAYER  6         RomaTech, uid 3033315 status MAP_LOAD team 2
+18:00:47.065         | client: ADD_PLAYER  7  Edocsil_Cruiser, uid 10826424 status MAP_LOAD team 1
+18:00:47.070         | client: ADD_PLAYER 16             Dave, uid 0 status   ACTIVE team 1
+18:00:47.140         | client: ADD_PLAYER 17            Peter, uid 0 status   ACTIVE team 2
+18:00:47.141         | client: ADD_PLAYER 18            Brian, uid 0 status   ACTIVE team 1
+18:00:47.142         | client: ADD_PLAYER 19           Sandra, uid 0 status   ACTIVE team 2
+18:00:47.142         | client: ADD_PLAYER 20           Joseph, uid 0 status   ACTIVE team 1
+18:00:47.142         | client: ADD_PLAYER 21             Andy, uid 0 status   ACTIVE team 2
+18:00:47.143         | client: ADD_PLAYER 22             Paul, uid 0 status   ACTIVE team 1
+18:00:47.143         | client: ADD_PLAYER 23           Edward, uid 0 status   ACTIVE team 2
+18:00:47.144         | client: UPDATE_PLAYER  4      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+18:00:47.168         | client: got init message. ping 78, MTU 1350
+18:00:47.168         | client: UPDATE_PLAYER  7  Edocsil_Cruiser, uid 10826424 status   ACTIVE team 1
+18:00:47.169         | client: UPDATE_PLAYER  2          bodyray, uid 4373469 status   ACTIVE team 2
+18:00:47.351         | ====== level started:  'factory' success ======
+18:00:47.352         | client: UPDATE_PLAYER  6         RomaTech, uid 3033315 status   ACTIVE team 2
+18:00:47.355         | client: UPDATE_PLAYER  0        nokintos7, uid 2566951 status   ACTIVE team 1
+18:00:47.355         | client: UPDATE_PLAYER  5         za7777zp, uid 12944279 status   ACTIVE team 2
+18:00:48.015         | client: player 22 leave game
+18:00:48.016         | client: RESERVE_PLAYER  8    Kicajek233707, uid 6901770@live status RESERVED team 1
+18:00:48.017         | client: player 23 leave game
+18:00:48.017         | client: RESERVE_PLAYER  9      NERFtheMODS, uid 4550754@live status RESERVED team 2
+18:00:48.018         | client: player 20 leave game
+18:00:48.019         | client: RESERVE_PLAYER 10 Талімансер, uid 77934@live status RESERVED team 1
+18:00:48.035         | client: player 21 leave game
+18:00:48.035         | client: RESERVE_PLAYER 11   KOT_B_KPOCOBKE, uid 6420124@live status RESERVED team 2
+18:00:48.035         | client: player 18 leave game
+18:00:48.035         | client: RESERVE_PLAYER 12         pavaogcc, uid 10508494@live status RESERVED team 1
+18:00:48.035         | client: player 19 leave game
+18:00:48.036         | client: RESERVE_PLAYER 13        savuionut, uid 4316298@live status RESERVED team 2
+18:00:48.718  WARNING| server_fps [ 2023-07-28T15:01:05.925Z ]:  29 29 30 30 29 29 29 30 30 29 24 30 30 29 29 29 30 30 30 30 30
+18:00:48.772         | client: UPDATE_PLAYER  1          H3D5HOT, uid 13460489 status   ACTIVE team 2
+18:00:49.653         | client: UPDATE_PLAYER 11   KOT_B_KPOCOBKE, uid 6420124 status   ACTIVE team 2
+18:00:49.855         | client: UPDATE_PLAYER  8    Kicajek233707, uid 6901770 status   ACTIVE team 1
+18:00:49.893         | client: UPDATE_PLAYER 12         pavaogcc, uid 10508494 status   ACTIVE team 1
+18:00:51.059         | client: player 16 leave game
+18:00:51.059         | client: RESERVE_PLAYER 14        JaggjabCZ, uid 2726483@live status RESERVED team 1
+18:00:51.174         | client: player 17 leave game
+18:00:51.174         | client: RESERVE_PLAYER 15          bukser5, uid 4712869@live status RESERVED team 2
+18:00:51.281         | client: UPDATE_PLAYER  9      NERFtheMODS, uid 4550754 status   ACTIVE team 2
+18:00:51.928         | client: UPDATE_PLAYER 13        savuionut, uid 4316298 status   ACTIVE team 2
+18:00:52.679         | client: UPDATE_PLAYER 14        JaggjabCZ, uid 2726483 status   ACTIVE team 1
+18:00:53.068         | client: UPDATE_PLAYER 15          bukser5, uid 4712869 status   ACTIVE team 2
+18:00:53.949         | client: UPDATE_PLAYER 10 Талімансер, uid 77934 status   ACTIVE team 1
+18:01:28.481  WARNING| Client: received Entity sync notification #1 for entity with netId 3278, but entity doesn't exist
+18:01:51.817  WARNING| Client: received Entity sync notification #1 for entity with netId 3680, but entity doesn't exist
+18:01:53.583  WARNING| Client: received Entity sync notification #1 for entity with netId 3700, but entity doesn't exist
+18:02:04.752  WARNING| server_fps [ 2023-07-28T15:02:21.956Z ]:  30 29 29 30 30 30 29 30 30 30 30 30 29 30 29 29 30 30 30 30 30 29 29 29 30 30 29 30 29 15 29 30 29 29 29 29 30 29 29 29
+18:02:23.225  WARNING| server_fps [ 2023-07-28T15:02:40.428Z ]:  30 30 29 30 30 30 29 29 29 29 29 29 29 29 29 30 29 29 30 29 29 30 29 29 29 29 30 30 29 24 30 29 30 30 30 29 30 29 30 29
+18:02:38.847  WARNING| server_fps [ 2023-07-28T15:02:56.052Z ]:  29 29 29 30 29 30 30 29 30 29 30 30 29 30 29 30 30 29 29 30 30 30 30 30 30 30 29 29 30 13 29 29 30 30 29 29 30 30 29 29
+18:02:59.572         | Gameplay statistic. gameResult 'victory'
+18:02:59.572         |      Scrap_Common  25, Glory  30,  score 129, expBase 129, expDailyBonus 4.0, expTotal 715, expBaseFactionTotal 715, expFactionTotal 715
+18:02:59.572         |      loot: ResourcePack_Gasoline5;ResourcePack_Gasoline10;
+18:02:59.572         |      quest Daily_2_WinsPvp2: 1 / 3 -> 2 / 3
+18:02:59.572         |      quest Daily_3_DamageDone2: 15678 / 20000 -> 16905 / 20000
+18:02:59.572         |      quest Quest_earn_mechanics_experience_pvp_15000: 8677 / 15000 -> 9392 / 15000
+18:02:59.931  WARNING| server_fps [ 2023-07-28T15:03:17.136Z ]:  30 29 29 29 29 30 29 30 30 29 29 29 29 29 29 29 29 29 29 29 29 30 29 29 29 29 29 29 29 15  8 30 29 30 30 29 30 29 29 29
+18:03:01.018         | client: player 10 leave game
+18:03:05.041         | client: player 15 leave game
+18:03:05.344         | client: player 5 leave game
+18:03:05.344         | client: player 6 leave game
+18:03:05.609         | client: avgPing 75.8/83.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/3.9%, MTU 1350
+18:03:05.609         | client: connection closed. CLIENT_QUIT
+18:03:05.609         | Network stats (bytes per second): avg pushed 2339, max pushed 3028, avg sent 4462, max sent 5539, avg received 15097, max received 23744
+18:03:05.919         | ====== starting level 20: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:03:05.919         | {
+18:03:05.919         | 	"is_hangar": 1
+18:03:05.919         | }
+18:03:06.403         | ====== level started:  'hangar' success ======
+18:03:24.821         | TargemServices: RenewAuth: new token = uoJDAAAAAAA9SiGOoMlIqO9bIp2JAQAAsWmXnARub25lBGxpdmU, server time 2023-07-28T15:03:42.033Z (drift of -17 sec)
+18:04:37.737  WARNING| frame 214882: 111 ms spike
+18:04:45.931  WARNING| frame 215004: 128 ms spike
+18:04:49.276         | Test drive started from Hangar
+18:04:49.720         | TestDriveLogic::EraseVisitor called from TestDriveLogic::OnVisitorBadCarDesign
+18:04:49.720         | TestDriveLogic::EraseVisitor called for removed car. Visitor erased.
+18:06:50.439         | Stored mission name: Machinegun
+18:06:50.439         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:06:51.895         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: Default2, inQueue: true
+18:06:55.557         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: Default2, inQueue: true
+18:06:57.677  WARNING| frame 232725: 115 ms spike
+18:06:58.340         | CL_MatchMaker::ConnectHandler: addr = 34.240.13.51:35832, gsid = 553213915
+18:06:58.367         | client: start connecting to 34.240.13.51|35832...
+18:06:58.606         | client: connected to 34.240.13.51|35832, server guid '1690556769983564', client guid '815151534032106213', setting up session...
+18:06:58.740         | client: connected to dedicated server. gsid: 553213915, hostname: 'wheel01-am-uk.pxo/live-bcr5v-q55x5'
+18:06:58.874         | client: server assigned id 12
+18:06:58.883         | client: got level load message 'levels/maps/sulfur' Assault, levelId: 1
+18:06:59.024         | ====== starting level 21: 'levels/maps/sulfur' Assault client Empty,env=732642 ======
+18:06:59.024         | {
+18:06:59.024         | 	"minUR": 7619
+18:06:59.024         | 	"maxUR": 8817
+18:06:59.024         | 	"queueTag": Default2
+18:06:59.024         | 	"fixedMMValue": 0
+18:06:59.024         | }
+18:07:00.281         | client: send ready message
+18:07:00.380         | client: ADD_PLAYER  0           kgb145, uid 10288267 status MAP_LOAD team 1
+18:07:00.485         | client: ADD_PLAYER  1   lwebb110217941, uid 10836683 status   ACTIVE team 2
+18:07:00.553         | client: ADD_PLAYER  2           AnGrim, uid 1365329 status   ACTIVE team 1
+18:07:00.554         | client: ADD_PLAYER  3           ri_end, uid 17488 status   ACTIVE team 2
+18:07:00.566         | client: ADD_PLAYER  4        DaLockree, uid 7580864 status   ACTIVE team 2
+18:07:00.567         | client: ADD_PLAYER  5           БURGA, uid 4959730 status   ACTIVE team 1
+18:07:00.568         | client: ADD_PLAYER  6        KoTuk2101, uid 9804481 status   ACTIVE team 1
+18:07:00.633         | client: ADD_PLAYER  7           Jay99x, uid 4272754 status   ACTIVE team 2
+18:07:00.635         | client: ADD_PLAYER  8      fallout8119, uid 9053849 status   ACTIVE team 1
+18:07:00.635         | client: ADD_PLAYER  9       Dedyshka77, uid 4696707 status MAP_LOAD team 1
+18:07:00.636         | client: ADD_PLAYER 10        Kippsisse, uid 10789044 status MAP_LOAD team 2
+18:07:00.641         | client: ADD_PLAYER 11      Zocker5_002, uid 8678222 status MAP_LOAD team 2
+18:07:00.642         | client: ADD_PLAYER 12      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+18:07:00.642         | client: ADD_PLAYER 13        WillBXR4U, uid 11474850 status MAP_LOAD team 1
+18:07:00.643         | client: ADD_PLAYER 14 aniquiladorazul2, uid 1143576 status RESERVED team 1
+18:07:00.643         | client: ADD_PLAYER 15         BadVladi, uid 8787879 status RESERVED team 2
+18:07:00.863         | client: UPDATE_PLAYER 12      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+18:07:01.018         | client: got init message. ping 91, MTU 1350
+18:07:01.019         | client: UPDATE_PLAYER 13        WillBXR4U, uid 11474850 status   ACTIVE team 1
+18:07:01.073         | client: UPDATE_PLAYER 10        Kippsisse, uid 10789044 status   ACTIVE team 2
+18:07:01.100         | ====== level started:  'sulfur' success ======
+18:07:02.157         | client: UPDATE_PLAYER 14 aniquiladorazul2, uid 1143576 status   ACTIVE team 1
+18:07:02.356         | client: UPDATE_PLAYER 15         BadVladi, uid 8787879 status   ACTIVE team 2
+18:07:02.423         | client: UPDATE_PLAYER 11      Zocker5_002, uid 8678222 status   ACTIVE team 2
+18:07:04.892         | client: UPDATE_PLAYER  9       Dedyshka77, uid 4696707 status   ACTIVE team 1
+18:07:06.758         | client: UPDATE_PLAYER  0           kgb145, uid 10288267 status   ACTIVE team 1
+18:07:26.200  WARNING| LogicEntityMover.RefreshPath. Used different path 'HeliPath'.
+18:07:26.200  WARNING| LogicEntityMover.RefreshPath. Used different path 'HeliPath_2'.
+18:07:58.301  WARNING| server_fps [ 2023-07-28T15:08:15.505Z ]:  30 30 29 30 30 29 30 29 30 29 29 29 30 30 30 30 29 29 29 30 29 29 30 29 29 30 30 30 29 24 24 30 29 30 30 29 30 30 29 29
+18:08:01.468         | client: player 7 leave game
+18:08:34.874  WARNING| server_fps [ 2023-07-28T15:08:52.078Z ]:  30 29 30 29 30 29 29 30 29 29 30 29 29 29 29 30 29 29 30 30 29 29 30 29 29 30 30 29 30 18 29 29 30 29 30 30 29 29 29 30
+18:08:50.529         | client: player 11 leave game
+18:09:13.098         | Quest_Completed callback. questName = 'Daily_3_DamageDone2'
+18:09:13.099         | Gameplay statistic. gameResult 'defeat'
+18:09:13.099         |      Scrap_Common  19, Glory  23,  score 258, expBase 258, expDailyBonus 4.0, expTotal 1431, expBaseFactionTotal 1431, expFactionTotal 1431
+18:09:13.099         |      quest Daily_3_DamageDone2: 16905 / 20000 -> 20000 / 20000
+18:09:13.099         |      quest Daily_6_Quests2: 1 / 4 -> 2 / 4
+18:09:13.099         |      quest Weekly_1_Quests_New: 33 / 40 -> 34 / 40
+18:09:13.099         |      quest Quest_earn_mechanics_experience_pvp_15000: 9392 / 15000 -> 10823 / 15000
+18:09:13.515  WARNING| server_fps [ 2023-07-28T15:09:30.717Z ]:  29 30 29 30 30 30 30 30 30 29 30 30 29 29 29 30 29 30 30 30 29 30 30 29 30 29 30 30 30 12 30 29 29 29 29 29 29 29 30 29
+18:09:18.819         | client: player 2 leave game
+18:09:19.146         | client: player 6 leave game
+18:09:19.691         | client: avgPing 73.0/91.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.0/0.0%, MTU 1350
+18:09:19.691         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+18:09:19.691         | Network stats (bytes per second): avg pushed 2341, max pushed 3023, avg sent 4435, max sent 5563, avg received 16392, max received 24487
+18:09:19.993         | ====== starting level 22: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:09:19.993         | {
+18:09:19.993         | 	"is_hangar": 1
+18:09:19.993         | 	"return_to_MM": 1
+18:09:19.993         | }
+18:09:20.462         | ====== level started:  'hangar' success ======
+18:09:20.500         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+18:09:20.500         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+18:09:20.529         | Stored mission name: Machinegun
+18:09:20.529         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:09:21.881         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: Default2, inQueue: true
+18:09:25.544         | Matchmaker_NotifyQueueState: 16 avg queue time sec, queueTag: Default2, inQueue: true
+18:09:29.589         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: Default2, inQueue: true
+18:09:33.573         | Matchmaker_NotifyQueueState: 3 avg queue time sec, queueTag: Default2, inQueue: true
+18:09:34.511         | CL_MatchMaker::ConnectHandler: addr = 52.213.58.249:35314, gsid = 553214191
+18:09:34.546         | client: start connecting to 52.213.58.249|35314...
+18:09:34.780         | client: connected to 52.213.58.249|35314, server guid '1690556916719787', client guid '815151534032106213', setting up session...
+18:09:34.870         | client: connected to dedicated server. gsid: 553214191, hostname: 'wheel03-am-uk.pxo/live-bcr5v-kzvxt'
+18:09:34.971         | client: server assigned id 2
+18:09:34.982         | client: got level load message 'levels/maps/castle_artillery' Conquer, levelId: 1
+18:09:35.079         | ====== starting level 23: 'levels/maps/castle_artillery' Conquer client Empty,env=314530 ======
+18:09:35.079         | {
+18:09:35.079         | 	"minUR": 7870
+18:09:35.079         | 	"maxUR": 8830
+18:09:35.079         | 	"queueTag": Default2
+18:09:35.079         | 	"fixedMMValue": 0
+18:09:35.079         | }
+18:09:36.129         | client: send ready message
+18:09:36.308         | client: ADD_PLAYER  0        KoTuk2101, uid 9804481 status   ACTIVE team 2
+18:09:36.309         | client: ADD_PLAYER  1        Spinykeys, uid 11036502 status MAP_LOAD team 2
+18:09:36.309         | client: ADD_PLAYER  2      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+18:09:36.310         | client: ADD_PLAYER  3    Adam_Sunlight, uid 1666542 status MAP_LOAD team 1
+18:09:36.383         | client: ADD_PLAYER  4      bobo_pospec, uid 12861908 status MAP_LOAD team 1
+18:09:36.383         | client: ADD_PLAYER  5    AIO_Berserker, uid 8116251 status MAP_LOAD team 1
+18:09:36.383         | client: ADD_PLAYER  6   GULYAI_RVANINA, uid 3661883 status MAP_LOAD team 1
+18:09:36.384         | client: ADD_PLAYER  7       Bombila625, uid 1327250 status MAP_LOAD team 2
+18:09:36.393         | client: ADD_PLAYER 16            Ethan, uid 0 status   ACTIVE team 2
+18:09:36.461         | client: ADD_PLAYER 17            Helge, uid 0 status   ACTIVE team 1
+18:09:36.461         | client: ADD_PLAYER 18          Kristen, uid 0 status   ACTIVE team 2
+18:09:36.462         | client: ADD_PLAYER 19          Dominic, uid 0 status   ACTIVE team 1
+18:09:36.462         | client: ADD_PLAYER 20          Orlando, uid 0 status   ACTIVE team 1
+18:09:36.462         | client: ADD_PLAYER 21          Abigail, uid 0 status   ACTIVE team 2
+18:09:36.463         | client: ADD_PLAYER 22          Kenneth, uid 0 status   ACTIVE team 2
+18:09:36.463         | client: ADD_PLAYER 23            Peter, uid 0 status   ACTIVE team 1
+18:09:36.464         | client: UPDATE_PLAYER  2      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+18:09:36.506         | client: got init message. ping 73, MTU 1350
+18:09:36.508         | client: UPDATE_PLAYER  3    Adam_Sunlight, uid 1666542 status   ACTIVE team 1
+18:09:36.638         | ====== level started:  'castle_artillery' success ======
+18:09:36.638         | client: UPDATE_PLAYER  5    AIO_Berserker, uid 8116251 status   ACTIVE team 1
+18:09:36.721         | client: UPDATE_PLAYER  1        Spinykeys, uid 11036502 status   ACTIVE team 2
+18:09:36.990         | client: player 22 leave game
+18:09:36.990         | client: RESERVE_PLAYER  8       adrox14785, uid 6808466@live status RESERVED team 2
+18:09:36.991         | client: player 23 leave game
+18:09:36.991         | client: RESERVE_PLAYER  9       Hungerilla, uid 5060931@live status RESERVED team 1
+18:09:37.124         | client: UPDATE_PLAYER  4      bobo_pospec, uid 12861908 status   ACTIVE team 1
+18:09:38.307         | client: UPDATE_PLAYER  7       Bombila625, uid 1327250 status   ACTIVE team 2
+18:09:38.546         | client: UPDATE_PLAYER  8       adrox14785, uid 6808466 status   ACTIVE team 2
+18:09:38.613         | client: UPDATE_PLAYER  9       Hungerilla, uid 5060931 status   ACTIVE team 1
+18:09:44.211         | client: player 21 leave game
+18:09:44.211         | client: RESERVE_PLAYER 10       Slaganator, uid 2320215@live status RESERVED team 2
+18:09:44.338         | client: player 20 leave game
+18:09:44.338         | client: RESERVE_PLAYER 11        Criss2018, uid 2129606@live status RESERVED team 1
+18:09:45.806         | client: UPDATE_PLAYER 10       Slaganator, uid 2320215 status   ACTIVE team 2
+18:09:46.405         | client: UPDATE_PLAYER  6   GULYAI_RVANINA, uid 3661883 status   ACTIVE team 1
+18:09:46.939         | client: UPDATE_PLAYER 11        Criss2018, uid 2129606 status   ACTIVE team 1
+18:10:10.383  WARNING| Client: received Entity sync notification #1 for entity with netId 3020, but entity doesn't exist
+18:10:13.643  WARNING| Client: received Entity sync notification #1 for entity with netId 3126, but entity doesn't exist
+18:10:29.086         | client: player 11 leave game
+18:10:32.225  WARNING| Client: received Entity sync notification #1 for entity with netId 3556, but entity doesn't exist
+18:10:36.029  WARNING| Client: received Entity sync notification #1 for entity with netId 3692, but entity doesn't exist
+18:10:43.716  WARNING| server_fps [ 2023-07-28T15:11:00.919Z ]:  29 29 29 29 30 30 29 30 30 29 30 29 30 30 30 29 29 29 30 30 29 29 30 29 30 30 30 29 29 14 29 29 30 30 30 29 30 29 29 29
+18:10:53.513  WARNING| net: USER_BYTES_PUSHED 2679; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 11536; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 4964; ACTUAL_BYTES_RECEIVED 15180; packetLoss 0%
+18:10:58.233  WARNING| Client: received Entity sync notification #1 for entity with netId 4514, but entity doesn't exist
+18:11:27.659  WARNING| server_fps [ 2023-07-28T15:11:44.863Z ]:  29 29 30 30 30 29 30 29 29 29 29 29 30 30 29 30 30 29 30 30 30 30 30 30 30 30 30 30 29  9 30 29 29 30 29 29 29 30 30 30
+18:13:03.396         | Quest_Completed callback. questName = 'Daily_2_WinsPvp2'
+18:13:03.396         | Gameplay statistic. gameResult 'victory'
+18:13:03.396         |      Scrap_Common  26, Glory  32,  score 369, expBase 369, expDailyBonus 4.0, expTotal 2047, expBaseFactionTotal 2047, expFactionTotal 2047
+18:13:03.396         |      quest Daily_2_WinsPvp2: 2 / 3 -> 3 / 3
+18:13:03.396         |      quest Daily_6_Quests2: 2 / 4 -> 3 / 4
+18:13:03.396         |      quest Weekly_1_Quests_New: 34 / 40 -> 35 / 40
+18:13:03.396         |      quest Quest_earn_mechanics_experience_pvp_15000: 10823 / 15000 -> 12870 / 15000
+18:13:03.396         | NotifyStripeEarned: 4424378@live, PvpCompanionOwnerKill, 1
+18:13:03.848  WARNING| server_fps [ 2023-07-28T15:13:21.053Z ]:  29 30 30 29 30 29 30 30 29 29 29 30 29 30 30 30 30 29 29 29 30 29 30 30 29 29 30 30 29 13 29 30 30 30 30 30 30 30 30 30
+18:13:08.921         | client: player 3 leave game
+18:13:09.368         | client: player 9 leave game
+18:13:09.403         | client: avgPing 73.6/80.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/3.9%, MTU 1350
+18:13:09.403         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+18:13:09.403         | Network stats (bytes per second): avg pushed 2251, max pushed 2828, avg sent 4272, max sent 5300, avg received 14824, max received 24605
+18:13:09.740         | ====== starting level 24: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:13:09.740         | {
+18:13:09.740         | 	"is_hangar": 1
+18:13:09.740         | 	"return_to_MM": 1
+18:13:09.740         | }
+18:13:10.301         | ====== level started:  'hangar' success ======
+18:13:10.342         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+18:13:10.342         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+18:13:10.373         | Stored mission name: Machinegun
+18:13:10.373         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:13:11.941         | Matchmaker_NotifyQueueState: 11 avg queue time sec, queueTag: Default2, inQueue: true
+18:13:12.440         | CL_MatchMaker::ConnectHandler: addr = 34.254.151.215:35078, gsid = 553214570
+18:13:12.469         | client: start connecting to 34.254.151.215|35078...
+18:13:12.695         | client: connected to 34.254.151.215|35078, server guid '1690557187664459', client guid '815151534032106213', setting up session...
+18:13:12.790         | client: connected to dedicated server. gsid: 553214570, hostname: 'wheel01-am-uk.pxo/live-bcr5v-bzspf'
+18:13:12.893         | client: server assigned id 10
+18:13:12.905         | client: got level load message 'levels/maps/riverport' Domination, levelId: 1
+18:13:12.990         | ====== starting level 25: 'levels/maps/riverport' Domination client Empty,env=702394 ======
+18:13:12.990         | {
+18:13:12.990         | 	"minUR": 8182
+18:13:12.990         | 	"maxUR": 8810
+18:13:12.990         | 	"queueTag": Default2
+18:13:12.990         | 	"fixedMMValue": 0
+18:13:12.990         | }
+18:13:13.942         | client: send ready message
+18:13:14.121         | client: ADD_PLAYER  0        LeonserGT, uid 13469692 status   ACTIVE team 2
+18:13:14.192         | client: ADD_PLAYER  1  DeinNachbar6532, uid 3113358 status   ACTIVE team 2
+18:13:14.193         | client: ADD_PLAYER  2        Dupstyler, uid 3100966 status   ACTIVE team 2
+18:13:14.193         | client: ADD_PLAYER  3           Lupe_8, uid 9379927 status   ACTIVE team 1
+18:13:14.203         | client: ADD_PLAYER  4    Picotheexpert, uid 12663643 status   ACTIVE team 2
+18:13:14.203         | client: ADD_PLAYER  5    Kicajek233707, uid 6901770 status   ACTIVE team 1
+18:13:14.264         | client: ADD_PLAYER  6         MeTorSet, uid 2500646 status   ACTIVE team 1
+18:13:14.264         | client: ADD_PLAYER  7      Experiment8, uid 7470865 status   ACTIVE team 1
+18:13:14.266         | client: ADD_PLAYER  8        savuionut, uid 4316298 status   ACTIVE team 2
+18:13:14.266         | client: ADD_PLAYER  9        Criss2018, uid 2129606 status   ACTIVE team 1
+18:13:14.266         | client: ADD_PLAYER 10      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+18:13:14.266         | client: ADD_PLAYER 11    Adam_Sunlight, uid 1666542 status MAP_LOAD team 2
+18:13:14.280         | client: ADD_PLAYER 16          Matthew, uid 0 status   ACTIVE team 1
+18:13:14.281         | client: ADD_PLAYER 17            Robyn, uid 0 status   ACTIVE team 2
+18:13:14.281         | client: ADD_PLAYER 18             Dave, uid 0 status   ACTIVE team 2
+18:13:14.336         | client: ADD_PLAYER 19             Lisa, uid 0 status   ACTIVE team 1
+18:13:14.342         | client: UPDATE_PLAYER 10      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+18:13:14.436         | client: got init message. ping 74, MTU 1350
+18:13:14.436         | client: UPDATE_PLAYER 11    Adam_Sunlight, uid 1666542 status   ACTIVE team 2
+18:13:14.444         | ====== level started:  'riverport' success ======
+18:13:29.951    ERROR| CL_SOContainer::ReplicaHandler: !so for live:so:RichPresence:11036502@cabin-lw-nl-13/auth_4
+18:13:35.956  WARNING| Client: received Entity sync notification #1 for entity with netId 3188, but entity doesn't exist
+18:13:44.107         | client: player 8 leave game
+18:14:09.348         | NotifyStripeEarned: 4424378@live, PvpBackstab, 1
+18:14:16.707         | client: player 9 leave game
+18:14:56.576         | NotifyStripeEarned: 4424378@live, PvpCompanionKill, 1
+18:15:21.132  WARNING| server_fps [ 2023-07-28T15:15:38.335Z ]:  30 30 29 29 30 30 29 30 29 30 29 30 30 29 30 29 29 30 30 29 30 29 29 30 30 30 29 30 29 14 30 29 29 29 29 29 30 29 29 30
+18:15:52.699         | NotifyStripeEarned: 4424378@live, PvpAssist, 1
+18:15:53.060         | Quest_Completed callback. questName = 'BattlePass2023_01_daily_q04'
+18:15:58.746         | Quest_Completed callback. questName = 'Quest_earn_mechanics_experience_pvp_15000'
+18:15:58.747         | Gameplay statistic. gameResult 'defeat'
+18:15:58.747         |      Scrap_Common  18, Glory  22,  score 451, expBase 451, expDailyBonus 4.0, expTotal 2503, expBaseFactionTotal 2503, expFactionTotal 2503
+18:15:58.747         |      quest Quest_earn_mechanics_experience_pvp_15000: 12870 / 15000 -> 15000 / 15000
+18:15:59.128  WARNING| server_fps [ 2023-07-28T15:16:16.333Z ]:  30 30 30 29 30 29 30 29 30 29 30 29 29 29 29 30 29 29 29 30 30 29 29 29 29 29 30 30 29 12 29 29 30 30 30 29 30 30 30 29
+18:16:03.984         | client: player 11 leave game
+18:16:04.198         | client: player 4 leave game
+18:16:04.269         | client: player 6 leave game
+18:16:04.644         | client: player 3 leave game
+18:16:04.977         | client: avgPing 72.7/82.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.0/2.3%, MTU 1350
+18:16:04.978         | client: connection closed. CLIENT_QUIT
+18:16:04.978         | Network stats (bytes per second): avg pushed 2402, max pushed 2855, avg sent 4495, max sent 5201, avg received 14427, max received 22445
+18:16:05.340         | ====== starting level 26: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:16:05.340         | {
+18:16:05.340         | 	"is_hangar": 1
+18:16:05.340         | }
+18:16:05.842         | ====== level started:  'hangar' success ======
+18:16:14.084         | Stored mission name: Machinegun
+18:16:14.084         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:16:14.956         | Matchmaker_NotifyQueueState: 6 avg queue time sec, queueTag: Default2, inQueue: true
+18:16:15.602         | CL_MatchMaker::ConnectHandler: addr = 54.74.179.52:35771, gsid = 553214890
+18:16:15.632         | client: start connecting to 54.74.179.52|35771...
+18:16:15.893         | client: connected to 54.74.179.52|35771, server guid '1690557364948432', client guid '815151534032106213', setting up session...
+18:16:15.998         | client: connected to dedicated server. gsid: 553214890, hostname: 'wheel03-am-uk.pxo/live-bcr5v-nq8fm'
+18:16:16.094         | client: server assigned id 14
+18:16:16.106         | client: got level load message 'levels/maps/holes' Domination, levelId: 1
+18:16:16.187         | ====== starting level 27: 'levels/maps/holes' Domination client Empty,env=137892 ======
+18:16:16.187         | {
+18:16:16.187         | 	"minUR": 7999
+18:16:16.187         | 	"maxUR": 8848
+18:16:16.187         | 	"queueTag": Default2
+18:16:16.187         | 	"fixedMMValue": 0
+18:16:16.187         | }
+18:16:16.945         | client: send ready message
+18:16:17.151         | client: ADD_PLAYER  0 donkbrainedhorse, uid 12740473 status   ACTIVE team 2
+18:16:17.152         | client: ADD_PLAYER  1         OxY_T4NE, uid 4824140 status   ACTIVE team 1
+18:16:17.237         | client: ADD_PLAYER  2      fallout8119, uid 9053849 status   ACTIVE team 1
+18:16:17.238         | client: ADD_PLAYER  3         Admeneym, uid 6310907 status   ACTIVE team 2
+18:16:17.238         | client: ADD_PLAYER  4      bobo_pospec, uid 12861908 status   ACTIVE team 1
+18:16:17.254         | client: ADD_PLAYER  5        Tdante_UA, uid 4032998 status   ACTIVE team 2
+18:16:17.319         | client: ADD_PLAYER  6       wurstbiene, uid 8218302 status   ACTIVE team 2
+18:16:17.320         | client: ADD_PLAYER  7          RoVe_73, uid 4790011 status   ACTIVE team 1
+18:16:17.320         | client: ADD_PLAYER  8         MeTorSet, uid 2500646 status   ACTIVE team 2
+18:16:17.321         | client: ADD_PLAYER  9    Adam_Sunlight, uid 1666542 status   ACTIVE team 2
+18:16:17.321         | client: ADD_PLAYER 10       adrox14785, uid 6808466 status   ACTIVE team 1
+18:16:17.322         | client: ADD_PLAYER 11   GULYAI_RVANINA, uid 3661883 status   ACTIVE team 1
+18:16:17.331         | client: ADD_PLAYER 12       Bombila625, uid 1327250 status   ACTIVE team 2
+18:16:17.337         | client: ADD_PLAYER 13    Kicajek233707, uid 6901770 status   ACTIVE team 1
+18:16:17.356         | client: ADD_PLAYER 14      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+18:16:17.357         | client: ADD_PLAYER 15      Experiment8, uid 7470865 status   ACTIVE team 2
+18:16:17.401         | client: UPDATE_PLAYER 14      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+18:16:17.443         | client: got init message. ping 80, MTU 1350
+18:16:17.447         | ====== level started:  'holes' success ======
+18:16:53.175  WARNING| server_fps [ 2023-07-28T15:17:10.376Z ]:  30 30 29 29 30 29 30 30 29 30 29 29 29 29 29 29 29 30 29 29 29 29 29 30 29 29 30 30 30 18 29 30 29 29 29 30 30 30 29 30
+18:17:18.293  WARNING| client: packet loss last second 7.7%
+18:17:18.954  WARNING| client: packet loss last second 6.4%
+18:17:19.286  WARNING| client: packet loss last second 7.7%
+18:17:26.213  WARNING| server_fps [ 2023-07-28T15:17:43.414Z ]:  30 29 29 29 30 30 29 29 30 30 30 29 30 29 29 29 30 29 30 30 30 29 29 30 30 29 30 29 29 23 30 29 30 30 29 30 29 29 30 29
+18:17:27.232         | NotifyStripeEarned: 4424378@live, PvpDestroyDetailsEpic, 1
+18:17:47.906  WARNING| server_fps [ 2023-07-28T15:18:05.111Z ]:  29 29 29 30 30 29 30 30 30 30 29 29 30 30 29 29 29 29 30 30 29 29 30 30 29 30 30 30 30 13 29 30 30 30 29 30 29 29 30 29
+18:18:25.379         | TargemServices: RenewAuth: new token = uoJDAAAAAABjIiNvsv77Z7wZMJ2JAQAAsWmXnARub25lBGxpdmU, server time 2023-07-28T15:18:42.593Z (drift of -17 sec)
+18:18:41.706  WARNING| server_fps [ 2023-07-28T15:18:58.913Z ]:  30 30 29 29 30 29 30 29 30 30 29 29 30 29 30 30 30 30 30 30 30 29 29 30 30 30 30 30 30 19 30 29 29 30 29 30 30 29 29 29
+18:19:07.103  WARNING| server_fps [ 2023-07-28T15:19:24.309Z ]:  29 29 29 29 29 29 29 30 29 29 29 29 29 29 30 29 29 29 29 29 29 29 30 30 29 29 29 30 29 23 30 29 30 29 30 30 29 29 29 30
+18:19:15.682         | Gameplay statistic. gameResult 'defeat'
+18:19:15.682         |      Scrap_Common  19, Glory  23,  score 259, expBase 259, expDailyBonus 4.0, expTotal 1437, expBaseFactionTotal 1437, expFactionTotal 1437
+18:19:21.011         | client: player 10 leave game
+18:19:21.212         | client: player 9 leave game
+18:19:21.379         | client: player 5 leave game
+18:19:21.896  WARNING| server_fps [ 2023-07-28T15:19:39.103Z ]:  30 30 30 30 30 30 30 30 29 30 30 29 30 29 29 30 30 29 30 30 30 30 30 29 30 30 30 29 29 13 29 10 29 29 30 29 30 29 30 29
+18:19:22.932         | client: player 6 leave game
+18:19:25.615         | client: player 0 leave game
+18:19:25.664         | client: avgPing 81.5/86.0; avgPacketLoss 0.0/7.0%; avgSnapshotLoss 0.0/3.9%, MTU 1350
+18:19:25.664         | client: connection closed. MANUALLY_RETURN_TO_MATCHMACKER
+18:19:25.664         | Network stats (bytes per second): avg pushed 2277, max pushed 3098, avg sent 4395, max sent 5919, avg received 14446, max received 25293
+18:19:25.945         | ====== starting level 28: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:19:25.945         | {
+18:19:25.945         | 	"is_hangar": 1
+18:19:25.945         | 	"return_to_MM": 1
+18:19:25.945         | }
+18:19:26.448         | ====== level started:  'hangar' success ======
+18:19:26.484         | Gameui. try to reenter into matchmaking queue, mission 'Machinegun'
+18:19:26.484         | ResetReturnToMatchmaking: setting up mode MISSION_SELECT
+18:19:26.514         | Stored mission name: Machinegun
+18:19:26.514         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:19:27.983         | Matchmaker_NotifyQueueState: 12 avg queue time sec, queueTag: Default2, inQueue: true
+18:19:30.484         | CL_MatchMaker::ConnectHandler: addr = 54.194.115.26:35049, gsid = 553215278
+18:19:30.516         | client: start connecting to 54.194.115.26|35049...
+18:19:30.775         | client: connected to 54.194.115.26|35049, server guid '1690557557523569', client guid '815151534032106213', setting up session...
+18:19:30.886         | client: connected to dedicated server. gsid: 553215278, hostname: 'wheel02-am-uk.pxo/live-bcr5v-nnsj8'
+18:19:30.991         | client: server assigned id 14
+18:19:31.002         | client: got level load message 'levels/maps/tower' Domination, levelId: 1
+18:19:31.084         | ====== starting level 29: 'levels/maps/tower' Domination client Empty,env=762335 ======
+18:19:31.084         | {
+18:19:31.084         | 	"minUR": 7330
+18:19:31.084         | 	"maxUR": 8403
+18:19:31.084         | 	"queueTag": Default2
+18:19:31.084         | 	"fixedMMValue": 0
+18:19:31.084         | }
+18:19:32.024         | client: send ready message
+18:19:32.234         | client: ADD_PLAYER  0          bodyray, uid 4373469 status   ACTIVE team 2
+18:19:32.234         | client: ADD_PLAYER  1        Louboutin, uid 4825211 status   ACTIVE team 2
+18:19:32.317         | client: ADD_PLAYER  2           Demast, uid 4825225 status   ACTIVE team 2
+18:19:32.318         | client: ADD_PLAYER  3          __Erika, uid 1686633 status   ACTIVE team 2
+18:19:32.318         | client: ADD_PLAYER  4        Darmaniak, uid 4017771 status   ACTIVE team 1
+18:19:32.319         | client: ADD_PLAYER  5     SalteD_Sugar, uid 6195523 status MAP_LOAD team 1
+18:19:32.338         | client: ADD_PLAYER  6           volkwi, uid 12207553 status   ACTIVE team 1
+18:19:32.404         | client: ADD_PLAYER  7           ZvezDA, uid 1585276 status   ACTIVE team 1
+18:19:32.404         | client: ADD_PLAYER  8    Adam_Sunlight, uid 1666542 status   ACTIVE team 1
+18:19:32.404         | client: ADD_PLAYER  9       adrox14785, uid 6808466 status   ACTIVE team 2
+18:19:32.406         | client: ADD_PLAYER 10    Kicajek233707, uid 6901770 status MAP_LOAD team 2
+18:19:32.406         | client: ADD_PLAYER 11          RoVe_73, uid 4790011 status   ACTIVE team 1
+18:19:32.406         | client: ADD_PLAYER 12      fallout8119, uid 9053849 status   ACTIVE team 1
+18:19:32.407         | client: ADD_PLAYER 13       hatemmanga, uid 10240565 status   ACTIVE team 2
+18:19:32.407         | client: ADD_PLAYER 14      _UA_Puffin_, uid 4424378 status MAP_LOAD team 2
+18:19:32.407         | client: ADD_PLAYER 15   GENERAL_TERROR, uid 178697 status MAP_LOAD team 1
+18:19:32.485         | client: UPDATE_PLAYER 14      _UA_Puffin_, uid 4424378 status   ACTIVE team 2
+18:19:32.541         | client: got init message. ping 82, MTU 1350
+18:19:32.542         | client: UPDATE_PLAYER 10    Kicajek233707, uid 6901770 status   ACTIVE team 2
+18:19:32.554         | ====== level started:  'tower' success ======
+18:19:33.013         | client: UPDATE_PLAYER 15   GENERAL_TERROR, uid 178697 status   ACTIVE team 1
+18:19:37.088         | client: UPDATE_PLAYER  5     SalteD_Sugar, uid 6195523 status   ACTIVE team 1
+18:20:09.994         | NotifyStripeEarned: 4424378@live, PvpCompanionKill, 1
+18:20:44.032  WARNING| server_fps [ 2023-07-28T15:21:01.236Z ]:  29 29 30 30 30 29 29 29 30 30 30 29 30 30 29 30 30 30 30 29 30 30 29 29 29 29 30 30 29 11 29 29 30 30 29 30 29 29 30 30
+18:21:13.521         | client: player 13 leave game
+18:21:14.192  WARNING| server_fps [ 2023-07-28T15:21:31.397Z ]:  29 29 29 29 30 29 29 30 29 30 29 30 30 29 29 29 29 30 30 29 30 30 30 29 30 30 30 29 29 10 30 30 29 29 30 29 29 30 30 29
+18:21:25.961  WARNING| server_fps [ 2023-07-28T15:21:43.166Z ]:  29 29 30 30 29 30 29 29 29 29 29 29 30 30 29 29 30 30 29 30 29 30 29 30 29 29 30 29 29 14 30 29 30 29 29 29 30 29 29 30
+18:21:50.414  WARNING| client: snapshot loss rate 14.8%
+18:21:50.414  WARNING| client: loss more 16 snapshot in a row
+18:21:50.491  WARNING| net: USER_BYTES_PUSHED 2193; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 9958; USER_BYTES_RECEIVED_IGNORED 24; ACTUAL_SENT 4012; ACTUAL_BYTES_RECEIVED 12381; packetLoss 0%
+18:21:51.449  WARNING| client: snapshot loss rate 14.8%
+18:21:53.421  WARNING| client: snapshot loss rate 14.8%
+18:21:53.520  WARNING| client: snapshot loss rate 57.0%
+18:21:53.520  WARNING| client: loss more 73 snapshot in a row
+18:21:53.816         | Gameplay statistic. gameResult 'defeat'
+18:21:53.816         |      Scrap_Common  16, Glory  19,  score 147, expBase 147, expDailyBonus 4.0, expTotal 815, expBaseFactionTotal 815, expFactionTotal 815
+18:21:54.576  WARNING| client: snapshot loss rate 57.0%
+18:21:55.592  WARNING| client: snapshot loss rate 53.9%
+18:21:55.937  WARNING| client: snapshot loss rate 48.4%
+18:21:56.201  WARNING| client: snapshot loss rate 43.0%
+18:21:56.471  WARNING| client: snapshot loss rate 37.5%
+18:21:56.814  WARNING| client: snapshot loss rate 32.0%
+18:21:57.084  WARNING| client: snapshot loss rate 26.6%
+18:21:57.352  WARNING| client: snapshot loss rate 21.1%
+18:21:57.531         | client: player 8 leave game
+18:21:57.783  WARNING| client: snapshot loss rate 15.6%
+18:21:57.916         | client: player 9 leave game
+18:21:58.051  WARNING| client: snapshot loss rate 10.2%
+18:21:58.163         | client: player 15 leave game
+18:21:58.204  WARNING| server_fps [ 2023-07-28T15:22:15.411Z ]:  29 29 30 30 30 30 29 29 29 30 30 30 30 30 29 30 30 30 29 30 30 30 30 30 30 30 30 30 29  6 28 29 30 29 30 29 30 29 12 29
+18:21:58.517         | client: player 7 leave game
+18:21:58.775         | client: player 12 leave game
+18:21:59.734         | client: player 3 leave game
+18:22:00.359         | client: player 10 leave game
+18:22:00.859         | client: player 4 leave game
+18:22:01.331         | client: player 6 leave game
+18:22:01.410         | client: player 11 leave game
+18:22:01.431         | client: player 5 leave game
+18:22:02.610         | client: player 1 leave game
+18:22:03.134         | client: player 2 leave game
+18:22:05.957         | client: avgPing 83.3/210.0; avgPacketLoss 0.0/1.4%; avgSnapshotLoss 1.5/57.0%, MTU 1350
+18:22:05.957         | client: connection closed. CLIENT_QUIT
+18:22:05.957         | Network stats (bytes per second): avg pushed 2146, max pushed 2650, avg sent 4207, max sent 5245, avg received 13790, max received 21164
+18:22:06.301         | ====== starting level 30: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:22:06.301         | {
+18:22:06.301         | 	"is_hangar": 1
+18:22:06.301         | }
+18:22:06.955         | ====== level started:  'hangar' success ======
+18:23:53.975         | Spawn User Blueprint 1
+18:24:00.640         | Stored mission name: Mission_MetaPve_Hard
+18:24:00.640         | StartMatchmaking: 'solo', mission 'Mission_MetaPve_Hard', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690558200000,"mapOptionList":"riverport:Pve_TowerDefense","botList":"nomads"}'
+18:24:01.883         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:24:05.552         | Matchmaker_NotifyQueueState: 12 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:24:08.562         | Matchmaker_NotifyQueueState: 9 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:27:22.114  WARNING| frame 373101: 110 ms spike
+18:27:22.241  WARNING| frame 373103: 121 ms spike
+18:27:22.445  WARNING| frame 373115: 114 ms spike
+18:27:26.834         | Sound::Fmod_SystemCallback: Device list changed
+18:27:26.848         | Number of audio devices: 1
+18:27:26.848         |   0: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+18:27:26.848         | Number of recording audio devices: 4, number of devices currently plugged in: 2
+18:27:26.848         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+18:27:26.848         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+18:27:26.848         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: 
+18:27:26.848         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: 
+18:27:53.995         | Sound::Fmod_SystemCallback: Device list changed
+18:27:54.037         | Number of audio devices: 1
+18:27:54.038         |   0: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+18:27:54.038         | Number of recording audio devices: 4, number of devices currently plugged in: 2
+18:27:54.038         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+18:27:54.038         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+18:27:54.038         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: 
+18:27:54.038         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: 
+18:28:04.085         | Sound::Fmod_SystemCallback: Device list changed
+18:28:04.100         | Number of audio devices: 2
+18:28:04.100         |   0: name 'Наушники (JBL T460BT)'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2
+18:28:04.100         |   1: name 'Динамики (Realtek(R) Audio)'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8
+18:28:04.100         | Number of recording audio devices: 4, number of devices currently plugged in: 2
+18:28:04.100         |   0: name 'Набор микрофонов (Realtek(R) Audio)'; guid 'CEAFDC7A-BC37-44FE-8D0D61CED9F6F65C'
+    System rate: 48000; speaker mode: Stereo; speaker mode channels: 2; state: CONNECTED DEFAULT 
+18:28:04.100         |   1: name 'Динамики (Realtek(R) Audio) [loopback]'; guid '89E83DFF-1CE2-44C9-83BD6642106C6CB3'
+    System rate: 48000; speaker mode: 7.1; speaker mode channels: 8; state: CONNECTED 
+18:28:04.100         |   2: name 'Наушники (JBL T460BT) [loopback]'; guid 'A3E5DE4B-1E75-4FF2-92FB442A087C7C73'
+    System rate: 44100; speaker mode: Stereo; speaker mode channels: 2; state: 
+18:28:04.100         |   3: name 'Головной телефон (JBL T460BT)'; guid '9400A3B4-32B2-47C0-80EFA910BA797941'
+    System rate: 8000; speaker mode: Mono; speaker mode channels: 1; state: 
+18:28:38.291         | Stored mission name: Mission_MetaPve_Hard
+18:28:38.291         | StartMatchmaking: 'solo', mission 'Mission_MetaPve_Hard', region 'EU' (strict) ,rotatingParams: '{"expireTime":1690558200000,"mapOptionList":"riverport:Pve_TowerDefense","botList":"nomads"}'
+18:28:39.869         | Matchmaker_NotifyQueueState: 16 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:43.532         | Matchmaker_NotifyQueueState: 20 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:46.534         | Matchmaker_NotifyQueueState: 15 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:49.599         | Matchmaker_NotifyQueueState: 11 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:52.572         | Matchmaker_NotifyQueueState: 8 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:55.279         | Test drive started from Hangar
+18:28:56.569         | Matchmaker_NotifyQueueState: 13 avg queue time sec, queueTag: QMetaPve_Hard, inQueue: true
+18:28:57.194         | CL_MatchMaker::ConnectHandler: addr = 54.194.115.26:35892, gsid = 553216306
+18:28:57.230         | client: start connecting to 54.194.115.26|35892...
+18:28:57.492         | client: connected to 54.194.115.26|35892, server guid '1690558144115348', client guid '815151534032106213', setting up session...
+18:28:57.616         | client: connected to dedicated server. gsid: 553216306, hostname: 'wheel01-am-uk.pxo/live-bcr5v-zsfd4'
+18:28:57.722         | client: server assigned id 3
+18:28:57.738         | client: got level load message 'levels/maps/riverport' Pve_TowerDefense, levelId: 1
+18:28:57.858         | ====== starting level 31: 'levels/maps/riverport' Pve_TowerDefense client Empty,env=705441 ======
+18:28:57.858         | {
+18:28:57.858         | 	"minUR": 8421
+18:28:57.858         | 	"maxUR": 12374
+18:28:57.858         | 	"queueTag": QMetaPve_Hard
+18:28:57.858         | 	"fixedMMValue": 0
+18:28:57.858         | 	"difficulty": 2
+18:28:57.858         | 	"botlist": nomads
+18:28:57.858         | }
+18:28:58.864         | client: send ready message
+18:28:59.075         | client: ADD_PLAYER  0    Tesseract_SVK, uid 9217032 status MAP_LOAD team 1
+18:28:59.075         | client: ADD_PLAYER  1      Shelkynchik, uid 2203607 status   ACTIVE team 1
+18:28:59.156         | client: ADD_PLAYER  2        Vagrant8x, uid 2207759 status   ACTIVE team 1
+18:28:59.160         | client: ADD_PLAYER  3      _UA_Puffin_, uid 4424378 status MAP_LOAD team 1
+18:28:59.237         | client: UPDATE_PLAYER  3      _UA_Puffin_, uid 4424378 status   ACTIVE team 1
+18:28:59.244         | client: got init message. ping 82, MTU 1350
+18:28:59.246         | ====== level started:  'riverport' success ======
+18:28:59.613         | client: UPDATE_PLAYER  0    Tesseract_SVK, uid 9217032 status   ACTIVE team 1
+18:29:09.295         | HudShowCharacterMsg: #TowerDefense_Start_nomads_text2, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:29:35.008         | HudShowCharacterMsg: #TowerDefense_Capture_nomads_text2, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:29:35.008         | HudShowCharacterMsg: #TowerDefense_1Wave_nomads_text2, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:29:48.598  WARNING| Client: received Entity sync notification #0 for entity with netId 2548, but entity doesn't exist
+18:29:49.210  WARNING| Client: received Entity sync notification #0 for entity with netId 2724, but entity doesn't exist
+18:29:50.092  WARNING| Client: received Entity sync notification #0 for entity with netId 3024, but entity doesn't exist
+18:30:22.226  WARNING| Client: received Entity sync notification #0 for entity with netId 3404, but entity doesn't exist
+18:31:06.306         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:31:06.306         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:31:20.854         | HudShowCharacterMsg: #TowerDefense_2Wave_nomads_text3, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:31:24.005  WARNING| Client: received Entity sync notification #0 for entity with netId 5328, but entity doesn't exist
+18:31:25.492  WARNING| Client: received Entity sync notification #0 for entity with netId 5780, but entity doesn't exist
+18:31:26.710         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:31:29.898         | Spawn Turret 'Gameplay_Defense2_Turret_Level3': healthScale 2.00, damageScale 2.00
+18:31:32.481         | Spawn Turret 'Gameplay_Defense2_Turret_Level4': healthScale 2.00, damageScale 2.00
+18:31:47.731  WARNING| Client: received Entity sync notification #0 for entity with netId 6310, but entity doesn't exist
+18:31:55.603         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:32:05.839         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:32:05.839         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:32:23.412  WARNING| Client: received Entity sync notification #0 for entity with netId 7308, but entity doesn't exist
+18:32:24.022  WARNING| Client: received Entity sync notification #0 for entity with netId 7494, but entity doesn't exist
+18:32:24.294  WARNING| Client: received Entity sync notification #0 for entity with netId 7578, but entity doesn't exist
+18:32:24.902         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:32:35.905         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:32:35.905         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:32:37.207  WARNING| net: USER_BYTES_PUSHED 2997; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 16487; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5218; ACTUAL_BYTES_RECEIVED 20850; packetLoss 0%
+18:32:39.900  WARNING| Client: received Entity sync notification #0 for entity with netId 7922, but entity doesn't exist
+18:32:40.516  WARNING| Client: received Entity sync notification #0 for entity with netId 8152, but entity doesn't exist
+18:32:46.746         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:32:46.746         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:33:06.848         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:33:17.486         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:33:17.487         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:33:25.803         | TargemServices: RenewAuth: new token = uoJDAAAAAAB878rtzba8BxDXPZ2JAQAAsWmXnARub25lBGxpdmU, server time 2023-07-28T15:33:43.026Z (drift of -17 sec)
+18:33:26.904    ERROR| TLS alert: warning: close notify
+18:33:26.904    ERROR| TLS alert: warning: close notify
+18:33:28.161         | HudShowCharacterMsg: #TowerDefense_3Wave_nomads_text3, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:33:31.502  WARNING| Client: received Entity sync notification #0 for entity with netId 9430, but entity doesn't exist
+18:33:32.112  WARNING| Client: received Entity sync notification #0 for entity with netId 9592, but entity doesn't exist
+18:33:33.808         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:33:41.204         | Spawn Turret 'Gameplay_Defense2_Turret_Level3': healthScale 2.00, damageScale 2.00
+18:33:44.467  WARNING| server_fps [ 2023-07-28T15:34:01.684Z ]:  29 29 30 29 29 29 29 29 30 29 29 30 29 30 30 30 30 29 29 29 30 29 29 30 30 30 30 29 29 24 29 29 30 30 30 29 30 29 29 29
+18:33:52.193  WARNING| Client: received Entity sync notification #0 for entity with netId 10372, but entity doesn't exist
+18:34:05.691         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:34:05.691         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:34:06.568         | Spawn Turret 'Gameplay_Defense2_Turret_Level2': healthScale 2.00, damageScale 2.00
+18:34:32.693  WARNING| Client: received Entity sync notification #0 for entity with netId 11538, but entity doesn't exist
+18:34:41.303         | Spawn Turret 'Gameplay_Defense2_Turret_Level3': healthScale 2.00, damageScale 2.00
+18:34:45.102         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:34:45.102         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:34:48.020  WARNING| Client: received Entity sync notification #0 for entity with netId 11942, but entity doesn't exist
+18:34:48.901  WARNING| Client: received Entity sync notification #0 for entity with netId 12256, but entity doesn't exist
+18:35:04.020         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:35:04.020         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:35:04.704         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:35:04.704         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:35:10.679         | NotifyStripeEarned: 4424378@live, PveNomadHardKill, 1
+18:35:23.886         | Spawn Turret 'Gameplay_Defense2_Turret_Level4': healthScale 2.00, damageScale 2.00
+18:35:30.588         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:35:30.588         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:35:33.231         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:35:33.231         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:35:41.702  WARNING| Client: received Entity sync notification #0 for entity with netId 13768, but entity doesn't exist
+18:35:57.714         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:35:57.715         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:36:00.028  WARNING| Client: received Entity sync notification #0 for entity with netId 14690, but entity doesn't exist
+18:36:04.966         | Spawn Turret 'Gameplay_Defense2_Turret_Level3': healthScale 2.00, damageScale 2.00
+18:36:11.747         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:36:11.747         | Spawn Turret 'Turret_Machinegun_Mob': healthScale 2.00, damageScale 2.00
+18:36:22.386         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:36:22.386         | Spawn Turret 'Turret_Machinegun_Preepic_Mob': healthScale 2.00, damageScale 2.00
+18:36:37.205  WARNING| net: USER_BYTES_PUSHED 3259; USER_BYTES_RESENT 0; USER_BYTES_RECEIVED_PROCESSED 14783; USER_BYTES_RECEIVED_IGNORED 8; ACTUAL_SENT 5546; ACTUAL_BYTES_RECEIVED 18455; packetLoss 0%
+18:36:42.452         | HudShowCharacterMsg: #TowerDefense_Win_nomads_text, #Commtowers_nomads_caption, avatar_Mask_23, CharacterEnemy, 10.000000, enemy, 
+18:36:42.647         | Gameplay statistic. gameResult 'victory'
+18:36:42.647         |      Platinum 217,  score 1339, expBase 1339, expDailyBonus 4.0, expTotal 6695, expBaseFactionTotal 6695, expFactionTotal 6695
+18:36:42.647         |      quest Weekly_Quest_win_hard_pve_1: 2 / 8 -> 3 / 8
+18:36:42.674         | NotifyStripeEarned: 4424378@live, PveWinAlive, 1
+18:36:49.741         | client: avgPing 81.7/86.0; avgPacketLoss 0.0/0.0%; avgSnapshotLoss 0.1/3.1%, MTU 1350
+18:36:49.741         | client: connection closed. CLIENT_QUIT
+18:36:49.741         | Network stats (bytes per second): avg pushed 2548, max pushed 3010, avg sent 4670, max sent 5398, avg received 16057, max received 22277
+18:36:50.111         | ====== starting level 32: 'levels/maps/hangar'  single Empty,env=221621 ======
+18:36:50.111         | {
+18:36:50.111         | 	"is_hangar": 1
+18:36:50.111         | }
+18:36:50.544         | ====== level started:  'hangar' success ======
+18:42:08.531         | Stored mission name: Machinegun
+18:42:08.531         | StartMatchmaking: 'solo', mission 'Machinegun', region 'EU' (strict)
+18:42:10.133         | Matchmaker_NotifyQueueState: 10 avg queue time sec, queueTag: Default2, inQueue: true
+18:42:35.624  WARNING| frame 471190: 122 ms spike
+18:42:38.396  WARNING| frame 471230: 116 ms spike
+18:42:38.541  WARNING| frame 471231: 143 ms spike
+18:43:11.011         | GameApp shutdown
+18:43:11.098    ERROR| TLS alert: warning: close notify
+18:43:11.099         | TSConnectionManager::StateDISCONNECTING: reason 'client gentle quit'
+18:43:11.099    ERROR| TLS alert: warning: close notify
+18:43:13.313         | [0x14:] async    000002A968120118 0000000000000000 
+18:43:13.313         | [0x8:] timer    00007FF781510588 00007FF781510580 
+18:43:13.313         | [0x2618c:I] tcp      000002A983B24660 000002A983B24040 ASC@000002A983B24040[ProtoTransport::Connect,0x602,fd 4294967295,0.0.0.0:0]
+18:43:13.313         | [0x9:] poll     000002A983B240B8 000002A983B24040 
+18:43:13.313         | [0x2618c:I] tcp      000002A983B24EB8 000002A983B24898 ASC@000002A983B24898[ProtoTransport::Connect,0x602,fd 4294967295,0.0.0.0:0]
+18:43:13.313         | [0x9:] poll     000002A983B24910 000002A983B24898 
+18:43:13.313         | [0x14:] async    000002A968120118 0000000000000000 
