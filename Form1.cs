@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace CrossoutNicknamesCollector
 {
@@ -560,108 +561,97 @@ namespace CrossoutNicknamesCollector
 
         public void NewBatchInsertNicknames(string dbPath, List<string> nicknames)
         {
-            List<string> nicknamesToAdd = new List<string>();
+            List<string> nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
+            
+            List<List<string>> nicknamesLists = new List<List<string>>();
+            int listSize = nicknamesToAdd.Count / 8; // TODO: replace 8 by real threads count
 
-            nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
+            Console.WriteLine("Generating nicknames lists...");
+            List<string> tmpNickanames = new List<string>();
+            int index = 0;
+            foreach(string nickname in nicknamesToAdd)
+            {
+                if(index >= listSize)
+                { // Add batch of nicknames
+                    nicknamesLists.Add(tmpNickanames);
+                    tmpNickanames = new List<string>();
 
-            int batchSize = 100;
+                    Console.WriteLine($"Generated {nicknamesLists.Count * listSize}...");
+
+                    index = 0;
+                }
+
+                // Add nickname to list
+                tmpNickanames.Add(nickname);
+                index += 1;
+            }
+
+            if (index != 0)
+            { // Add other nicknames
+                nicknamesLists.Add(tmpNickanames);
+
+                Console.WriteLine($"Generated {tmpNickanames.Count}...");
+            }
 
             SQLiteConnection connection = sqlConnect;
-            
-                try
+
+            List<Thread> threads = new List<Thread>();
+
+            Console.WriteLine("Starting threads...");
+            int threadIndex = 0;
+            foreach(List<string> nicknamesList in nicknamesLists)
+            {
+                int currentThreadIndex = threadIndex;
+                Thread t = new Thread(() =>
                 {
-                    // Создаем SQL-запрос на добавление записи
-                    string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
-
-                    // Создаем команду с параметром для безопасного добавления значения nickname
-                    using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
+                    try
                     {
-                        // Добавляем параметр к команде
-                        SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
-
-                        int totalNicknames = nicknamesToAdd.Count;
-                        int batchesCount = (int)Math.Ceiling((double)totalNicknames / batchSize);
-
-                        // Используем цикл для вставки каждой части никнеймов
-                        for (int i = 0; i < batchesCount; i++)
+                        string insertQuery = "INSERT INTO Players (nickname) VALUES (@Nickname)";
+                        using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection))
                         {
-                            int startIndex = i * batchSize;
-                            int count = Math.Min(batchSize, totalNicknames - startIndex);
+                            SQLiteParameter parameter = command.Parameters.AddWithValue("@Nickname", null);
 
-                            // Создаем пакет значений для вставки
-                            List<string> batchValues = nicknamesToAdd.GetRange(startIndex, count);
-
-                            // Очищаем параметры команды
-                            parameter.Value = null;
-
-                            // Вставляем пакет значений
-                            foreach (string nickname in batchValues)
+                            foreach (string nickname in nicknamesList)
                             {
                                 parameter.Value = nickname;
                                 command.ExecuteNonQuery();
                             }
-
-                            Console.WriteLine($"Добавлено {count} никнеймов. Всего добавлено: {startIndex + count}");
                         }
-
-                        Console.WriteLine("Вставка завершена.");
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
-                }
-            
-        }
-    
-        /*
-        public void BatchInsertNicknames(string dbPath, List<string> nicknames)
-        {
-            try
-            {
-                
-                using (var connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
-                {
-                    connection.Open();
-
-                    // Определяем размер пакета
-                    int batchSize = 100;
-
-                    for (int i = 0; i < sortNickNames.Count; i += batchSize)
+                    catch (Exception ex)
                     {
-                        // Получаем текущий пакет никнеймов
-                        List<string> batchNicknames = sortNickNames.Skip(i).Take(batchSize).ToList();
-
-                        // Формируем SQL-запрос для пакетной вставки
-                        StringBuilder queryBuilder = new StringBuilder();
-                        queryBuilder.Append("INSERT INTO Players (nickname) VALUES ");
-
-                        for (int j = 0; j < batchNicknames.Count; j++)
-                        {
-                            queryBuilder.Append($"(@nickname{j})");
-                        }
-
-                        // Выполняем пакетную вставку
-                        using (var command = new SQLiteCommand(queryBuilder.ToString(), connection))
-                        {
-                            for (int j = 0; j < batchNicknames.Count; j++)
-                            {
-                                command.Parameters.AddWithValue($"@nickname{j}", batchNicknames[j]);
-                            }
-
-                            command.ExecuteNonQuery();
-                        }
+                        Console.WriteLine("Ошибка при добавлении записей: " + ex.Message);
                     }
 
-                    Console.WriteLine("Пакетная вставка никнеймов успешно завершена.");
-                }
+                    Console.WriteLine($"Thread finished #{threadIndex}");
+                });
+
+                t.Name = $"Thread #{currentThreadIndex}";
+                t.IsBackground = true;
+                t.Start();
+
+                Console.WriteLine($"Thread started #{currentThreadIndex}");
+
+                threads.Add(t);
+                threadIndex++;
             }
-            catch (Exception ex)
+
+            // Wait all threads finish
+            while (true)
             {
-                Console.WriteLine("Ошибка: " + ex.Message);
+                Thread.Sleep(100);
+
+                int finishedCount = 0;
+                foreach(Thread thread in threads)
+                {
+                    if (!thread.IsAlive)
+                        finishedCount++;
+                }
+
+                if (finishedCount == threads.Count)
+                    break;
             }
         }
-        */
         private void button1_Click(object sender, EventArgs e)
         {
 
