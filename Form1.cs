@@ -52,7 +52,7 @@ namespace CrossoutNicknamesCollector
 
         public string PathToTemplateDB => $"{LocalDerictory}\\{templateFileDB}";
 
-        public string pathToLogsFile => Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\Crossout\logs\";
+        public string PathToLogsFile => Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\Crossout\logs\";
 
         public string[] NickNames => GetNicknamesFromDatabase(ConnectionStringPlayers, "Players");
         
@@ -394,7 +394,7 @@ namespace CrossoutNicknamesCollector
             return nicknames;
         }
 
-        public void NewBatchInsertNicknames(string dbPath, List<string> nicknames)
+        public void NewBatchInsertNicknames(string dbPath)
         {
             List<string> nicknamesToAdd = GetUniqueNicknames(NickNames.ToList(), AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory)));
             
@@ -500,7 +500,7 @@ namespace CrossoutNicknamesCollector
 
             //Analitics
             DeleteFolderRecursively(DuplicateLogsDerictory);
-            DuplicateFolders(pathToLogsFile, DuplicateLogsDerictory);
+            DuplicateFolders(PathToLogsFile, DuplicateLogsDerictory);
 
             AllPlayers(ReadPlayerNicknamesFromLogsChat(DuplicateLogsDerictory), ReadPlayerNicknamesFromLogsGame(DuplicateLogsDerictory));
 
@@ -509,7 +509,7 @@ namespace CrossoutNicknamesCollector
             Stopwatch watch = new Stopwatch();
             watch.Start();
 
-            NewBatchInsertNicknames(PathToPlayersDB, allSortPlayers);//new
+            NewBatchInsertNicknames(PathToPlayersDB);
 
             watch.Stop();
 
@@ -550,7 +550,7 @@ namespace CrossoutNicknamesCollector
             CreateNicknamesToTxt(path);
             NicknamesToTxt(path, SortNickNames());
         }
-
+        
         private void button4_Click(object sender, EventArgs e)
         {
             //Delete Player
@@ -615,6 +615,26 @@ namespace CrossoutNicknamesCollector
             label3.Invoke((MethodInvoker)delegate {
                 label3.Text = message;
             });
+        }
+
+        /// <summary>
+        /// Show local folder
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", LocalDerictory);
+        }
+
+        /// <summary>
+        /// Show game log
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", PathToLogsFile);
         }
     }
 }

@@ -59,5 +59,15 @@ namespace CrossoutNicknamesCollector.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bottomrect {
+            get {
+                object obj = ResourceManager.GetObject("bottomrect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
