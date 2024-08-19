@@ -31,3 +31,10 @@ jobs:
     - name: Build Solution
       run: |
         msbuild.exe CrossoutNicknamesCollector.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
+    
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v4
+      with:
+          name: dist-without-markdown
+          path: |
+            bin/Release/
